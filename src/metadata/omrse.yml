@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/omrse
+
+idspace: OMRSE
+base_url: /obo/omrse
+
+products:
+- omrse.owl: https://raw.githubusercontent.com/matentzn/omrse-odk-test/master/omrse.owl
+- omrse.obo: https://raw.githubusercontent.com/matentzn/omrse-odk-test/master/omrse.obo
+
+term_browser: ontobee
+example_terms:
+- OMRSE_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/matentzn/omrse-odk-test/v
+
+- prefix: /tracker/
+  replacement: https://github.com/matentzn/omrse-odk-test/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/OMRSE?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/matentzn/omrse-odk-test/master/
