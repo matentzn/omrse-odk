@@ -3,10 +3,10 @@ ERROR	duplicate_definition	IAO:0000603	IAO:0000115	Add as annotation triples in 
 ERROR	duplicate_definition	IAO:0100001	IAO:0000115	Add as annotation triples in the granting ontology@en	
 ERROR	duplicate_definition	OBI:0000299	IAO:0000115	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en	
 ERROR	duplicate_definition	OBI:0000312	IAO:0000115	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en	
-ERROR	multiple_equivalent_classes	OMRSE:00000033	owl:equivalentClass	275d4433-696c-4b60-9e41-829735055694genid594	
-ERROR	multiple_equivalent_classes	OMRSE:00000033	owl:equivalentClass	275d4433-696c-4b60-9e41-829735055694genid601	
-ERROR	multiple_equivalent_classes	OMRSE:00000201	owl:equivalentClass	275d4433-696c-4b60-9e41-829735055694genid1006	
-ERROR	multiple_equivalent_classes	OMRSE:00000201	owl:equivalentClass	275d4433-696c-4b60-9e41-829735055694genid1007	
+ERROR	multiple_equivalent_classes	OMRSE:00000033	owl:equivalentClass	6a01d346-865f-4410-9be7-2a6b7bb62704genid594	
+ERROR	multiple_equivalent_classes	OMRSE:00000033	owl:equivalentClass	6a01d346-865f-4410-9be7-2a6b7bb62704genid601	
+ERROR	multiple_equivalent_classes	OMRSE:00000201	owl:equivalentClass	6a01d346-865f-4410-9be7-2a6b7bb62704genid1006	
+ERROR	multiple_equivalent_classes	OMRSE:00000201	owl:equivalentClass	6a01d346-865f-4410-9be7-2a6b7bb62704genid1007	
 ERROR	missing_label	http://example.com/bfo-spec-label	rdfs:label		
 ERROR	missing_label	BFO:0000134	rdfs:label		
 ERROR	missing_label	OMRSE:00002028	rdfs:label		
@@ -19,9 +19,9 @@ ERROR	missing_label	oboInOwl:Definition	rdfs:label
 ERROR	missing_label	oboInOwl:Subset	rdfs:label		
 ERROR	missing_label	oboInOwl:Synonym	rdfs:label		
 ERROR	missing_label	oboInOwl:SynonymType	rdfs:label		
-ERROR	deprecated_class_reference	275d4433-696c-4b60-9e41-829735055694genid839	owl:someValuesFrom	OMRSE:00000098	
-ERROR	deprecated_class_reference	275d4433-696c-4b60-9e41-829735055694genid855	owl:someValuesFrom	OMRSE:00000100	
-ERROR	deprecated_class_reference	275d4433-696c-4b60-9e41-829735055694genid936	owl:someValuesFrom	OMRSE:00000133	
+ERROR	deprecated_class_reference	6a01d346-865f-4410-9be7-2a6b7bb62704genid839	owl:someValuesFrom	OMRSE:00000098	
+ERROR	deprecated_class_reference	6a01d346-865f-4410-9be7-2a6b7bb62704genid855	owl:someValuesFrom	OMRSE:00000100	
+ERROR	deprecated_class_reference	6a01d346-865f-4410-9be7-2a6b7bb62704genid936	owl:someValuesFrom	OMRSE:00000133	
 ERROR	deprecated_class_reference	OMRSE:00000083	rdfs:subClassOf	OMRSE:00000127	
 ERROR	deprecated_class_reference	OMRSE:00000083	rdfs:subClassOf	OMRSE:00000128	
 ERROR	deprecated_class_reference	OMRSE:00000098	rdfs:subClassOf	OMRSE:00000185	
