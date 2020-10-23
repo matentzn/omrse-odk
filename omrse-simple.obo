@@ -1,0 +1,12 @@
+format-version: 1.2
+data-version: omrse/releases/2020-10-23/omrse-simple.owl
+ontology: omrse/omrse-simple
+property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "The Ontology of Medically Related Social Entities" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: owl:versionInfo "2020-10-23" xsd:string
+
+[Term]
+id: OMRSE:00000000
+name: root node
+
