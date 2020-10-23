@@ -1,0 +1,463 @@
+Level	Rule Name	Subject	Property	Value
+ERROR	duplicate_definition	IAO:0000603	IAO:0000115	Add as annotation triples in the granting ontology@en	
+ERROR	duplicate_definition	IAO:0100001	IAO:0000115	Add as annotation triples in the granting ontology@en	
+ERROR	duplicate_definition	OBI:0000299	IAO:0000115	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en	
+ERROR	duplicate_definition	OBI:0000312	IAO:0000115	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en	
+ERROR	multiple_equivalent_classes	OMRSE:00000033	owl:equivalentClass	275d4433-696c-4b60-9e41-829735055694genid594	
+ERROR	multiple_equivalent_classes	OMRSE:00000033	owl:equivalentClass	275d4433-696c-4b60-9e41-829735055694genid601	
+ERROR	multiple_equivalent_classes	OMRSE:00000201	owl:equivalentClass	275d4433-696c-4b60-9e41-829735055694genid1006	
+ERROR	multiple_equivalent_classes	OMRSE:00000201	owl:equivalentClass	275d4433-696c-4b60-9e41-829735055694genid1007	
+ERROR	missing_label	http://example.com/bfo-spec-label	rdfs:label		
+ERROR	missing_label	BFO:0000134	rdfs:label		
+ERROR	missing_label	OMRSE:00002028	rdfs:label		
+ERROR	missing_label	OMRSE:00002046	rdfs:label		
+ERROR	missing_label	OMRSE:00002047	rdfs:label		
+ERROR	missing_label	http://purl.obolibrary.org/obo/iao/d-acts.owl	rdfs:label		
+ERROR	missing_label	http://purl.obolibrary.org/obo/iao/pno.owl	rdfs:label		
+ERROR	missing_label	oboInOwl:DbXref	rdfs:label		
+ERROR	missing_label	oboInOwl:Definition	rdfs:label		
+ERROR	missing_label	oboInOwl:Subset	rdfs:label		
+ERROR	missing_label	oboInOwl:Synonym	rdfs:label		
+ERROR	missing_label	oboInOwl:SynonymType	rdfs:label		
+ERROR	deprecated_class_reference	275d4433-696c-4b60-9e41-829735055694genid839	owl:someValuesFrom	OMRSE:00000098	
+ERROR	deprecated_class_reference	275d4433-696c-4b60-9e41-829735055694genid855	owl:someValuesFrom	OMRSE:00000100	
+ERROR	deprecated_class_reference	275d4433-696c-4b60-9e41-829735055694genid936	owl:someValuesFrom	OMRSE:00000133	
+ERROR	deprecated_class_reference	OMRSE:00000083	rdfs:subClassOf	OMRSE:00000127	
+ERROR	deprecated_class_reference	OMRSE:00000083	rdfs:subClassOf	OMRSE:00000128	
+ERROR	deprecated_class_reference	OMRSE:00000098	rdfs:subClassOf	OMRSE:00000185	
+ERROR	deprecated_class_reference	OMRSE:00000100	rdfs:subClassOf	OMRSE:00000083	
+ERROR	deprecated_class_reference	OMRSE:00000131	owl:someValuesFrom	OMRSE:00000185	
+ERROR	deprecated_class_reference	OMRSE:00000132	rdfs:subClassOf	OMRSE:00000098	
+ERROR	deprecated_class_reference	OMRSE:00000132	rdfs:subClassOf	OMRSE:00000100	
+ERROR	deprecated_class_reference	OMRSE:00000132	rdfs:subClassOf	OMRSE:00000133	
+ERROR	deprecated_class_reference	OMRSE:00000132	rdfs:subClassOf	OMRSE:00000145	
+ERROR	deprecated_class_reference	OMRSE:00000133	rdfs:subClassOf	OMRSE:00000138	
+ERROR	deprecated_class_reference	OMRSE:00000133	rdfs:subClassOf	OMRSE:00000141	
+ERROR	deprecated_class_reference	OMRSE:00000133	rdfs:subClassOf	OMRSE:00000507	
+ERROR	deprecated_class_reference	OMRSE:00000163	owl:someValuesFrom	OMRSE:00000168	
+ERROR	deprecated_class_reference	OMRSE:00000168	rdfs:subClassOf	OMRSE:00000176	
+ERROR	deprecated_class_reference	OMRSE:00000168	owl:someValuesFrom	OMRSE:00000173	
+ERROR	deprecated_class_reference	OMRSE:00000176	rdfs:subClassOf	OMRSE:00000177	
+ERROR	deprecated_class_reference	OMRSE:00000176	rdfs:subClassOf	OMRSE:00000178	
+ERROR	deprecated_class_reference	OMRSE:00000185	rdfs:subClassOf	OMRSE:00000180	
+ERROR	deprecated_class_reference	OMRSE:00000185	rdfs:subClassOf	OMRSE:00000181	
+ERROR	deprecated_class_reference	OMRSE:00000185	rdfs:subClassOf	OMRSE:00000182	
+ERROR	deprecated_class_reference	OMRSE:00000185	rdfs:subClassOf	OMRSE:00000183	
+ERROR	deprecated_class_reference	OMRSE:00000185	rdfs:subClassOf	OMRSE:00000184	
+ERROR	missing_ontology_description	omrse.owl	dc11:description		
+ERROR	multiple_definitions	BFO:0000004	IAO:0000115	A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.@en	
+ERROR	multiple_definitions	BFO:0000004	IAO:0000115	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en	
+ERROR	multiple_definitions	BFO:0000015	IAO:0000115	An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.@en	
+ERROR	multiple_definitions	BFO:0000015	IAO:0000115	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en	
+ERROR	multiple_definitions	BFO:0000020	IAO:0000115	A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.@en	
+ERROR	multiple_definitions	BFO:0000020	IAO:0000115	b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en	
+ERROR	multiple_definitions	BFO:0000020	IAO:0000115	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en	
+ERROR	multiple_definitions	BFO:0000031	IAO:0000115	A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.@en	
+ERROR	multiple_definitions	BFO:0000031	IAO:0000115	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en	
+ERROR	multiple_definitions	BFO:0000134	IAO:0000600	To say that each spatiotemporal region s temporally_projects_onto some temporal region t is to say that t is the temporal extension of s. (axiom label in BFO2 Reference: [080-003])@en	
+ERROR	multiple_definitions	BFO:0000134	IAO:0000600	To say that spatiotemporal region s spatially_projects_onto spatial region r at t is to say that r is the spatial extent of s at t. (axiom label in BFO2 Reference: [081-003])@en	
+ERROR	multiple_definitions	IAO:0000578	IAO:0000115	An information content entity that consists of a CRID symbol and additional information about the CRID registry to which it belongs.@en	
+ERROR	multiple_definitions	IAO:0000578	IAO:0000115	An information content entity that consists of a CRID symbol and additional information about which CRID registry it belongs. @en	
+ERROR	multiple_definitions	IAO:0000603	IAO:0000115	Add as annotation triples in the granting ontology@en	
+ERROR	multiple_definitions	IAO:0000603	IAO:0000115	Relates an ontology IRI to an (inclusive) range of IRIs in an OBO name space. The range is give as, e.g. \"IAO_0020000-IAO_0020999\"@en	
+ERROR	multiple_definitions	IAO:0020021	IAO:0000115	A document that denotes some identity and is concretized by the bearer of some credential role.@en	
+ERROR	multiple_definitions	IAO:0020021	IAO:0000115	a document that denotes some identity and is concretized by the bearer of some credential role@en	
+ERROR	multiple_definitions	IAO:0020022	IAO:0000115	A documented identity is the aggregate of all data items about an entity.  Notice that a documented identity is not itself a document since a document is intended to be understood as a whole and data items about an individual are usually scattered across different documents.@en	
+ERROR	multiple_definitions	IAO:0020022	IAO:0000115	a documented identity is the aggregate of all data items about an entity.  Notice that a documented identity is not itself a document since a document is intended to be understood as a whole and data items about an individual are usually scattered across different documents.@en	
+ERROR	multiple_definitions	IAO:0020023	IAO:0000115	Authentication is the act of checking or verifying an identity claim (that is either tacit or explicit).    @en	
+ERROR	multiple_definitions	IAO:0020023	IAO:0000115	Authentication is the act of checking or verifying an identity claim (that is either tacit or explicit).     @en	
+ERROR	multiple_definitions	IAO:0020024	IAO:0000115	 a role that inheres in a concretization of an identity document and is realized by an authentication process@en	
+ERROR	multiple_definitions	IAO:0020024	IAO:0000115	A role that inheres in a concretization of an identity document and is realized by an authentication process.@en	
+ERROR	multiple_definitions	IAO:0100001	IAO:0000115	Add as annotation triples in the granting ontology@en	
+ERROR	multiple_definitions	IAO:0100001	IAO:0000115	Use on obsolete terms, relating the term to another term that can be used as a substitute@en	
+ERROR	multiple_definitions	OMRSE:00000022	IAO:0000115	An object aggregate of objectual organisms.@en	
+ERROR	multiple_definitions	OMRSE:00000022	IAO:0000115	An object aggregate of organisms.@en	
+ERROR	multiple_definitions	OMRSE:00000033	IAO:0000115	An aggregate of organizations that have some feature in common, but is not itself an organization.@en	
+ERROR	multiple_definitions	OMRSE:00000033	IAO:0000115	An object aggregate that is not itself an organization and whose members are only organizations that have some feature in common@en	
+ERROR	missing_ontology_title	omrse.owl	dc11:title		
+ERROR	multiple_labels	BFO:0000024	rdfs:label	fiat object@en	
+ERROR	multiple_labels	BFO:0000024	rdfs:label	fiat object part@en	
+ERROR	multiple_labels	IAO:0000111	rdfs:label	editor preferred label@en	
+ERROR	multiple_labels	IAO:0000111	rdfs:label	editor preferred term	
+ERROR	multiple_labels	IAO:0000111	rdfs:label	editor preferred term@en	
+ERROR	multiple_labels	IAO:0000115	rdfs:label	definition	
+ERROR	multiple_labels	IAO:0000115	rdfs:label	definition@en	
+ERROR	multiple_labels	IAO:0000115	rdfs:label	textual definition	
+ERROR	multiple_labels	IAO:0000116	rdfs:label	editor note	
+ERROR	multiple_labels	IAO:0000116	rdfs:label	editor note@en	
+ERROR	multiple_labels	IAO:0000117	rdfs:label	definition editor	
+ERROR	multiple_labels	IAO:0000117	rdfs:label	definition editor@en	
+ERROR	multiple_labels	IAO:0000117	rdfs:label	term editor@en	
+ERROR	multiple_labels	IAO:0000119	rdfs:label	definition source	
+ERROR	multiple_labels	IAO:0000119	rdfs:label	definition source@en	
+ERROR	multiple_labels	IAO:0000232	rdfs:label	curator note	
+ERROR	multiple_labels	IAO:0000232	rdfs:label	curator note@en	
+ERROR	multiple_labels	IAO:0000578	rdfs:label	CRID@en	
+ERROR	multiple_labels	IAO:0000578	rdfs:label	centrally registered identifier@en	
+ERROR	multiple_labels	OBI:0000312	rdfs:label	is_specified_output_of	
+ERROR	multiple_labels	OBI:0000312	rdfs:label	is_specified_output_of@en	
+ERROR	multiple_labels	OMRSE:00000022	rdfs:label	aggregate of objectual organisms@en	
+ERROR	multiple_labels	OMRSE:00000022	rdfs:label	collection of organisms@en	
+ERROR	multiple_labels	RO:0000053	rdfs:label	bearer of@en	
+ERROR	multiple_labels	RO:0000053	rdfs:label	bearer_of@en	
+ERROR	multiple_labels	RO:0000053	rdfs:label	is bearer of@en	
+ERROR	multiple_labels	RO:0000057	rdfs:label	has participant@en	
+ERROR	multiple_labels	RO:0000057	rdfs:label	has_participant	
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 	
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 	
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 	
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] 	
+WARN	annotation_whitespace	BFO:0000003	IAO:0000602	(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] 	
+WARN	annotation_whitespace	BFO:0000003	IAO:0000602	(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] 	
+WARN	annotation_whitespace	BFO:0000004	IAO:0000602	(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] 	
+WARN	annotation_whitespace	BFO:0000004	IAO:0000602	(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] 	
+WARN	annotation_whitespace	BFO:0000004	IAO:0000602	(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] 	
+WARN	annotation_whitespace	BFO:0000006	IAO:0000602	(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] 	
+WARN	annotation_whitespace	BFO:0000006	IAO:0000602	(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] 	
+WARN	annotation_whitespace	BFO:0000008	IAO:0000602	(forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] 	
+WARN	annotation_whitespace	BFO:0000008	IAO:0000602	(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] 	
+WARN	annotation_whitespace	BFO:0000008	IAO:0000602	(forall (x) (if (TemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [100-001] 	
+WARN	annotation_whitespace	BFO:0000009	IAO:0000602	(forall (x) (if (TwoDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [039-001] 	
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] 	
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] 	
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] 	
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] 	
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] 	
+WARN	annotation_whitespace	BFO:0000015	IAO:0000602	(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] 	
+WARN	annotation_whitespace	BFO:0000016	IAO:0000602	(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] 	
+WARN	annotation_whitespace	BFO:0000016	IAO:0000602	(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] 	
+WARN	annotation_whitespace	BFO:0000017	IAO:0000602	(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] 	
+WARN	annotation_whitespace	BFO:0000017	IAO:0000602	(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] 	
+WARN	annotation_whitespace	BFO:0000018	IAO:0000602	(forall (x) (if (ZeroDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [037-001] 	
+WARN	annotation_whitespace	BFO:0000019	IAO:0000602	(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] 	
+WARN	annotation_whitespace	BFO:0000019	IAO:0000602	(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] 	
+WARN	annotation_whitespace	BFO:0000020	IAO:0000602	(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] 	
+WARN	annotation_whitespace	BFO:0000020	IAO:0000602	(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 	
+WARN	annotation_whitespace	BFO:0000023	IAO:0000602	(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] 	
+WARN	annotation_whitespace	BFO:0000024	IAO:0000602	(forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] 	
+WARN	annotation_whitespace	BFO:0000026	IAO:0000602	(forall (x) (if (OneDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [038-001] 	
+WARN	annotation_whitespace	BFO:0000027	IAO:0000116	An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects 	
+WARN	annotation_whitespace	BFO:0000027	IAO:0000602	(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] 	
+WARN	annotation_whitespace	BFO:0000028	IAO:0000602	(forall (x) (if (ThreeDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [040-001] 	
+WARN	annotation_whitespace	BFO:0000029	IAO:0000602	(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] 	
+WARN	annotation_whitespace	BFO:0000031	IAO:0000602	(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] 	
+WARN	annotation_whitespace	BFO:0000034	IAO:0000602	(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] 	
+WARN	annotation_whitespace	BFO:0000035	IAO:0000602	(forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] 	
+WARN	annotation_whitespace	BFO:0000035	IAO:0000602	(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] 	
+WARN	annotation_whitespace	BFO:0000038	IAO:0000602	(forall (x) (if (OneDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [103-001] 	
+WARN	annotation_whitespace	BFO:0000040	IAO:0000602	(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 	
+WARN	annotation_whitespace	BFO:0000040	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 	
+WARN	annotation_whitespace	BFO:0000040	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 	
+WARN	annotation_whitespace	BFO:0000140	IAO:0000602	(iff (ContinuantFiatBoundary a) (and (ImmaterialEntity a) (exists (b) (and (or (ZeroDimensionalSpatialRegion b) (OneDimensionalSpatialRegion b) (TwoDimensionalSpatialRegion b)) (forall (t) (locatedInAt a b t)))) (not (exists (c t) (and (SpatialRegion c) (continuantPartOfAt c a t)))))) // axiom label in BFO2 CLIF: [029-001] 	
+WARN	annotation_whitespace	BFO:0000142	IAO:0000602	(iff (OneDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (OneDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [032-001] 	
+WARN	annotation_whitespace	BFO:0000144	IAO:0000602	(forall (x y) (if (processProfileOf x y) (and (properContinuantPartOf x y) (exists (z t) (and (properOccurrentPartOf z y) (TemporalRegion t) (occupiesSpatioTemporalRegion x t) (occupiesSpatioTemporalRegion y t) (occupiesSpatioTemporalRegion z t) (not (exists (w) (and (occurrentPartOf w x) (occurrentPartOf w z))))))))) // axiom label in BFO2 CLIF: [094-005] 	
+WARN	annotation_whitespace	BFO:0000144	IAO:0000602	(iff (ProcessProfile a) (exists (b) (and (Process b) (processProfileOf a b)))) // axiom label in BFO2 CLIF: [093-002] 	
+WARN	annotation_whitespace	BFO:0000145	IAO:0000602	(iff (RelationalQuality a) (exists (b c t) (and (IndependentContinuant b) (IndependentContinuant c) (qualityOfAt a b t) (qualityOfAt a c t)))) // axiom label in BFO2 CLIF: [057-001] 	
+WARN	annotation_whitespace	BFO:0000146	IAO:0000602	(iff (TwoDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (TwoDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [033-001] 	
+WARN	annotation_whitespace	BFO:0000147	IAO:0000602	(iff (ZeroDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (ZeroDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [031-001] 	
+WARN	annotation_whitespace	BFO:0000148	IAO:0000602	(forall (x) (if (ZeroDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [102-001] 	
+WARN	annotation_whitespace	IAO:0000009	IAO:0000232	9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum.     	
+WARN	annotation_whitespace	IAO:0000065	IAO:0000115	A software interpreter is a software application that executes some specified input software. @en	
+WARN	annotation_whitespace	IAO:0000115	IAO:0000116	2012-04-05:     Barry Smith        The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.        Can you fix to something like:        A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.        Alan Ruttenberg        Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria.         On the specifics of the proposed definition:        We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition.         Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable.         We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  @en	
+WARN	annotation_whitespace	IAO:0000424	IAO:0000112	ObjectProperty: RO_0002104    Label: has plasma membrane part    Annotations: IAO_0000424 \"http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.org/obo/owl/GO#GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)\"    @en	
+WARN	annotation_whitespace	IAO:0000425	IAO:0000112	ObjectProperty: RO???    Label: spatially disjoint from    Annotations: expand_assertion_to \"DisjointClasses: (http://purl.obolibrary.org/obo/BFO_0000051 some ?X)  (http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)\"    @en	
+WARN	annotation_whitespace	IAO:0000575	IAO:0000112	Articles in Pubmed are reviewed by curators who add MESH terms to the Pubmed records in order to categorize them better and improve the ability to search for them. 	
+WARN	annotation_whitespace	IAO:0000578	IAO:0000112	Entries in a Column of which the header is \"Pubmed ID\" @en	
+WARN	annotation_whitespace	IAO:0000578	IAO:0000112	The following sentence contains a CRID: \"The article with Pubmed ID: 19918065\". @en	
+WARN	annotation_whitespace	IAO:0000578	IAO:0000115	An information content entity that consists of a CRID symbol and additional information about which CRID registry it belongs. @en	
+WARN	annotation_whitespace	IAO:0000578	IAO:0000116	Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation.     @en	
+WARN	annotation_whitespace	IAO:0000579	IAO:0000112	PubMed is a CRID registry. It has a dataset of PubMed identifiers associated with journal articles. @en	
+WARN	annotation_whitespace	IAO:0000580	IAO:0000112	Going to the PubMed website and entering a PubMed ID in order to retrieve the Pubmed information associated with that ID. 	
+WARN	annotation_whitespace	IAO:0000592	IAO:0000115	 A software module is software composed of a collection of software methods.@en	
+WARN	annotation_whitespace	IAO:0000595	IAO:0000115	 A software script is software whose instructions can be executed using a software     interpreter.@en	
+WARN	annotation_whitespace	IAO:0000597	IAO:0000112	Datatype: idrange:1    Annotations: 'has ID range allocated to': \"Chris Mungall\"    EquivalentTo: xsd:integer[> 2151 , <= 2300]    	
+WARN	annotation_whitespace	IAO:0000615	IAO:0000115	A part of a document used to summarize the findings discussed in the document. The conclusion section is typically found near the end of a document. @en	
+WARN	annotation_whitespace	IAO:0000617	IAO:0000112	SD [an author] is a Merck employee and Merck is the sponsor of this study. [Taken from 'Effects of obstructive sleep apnoea risk on postoperative respiratory complications: protocol for a hospital-based registry study' Shin et al. 2016  (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4735131/)] @en	
+WARN	annotation_whitespace	IAO:0000640	IAO:0000112	Excerpt from Žitnik and Zupan. Bioinformatics. 2015 Jun 15; 31(12): i230–i239. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4542780/):        Our work presented here is similar in spirit to our recently developed methodology for data fusion via collective matrix factorization (Žitnik and Zupan, 2015).        @en	
+WARN	annotation_whitespace	IAO:0020001	IAO:0000115	A grapheme  is an information content entity that is a fundamental unit in a written language. @en	
+WARN	annotation_whitespace	IAO:0020002	IAO:0000115	An utterance is an information content entity that is a complete unit of speech in spoken language. @en	
+WARN	annotation_whitespace	IAO:0020008	IAO:0000115	Sound energy bearing the concretization of an utterance and being the output of an uttering process. @en	
+WARN	annotation_whitespace	IAO:0020011	IAO:0000115	is a planned process of making speech sounds which may or may not have an actual language involved. @en	
+WARN	annotation_whitespace	IAO:0020023	IAO:0000112	 I order a beer and the bartender authenticates my age by looking at my DOB on my driver's license.  I sign into my email account, and the system authenticates my permission to read the email by checking the password I enter against my password listed in the database.	
+WARN	annotation_whitespace	IAO:0020023	IAO:0000115	Authentication is the act of checking or verifying an identity claim (that is either tacit or explicit).    @en	
+WARN	annotation_whitespace	IAO:0020023	IAO:0000115	Authentication is the act of checking or verifying an identity claim (that is either tacit or explicit).     @en	
+WARN	annotation_whitespace	IAO:0020024	IAO:0000115	 a role that inheres in a concretization of an identity document and is realized by an authentication process@en	
+WARN	annotation_whitespace	OAE:0000002	IAO:0000115	medical intervention is a planned process that has the goal of diagnosing, preventing or relieving illness or injury. 	
+WARN	annotation_whitespace	OAE:0000002	IAO:0000116	The act of intervening, interfering or interceding with the intent of modifying the outcome. In medicine, an intervention is usually undertaken to help treat or cure a condition. For example, \"Acupuncture as a therapeutic intervention is widely practiced in the United States,\"     Reference:    http://www.medterms.com/script/main/art.asp?articlekey=34214 . Some interventions can be used for diagnosis. 	
+WARN	annotation_whitespace	OMIABIS:0000008	IAO:0000600	This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. @en	
+WARN	annotation_whitespace	OMRSE:00000001	IAO:0000117	Mathias Brochhausen    @en	
+WARN	annotation_whitespace	OMRSE:00000010	IAO:0000115	A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. @en	
+WARN	annotation_whitespace	OMRSE:00000012	IAO:0000117	Mathias Brochhausen    @en	
+WARN	annotation_whitespace	OMRSE:00000020	rdfs:comment	We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.    @en	
+WARN	annotation_whitespace	OMRSE:00000022	rdfs:comment	Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  @en	
+WARN	annotation_whitespace	OMRSE:00000032	rdfs:comment	Typically, the common feature is that the dependency does not conduct foreign affairs, and relegates this authority to the sovereign state.  BUt otherwise, it is largely or completely autonomous relative to the administrative subdivisions.  Examples include Puerto Rico (U.S.), Guam (U.S.), Greenland (Denmark), French Polynesia (France), and Falkland Islands (United Kingdom). @en	
+WARN	annotation_whitespace	OMRSE:00000033	rdfs:comment	It is often convenient to group organizations together that otherwise might not even interact with one another. @en	
+WARN	annotation_whitespace	OMRSE:00000035	IAO:0000117	William R. Hogan    @en	
+WARN	annotation_whitespace	OMRSE:00000061	rdfs:comment	\"Building\" is a subclass of this. @en	
+WARN	annotation_whitespace	RO:0000059	rdfs:comment	It is recommended to not use this if possible in OMRSE.  According to OntoBee this relation has been obsoleted and replaced with 'concretization of at all times'.  As of Dec. 2, 2013 iao-main still uses this relation.  @en	
+WARN	annotation_whitespace	RO:0001901	IAO:0000115	        ## Elucidation        This is used when the statement/axiom is assumed to hold true 'eternally'        ## How to interpret (informal)        First the \"atemporal\" FOL is derived from the OWL using the standard    interpretation. This axiom is temporalized by embedding the axiom    within a for-all-times quantified sentence. The t argument is added to    all instantiation predicates and predicates that use this relation.        ## Example            Class: nucleus        SubClassOf: part_of some cell            forall t :          forall n :            instance_of(n,Nucleus,t)             implies            exists c :              instance_of(c,Cell,t)              part_of(n,c,t)        ## Notes        This interpretation is *not* the same as an at-all-times relation        	
+WARN	annotation_whitespace	RO:0001902	IAO:0000115	        ## Elucidation        This is used when the first-order logic form of the relation is    binary, and takes no temporal argument.        ## Example:            Class: limb        SubClassOf: develops_from some lateral-plate-mesoderm             forall t, t2:          forall x :            instance_of(x,Limb,t)             implies            exists y :              instance_of(y,LPM,t2)              develops_from(x,y)            	
+WARN	duplicate_exact_synonym	IAO:0000609	IAO:0000118	summary@en	
+WARN	duplicate_exact_synonym	IAO:0000615	IAO:0000118	summary@en	
+WARN	missing_definition	http://example.com/bfo-spec-label	IAO:0000115		
+WARN	missing_definition	BFO:0000075	IAO:0000115		
+WARN	missing_definition	BFO:0000141	IAO:0000115		
+WARN	missing_definition	FMA:49443	IAO:0000115		
+WARN	missing_definition	FMA:55457	IAO:0000115		
+WARN	missing_definition	FMA:64854	IAO:0000115		
+WARN	missing_definition	FMA:64989	IAO:0000115		
+WARN	missing_definition	FMA:67135	IAO:0000115		
+WARN	missing_definition	FMA:67165	IAO:0000115		
+WARN	missing_definition	IAO:0000004	IAO:0000115		
+WARN	missing_definition	IAO:0000039	IAO:0000115		
+WARN	missing_definition	IAO:0000057	IAO:0000115		
+WARN	missing_definition	IAO:0000114	IAO:0000115		
+WARN	missing_definition	IAO:0000404	IAO:0000115		
+WARN	missing_definition	IAO:0000405	IAO:0000115		
+WARN	missing_definition	IAO:0000406	IAO:0000115		
+WARN	missing_definition	IAO:0000407	IAO:0000115		
+WARN	missing_definition	IAO:0000426	IAO:0000115		
+WARN	missing_definition	IAO:0000429	IAO:0000115		
+WARN	missing_definition	IAO:0000582	IAO:0000115		
+WARN	missing_definition	IAO:0020006	IAO:0000115		
+WARN	missing_definition	IAO:0020019	IAO:0000115		
+WARN	missing_definition	IAO:8000000	IAO:0000115		
+WARN	missing_definition	IAO:8000016	IAO:0000115		
+WARN	missing_definition	IAO:8000017	IAO:0000115		
+WARN	missing_definition	IAO:8000019	IAO:0000115		
+WARN	missing_definition	IAO:8000020	IAO:0000115		
+WARN	missing_definition	NCBITaxon:9606	IAO:0000115		
+WARN	missing_definition	OBI:0000295	IAO:0000115		
+WARN	missing_definition	OBI:0001688	IAO:0000115		
+WARN	missing_definition	OMRSE:00000002	IAO:0000115		
+WARN	missing_definition	OMRSE:00000003	IAO:0000115		
+WARN	missing_definition	OMRSE:00000004	IAO:0000115		
+WARN	missing_definition	OMRSE:00000005	IAO:0000115		
+WARN	missing_definition	OMRSE:00000006	IAO:0000115		
+WARN	missing_definition	OMRSE:00000016	IAO:0000115		
+WARN	missing_definition	OMRSE:00000020	IAO:0000115		
+WARN	missing_definition	OMRSE:00000040	IAO:0000115		
+WARN	missing_definition	OMRSE:00000048	IAO:0000115		
+WARN	missing_definition	OMRSE:00000049	IAO:0000115		
+WARN	missing_definition	OMRSE:00000050	IAO:0000115		
+WARN	missing_definition	OMRSE:00000051	IAO:0000115		
+WARN	missing_definition	OMRSE:00000055	IAO:0000115		
+WARN	missing_definition	OMRSE:00000059	IAO:0000115		
+WARN	missing_definition	OMRSE:00000060	IAO:0000115		
+WARN	missing_definition	OMRSE:00000065	IAO:0000115		
+WARN	missing_definition	OMRSE:00000068	IAO:0000115		
+WARN	missing_definition	OMRSE:00000070	IAO:0000115		
+WARN	missing_definition	OMRSE:00000071	IAO:0000115		
+WARN	missing_definition	OMRSE:00000078	IAO:0000115		
+WARN	missing_definition	OMRSE:00000084	IAO:0000115		
+WARN	missing_definition	OMRSE:00000088	IAO:0000115		
+WARN	missing_definition	OMRSE:00000095	IAO:0000115		
+WARN	missing_definition	OMRSE:00000096	IAO:0000115		
+WARN	missing_definition	OMRSE:00000097	IAO:0000115		
+WARN	missing_definition	OMRSE:00000099	IAO:0000115		
+WARN	missing_definition	OMRSE:00000101	IAO:0000115		
+WARN	missing_definition	OMRSE:00000102	IAO:0000115		
+WARN	missing_definition	OMRSE:00000105	IAO:0000115		
+WARN	missing_definition	OMRSE:00000109	IAO:0000115		
+WARN	missing_definition	OMRSE:00000111	IAO:0000115		
+WARN	missing_definition	OMRSE:00000112	IAO:0000115		
+WARN	missing_definition	OMRSE:00000113	IAO:0000115		
+WARN	missing_definition	OMRSE:00000115	IAO:0000115		
+WARN	missing_definition	OMRSE:00000116	IAO:0000115		
+WARN	missing_definition	OMRSE:00000117	IAO:0000115		
+WARN	missing_definition	OMRSE:00000118	IAO:0000115		
+WARN	missing_definition	OMRSE:00000119	IAO:0000115		
+WARN	missing_definition	OMRSE:00000120	IAO:0000115		
+WARN	missing_definition	OMRSE:00000121	IAO:0000115		
+WARN	missing_definition	OMRSE:00000122	IAO:0000115		
+WARN	missing_definition	OMRSE:00000123	IAO:0000115		
+WARN	missing_definition	OMRSE:00000124	IAO:0000115		
+WARN	missing_definition	OMRSE:00000125	IAO:0000115		
+WARN	missing_definition	OMRSE:00000131	IAO:0000115		
+WARN	missing_definition	OMRSE:00000134	IAO:0000115		
+WARN	missing_definition	OMRSE:00000135	IAO:0000115		
+WARN	missing_definition	OMRSE:00000136	IAO:0000115		
+WARN	missing_definition	OMRSE:00000137	IAO:0000115		
+WARN	missing_definition	OMRSE:00000139	IAO:0000115		
+WARN	missing_definition	OMRSE:00000143	IAO:0000115		
+WARN	missing_definition	OMRSE:00000149	IAO:0000115		
+WARN	missing_definition	OMRSE:00000151	IAO:0000115		
+WARN	missing_definition	OMRSE:00000152	IAO:0000115		
+WARN	missing_definition	OMRSE:00000154	IAO:0000115		
+WARN	missing_definition	OMRSE:00000155	IAO:0000115		
+WARN	missing_definition	OMRSE:00000156	IAO:0000115		
+WARN	missing_definition	OMRSE:00000158	IAO:0000115		
+WARN	missing_definition	OMRSE:00000160	IAO:0000115		
+WARN	missing_definition	OMRSE:00000161	IAO:0000115		
+WARN	missing_definition	OMRSE:00000163	IAO:0000115		
+WARN	missing_definition	OMRSE:00000164	IAO:0000115		
+WARN	missing_definition	OMRSE:00000165	IAO:0000115		
+WARN	missing_definition	OMRSE:00000166	IAO:0000115		
+WARN	missing_definition	OMRSE:00000167	IAO:0000115		
+WARN	missing_definition	OMRSE:00000169	IAO:0000115		
+WARN	missing_definition	OMRSE:00000170	IAO:0000115		
+WARN	missing_definition	OMRSE:00000171	IAO:0000115		
+WARN	missing_definition	OMRSE:00000172	IAO:0000115		
+WARN	missing_definition	OMRSE:00000174	IAO:0000115		
+WARN	missing_definition	OMRSE:00000175	IAO:0000115		
+WARN	missing_definition	OMRSE:00000179	IAO:0000115		
+WARN	missing_definition	OMRSE:00000188	IAO:0000115		
+WARN	missing_definition	OMRSE:00000189	IAO:0000115		
+WARN	missing_definition	OMRSE:00000190	IAO:0000115		
+WARN	missing_definition	OMRSE:00000500	IAO:0000115		
+WARN	missing_definition	OMRSE:00000501	IAO:0000115		
+WARN	missing_definition	OMRSE:00000502	IAO:0000115		
+WARN	missing_definition	OMRSE:00000503	IAO:0000115		
+WARN	missing_definition	OMRSE:00000504	IAO:0000115		
+WARN	missing_definition	OMRSE:00000505	IAO:0000115		
+WARN	missing_definition	OMRSE:00000506	IAO:0000115		
+WARN	missing_definition	OMRSE:00002025	IAO:0000115		
+WARN	missing_definition	OMRSE:00002026	IAO:0000115		
+WARN	missing_definition	OMRSE:00002027	IAO:0000115		
+WARN	missing_definition	OMRSE:00002028	IAO:0000115		
+WARN	missing_definition	OMRSE:00002042	IAO:0000115		
+WARN	missing_definition	OOSTT:00000030	IAO:0000115		
+WARN	missing_definition	RO:0000092	IAO:0000115		
+WARN	missing_definition	RO:0001900	IAO:0000115		
+WARN	missing_definition	RO:0002081	IAO:0000115		
+WARN	missing_definition	RO:0002083	IAO:0000115		
+WARN	missing_definition	RO:0002222	IAO:0000115		
+WARN	missing_definition	http://purl.obolibrary.org/obo/iao/d-acts.owl	IAO:0000115		
+WARN	missing_definition	http://purl.obolibrary.org/obo/iao/pno.owl	IAO:0000115		
+WARN	missing_definition	http://purl.org/obo/owl/PATO#PATO_0001025	IAO:0000115		
+WARN	missing_definition	oboInOwl:DbXref	IAO:0000115		
+WARN	missing_definition	oboInOwl:Definition	IAO:0000115		
+WARN	missing_definition	oboInOwl:ObsoleteClass	IAO:0000115		
+WARN	missing_definition	oboInOwl:Subset	IAO:0000115		
+WARN	missing_definition	oboInOwl:Synonym	IAO:0000115		
+WARN	missing_definition	oboInOwl:SynonymType	IAO:0000115		
+WARN	missing_definition	oboInOwl:inSubset	IAO:0000115		
+WARN	missing_definition	oboInOwl:shorthand	IAO:0000115		
+WARN	missing_obsolete_label	IAO:0000230	rdfs:label	other@en	
+WARN	missing_obsolete_label	OMRSE:00000021	rdfs:label	is-component-of-aggregate	
+WARN	missing_obsolete_label	OMRSE:00000168	rdfs:label	questions asking process@en	
+WARN	missing_obsolete_label	OMRSE:00000173	rdfs:label	material information bearer of question text plus answer set@en	
+WARN	missing_obsolete_label	OMRSE:00000176	rdfs:label	identity question asking process@en	
+WARN	missing_obsolete_label	OMRSE:00000177	rdfs:label	ethnic identity question asking process@en	
+WARN	missing_obsolete_label	OMRSE:00000178	rdfs:label	race identity question asking process@en	
+INFO	lowercase_definition	BFO:0000004	IAO:0000115	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en	
+INFO	lowercase_definition	BFO:0000015	IAO:0000115	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en	
+INFO	lowercase_definition	BFO:0000016	IAO:0000600	b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])@en	
+INFO	lowercase_definition	BFO:0000019	IAO:0000600	a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])@en	
+INFO	lowercase_definition	BFO:0000020	IAO:0000115	b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en	
+INFO	lowercase_definition	BFO:0000020	IAO:0000115	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en	
+INFO	lowercase_definition	BFO:0000023	IAO:0000600	b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])@en	
+INFO	lowercase_definition	BFO:0000024	IAO:0000600	b is a fiat object part = Def. b is a material entity which is such that for all times t, if b exists at t then there is some object c such that b proper continuant_part of  c at t and c is demarcated from the remainder of c by a two-dimensional continuant fiat boundary. (axiom label in BFO2 Reference: [027-004])@en	
+INFO	lowercase_definition	BFO:0000027	IAO:0000600	b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])@en	
+INFO	lowercase_definition	BFO:0000029	IAO:0000600	b is a site means: b is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof. (axiom label in BFO2 Reference: [034-002])@en	
+INFO	lowercase_definition	BFO:0000030	IAO:0000600	b is an object means: b is a material entity which manifests causal unity of one or other of the types CUn listed above & is of a type (a material universal) instances of which are maximal relative to this criterion of causal unity. (axiom label in BFO2 Reference: [024-001])@en	
+INFO	lowercase_definition	BFO:0000031	IAO:0000115	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en	
+INFO	lowercase_definition	BFO:0000035	IAO:0000115	p is a process boundary =Def. p is a temporal part of a process & p has no proper temporal parts. (axiom label in BFO2 Reference: [084-001])@en	
+INFO	lowercase_definition	BFO:0000050	IAO:0000115	a core relation that holds between a part and its whole@en	
+INFO	lowercase_definition	BFO:0000051	IAO:0000115	a core relation that holds between a whole and its part@en	
+INFO	lowercase_definition	BFO:0000054	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en	
+INFO	lowercase_definition	BFO:0000055	IAO:0000600	to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en	
+INFO	lowercase_definition	BFO:0000066	IAO:0000115	b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en	
+INFO	lowercase_definition	BFO:0000067	IAO:0000115	[copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en	
+INFO	lowercase_definition	BFO:0000140	IAO:0000115	b is a continuant fiat boundary = Def. b is an immaterial entity that is of zero, one or two dimensions and does not include a spatial region as part. (axiom label in BFO2 Reference: [029-001])@en	
+INFO	lowercase_definition	BFO:0000142	IAO:0000600	a one-dimensional continuant fiat boundary is a continuous fiat line whose location is defined in relation to some material entity. (axiom label in BFO2 Reference: [032-001])@en	
+INFO	lowercase_definition	BFO:0000144	IAO:0000115	b is a process_profile =Def. there is some process c such that b process_profile_of c (axiom label in BFO2 Reference: [093-002])@en	
+INFO	lowercase_definition	BFO:0000144	IAO:0000600	b process_profile_of c holds when b proper_occurrent_part_of c& there is some proper_occurrent_part d of c which has no parts in common with b & is mutually dependent on b& is such that b, c and d occupy the same temporal region (axiom label in BFO2 Reference: [094-005])@en	
+INFO	lowercase_definition	BFO:0000145	IAO:0000115	b is a relational quality = Def. for some independent continuants c, d and for some time t: b quality_of c at t & b quality_of d at t. (axiom label in BFO2 Reference: [057-001])@en	
+INFO	lowercase_definition	BFO:0000146	IAO:0000600	a two-dimensional continuant fiat boundary (surface) is a self-connected fiat surface whose location is defined in relation to some material entity. (axiom label in BFO2 Reference: [033-001])@en	
+INFO	lowercase_definition	BFO:0000147	IAO:0000600	a zero-dimensional continuant fiat boundary is a fiat point whose location is defined in relation to some material entity. (axiom label in BFO2 Reference: [031-001])@en	
+INFO	lowercase_definition	IAO:0000001	IAO:0000115	a directive information entity that specifies what should happen if the trigger condition is fulfilled@en	
+INFO	lowercase_definition	IAO:0000005	IAO:0000115	a directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.@en	
+INFO	lowercase_definition	IAO:0000007	IAO:0000115	a directive information entity that describes an action the bearer will take@en	
+INFO	lowercase_definition	IAO:0000013	IAO:0000115	a report that is published in a journal@en	
+INFO	lowercase_definition	IAO:0000024	IAO:0000115	a unit of measure is the quality of some material entity compared to which another quality is some multiple of.	
+INFO	lowercase_definition	IAO:0000027	IAO:0000115	a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.@en	
+INFO	lowercase_definition	IAO:0000031	IAO:0000115	a numeral that denotes an integer@en	
+INFO	lowercase_definition	IAO:0000032	IAO:0000115	a scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.@en	
+INFO	lowercase_definition	IAO:0000034	IAO:0000115	revisit?@en	
+INFO	lowercase_definition	IAO:0000055	IAO:0000115	a rule is an executable which guides, defines, restricts actions@en	
+INFO	lowercase_definition	IAO:0000088	IAO:0000115	a document assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record)@en	
+INFO	lowercase_definition	IAO:0000102	IAO:0000115	data about an ontology part is a data item about a part of an ontology, for example a term@en	
+INFO	lowercase_definition	IAO:0000119	IAO:0000115	formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007@en	
+INFO	lowercase_definition	IAO:0000121	IAO:0000115	term created to ease viewing/sort terms for development purpose, and will not be included in a release@en	
+INFO	lowercase_definition	IAO:0000135	IAO:0000115	c specifically denotes r =def     r is a portion of reality    & c is a particular quality    & c depends specifically on some independent continuant b     & b acquired c as the result of the achievement of an objective to enable pointing to r repeatedly.         Marked means there is a changed or additional quality of the bearer - the  quality is the information carrier.        Case 1    Memory trace as mark created when reading some description of some friend. The trace can denote.        Case 2    Pattern of ink arrayed on paper as mark when writing down a friend's name        Case 3    Pattern of magnetic domains on scattered pieces of a hard disk platter as mark when saving a file.	
+INFO	lowercase_definition	IAO:0000136	IAO:0000115	is_about is a (currently) primitive relation that relates an information artifact to an entity.@en	
+INFO	lowercase_definition	IAO:0000219	IAO:0000115	denotes is a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically@en	
+INFO	lowercase_definition	IAO:0000221	IAO:0000115	m is a quality measurement of q at t when    q is a quality     there is a measurement process p that has specified output m, a measurement datum, that is about q@en	
+INFO	lowercase_definition	IAO:0000301	IAO:0000115	a textual entity intended to identify a particular publication@en	
+INFO	lowercase_definition	IAO:0000314	IAO:0000115	an information content entity that is part of a document@en	
+INFO	lowercase_definition	IAO:0000321	IAO:0000115	part of a document that enumerates the authors of the document@en	
+INFO	lowercase_definition	IAO:0000322	IAO:0000115	part of a document that has parts that are institution identifications associated with the authors of the document@en	
+INFO	lowercase_definition	IAO:0000326	IAO:0000115	part of a document that is segregated from the rest of the document due to its size@en	
+INFO	lowercase_definition	IAO:0000411	IAO:0000115	relates an class defined in an ontology, to the type of it's denotator	
+INFO	lowercase_definition	IAO:0000413	IAO:0000115	relates a process to a time-measurement-datum that represents the duration of the process@en	
+INFO	lowercase_definition	IAO:0000417	IAO:0000115	inverse of the relation of is quality measurement of@en	
+INFO	lowercase_definition	IAO:0000418	IAO:0000115	a relation between a data item and a quality of a material entity where the material entity is the specified output of a material transformation which achieves an objective specification that indicates the intended value of the specified quality.@en	
+INFO	lowercase_definition	IAO:0000419	IAO:0000115	inverse of the relation of is quality specification of@en	
+INFO	lowercase_definition	IAO:0000427	IAO:0000115	use boolean value xsd:true to indicate that the property is an antisymmetric property@en	
+INFO	lowercase_definition	IAO:0000443	IAO:0000115	a planned process in which journal articles are read or processed and data items are extracted, typically for further analysis or indexing	
+INFO	lowercase_definition	IAO:0000572	IAO:0000115	a planned process in which a document is created or added to by including the specified input in it.@en	
+INFO	lowercase_definition	IAO:0000574	IAO:0000115	a planned process in which a new CRID is created, associated with an entity, and stored in the CRID registry thereby registering it as being associated with some entity@en	
+INFO	lowercase_definition	IAO:0000576	IAO:0000115	a planned process with the objective to establish a system that allows to refer to specific entities of a certain kind and store information about them, by establishing a CRID registry and plan specifications for the process of 1) assigning a CRID and 2) looking up a CRID.	
+INFO	lowercase_definition	IAO:0000581	IAO:0000115	relates a time stamped measurement datum to the time measurement datum that denotes the time when the measurement was taken@en	
+INFO	lowercase_definition	IAO:0000583	IAO:0000115	relates a time stamped measurement datum to the measurement datum that was measured@en	
+INFO	lowercase_definition	IAO:0000592	IAO:0000115	 A software module is software composed of a collection of software methods.@en	
+INFO	lowercase_definition	IAO:0000595	IAO:0000115	 A software script is software whose instructions can be executed using a software     interpreter.@en	
+INFO	lowercase_definition	IAO:0000604	IAO:0000115	relates a class of CRID to the date after which further instances should not be made, according to the central authority	
+INFO	lowercase_definition	IAO:0020004	IAO:0000115	is a quality that is the concretization of graphemes and inheres in a material object.@en	
+INFO	lowercase_definition	IAO:0020005	IAO:0000115	is a material information bearer that bears the concretization of graphemes.@en	
+INFO	lowercase_definition	IAO:0020011	IAO:0000115	is a planned process of making speech sounds which may or may not have an actual language involved. @en	
+INFO	lowercase_definition	IAO:0020012	IAO:0000115	x designates y, if for any given group of language users, x is an information content entity, is about y, and represents y in a linguistic context..@en	
+INFO	lowercase_definition	IAO:0020013	IAO:0000115	x is_borrowed_reference_for y, if x is a proper name that is used to refer to one individual among a specific group after the dubbing process took place.@en	
+INFO	lowercase_definition	IAO:0020014	IAO:0000115	x is_fixed_reference_for y, if x is an utterance or graphemes concretized as writing quality inhering in some independent continuant that is used to single out one individual and refer to the latter among a specific group after the.@en	
+INFO	lowercase_definition	IAO:0020018	IAO:0000115	p1 is designated by p2, if p2 is an information content entity that represents p1 in a linguistic context.@en	
+INFO	lowercase_definition	IAO:0020021	IAO:0000115	a document that denotes some identity and is concretized by the bearer of some credential role@en	
+INFO	lowercase_definition	IAO:0020022	IAO:0000115	a documented identity is the aggregate of all data items about an entity.  Notice that a documented identity is not itself a document since a document is intended to be understood as a whole and data items about an individual are usually scattered across different documents.@en	
+INFO	lowercase_definition	IAO:0020024	IAO:0000115	 a role that inheres in a concretization of an identity document and is realized by an authentication process@en	
+INFO	lowercase_definition	IAO:0021011	IAO:0000115	d socio-legally revokes s if s participates in d and at the end of d s no longer exists.    It is important to note that this going out of existence of s is complete and unlike the going out of existence for material entities which basically always are transformed into something else. After the declaration nothing is left of the socio-legal generically dependent continuant in question.@en	
+INFO	lowercase_definition	IAO:0021012	IAO:0000115	d socio-legally transfers l if l participates in d and d has specified input  (concretization of l)1 and specified output  (concretization of l)2, where (concretization of l)1 and (concretization of l)2 are not identical.@en	
+INFO	lowercase_definition	OAE:0000002	IAO:0000115	medical intervention is a planned process that has the goal of diagnosing, preventing or relieving illness or injury. 	
+INFO	lowercase_definition	OAE:0002807	IAO:0000115	a medical intervention that refers to any series of pre-defined steps that should be followed to achieve a desired result.	
+INFO	lowercase_definition	OBI:0000066	IAO:0000115	a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).@en	
+INFO	lowercase_definition	OBI:0000471	IAO:0000115	a planned process that carries out a study design	
+INFO	lowercase_definition	OMIABIS:0000009	IAO:0000115	a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a.@en	
+INFO	lowercase_definition	OMIABIS:0000048	IAO:0000115	a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b.@en	
+INFO	lowercase_definition	OMRSE:00000041	IAO:0000115	an intergovernmental organization that has at least three member states, that has activies in at least three states, and that is unified by some formal intergovernmental agreement	
+INFO	lowercase_definition	OMRSE:00000042	IAO:0000115	a geopolitical organization that is voluntary and private, whose members are individual persons or organizations that come together to acheive a common purpose.@en	
+INFO	lowercase_definition	OMRSE:00000046	IAO:0000115	a governmental organization that has a local, regional, or territorial government that recognizes a sovereign state as its higher political authority@en	
+INFO	lowercase_definition	OMRSE:00000079	IAO:0000115	a function inhering in a material entity that, if realized, is realized by that material entity being the site where the work of some organization is carried out@en	
+INFO	lowercase_definition	OMRSE:00000087	IAO:0000115	a role in human social processes that is realized when the bearer provides a wage or salary in exchange for some labour or services as specified by some declaration@en	
+INFO	lowercase_definition	OMRSE:00000138	IAO:0000115	a gender identity datum resulting from a gender identification process in which ‘female’ is selected based on the participant's subjective sense of gender@en	
+INFO	lowercase_definition	OMRSE:00000141	IAO:0000115	a gender identity datum resulting from a gender identification process in which ‘male’ is selected based on the participant's subjective sense of gender@en	
+INFO	lowercase_definition	OMRSE:00000145	IAO:0000115	an identity datum that has been asserted by the person whom it is about@en	
+INFO	lowercase_definition	OMRSE:00000148	IAO:0000115	a facility that is run by an adult foster home organization and is the bearer of an adult foster home organization@en	
+INFO	lowercase_definition	OMRSE:00000150	IAO:0000115	a health care facility that also bears a residence function and thus one in which the patients are also residents of the facility@en	
+INFO	lowercase_definition	OMRSE:00000159	IAO:0000115	temporally located after some acute care encounter    Somehow involves skilled nursing encounters@en	
+INFO	lowercase_definition	OMRSE:00000198	IAO:0000115	a communication in which some participant requests of some other participant an information content entity about some portion of reality@en	
+INFO	lowercase_definition	OMRSE:00000199	IAO:0000115	an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the ethnic identity of that other participant@en	
+INFO	lowercase_definition	OMRSE:00000200	IAO:0000115	an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the racial identity of that other participant@en	
+INFO	lowercase_definition	RO:0000052	IAO:0000115	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en	
+INFO	lowercase_definition	RO:0000053	IAO:0000115	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en	
+INFO	lowercase_definition	RO:0000056	IAO:0000115	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en	
+INFO	lowercase_definition	RO:0000057	IAO:0000115	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en	
+INFO	lowercase_definition	RO:0000079	IAO:0000115	a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence@en	
+INFO	lowercase_definition	RO:0000080	IAO:0000115	a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence@en	
+INFO	lowercase_definition	RO:0000081	IAO:0000115	a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence@en	
+INFO	lowercase_definition	RO:0000085	IAO:0000115	a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence@en	
+INFO	lowercase_definition	RO:0000086	IAO:0000115	a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence@en	
+INFO	lowercase_definition	RO:0000087	IAO:0000115	a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence@en	
+INFO	lowercase_definition	RO:0000091	IAO:0000115	a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence@en	
+INFO	lowercase_definition	RO:0001000	IAO:0000115	a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity@en	
+INFO	lowercase_definition	RO:0001001	IAO:0000115	a relation between two distinct material entities, the old entity and the new entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity@en	
+INFO	lowercase_definition	RO:0001015	IAO:0000115	a relation between two independent continuants, the location and the target, in which the target is entirely within the location@en	
+INFO	lowercase_definition	RO:0001025	IAO:0000115	a relation between two independent continuants, the target and the location, in which the target is entirely within the location@en	
+INFO	lowercase_definition	RO:0001901	IAO:0000115	        ## Elucidation        This is used when the statement/axiom is assumed to hold true 'eternally'        ## How to interpret (informal)        First the \"atemporal\" FOL is derived from the OWL using the standard    interpretation. This axiom is temporalized by embedding the axiom    within a for-all-times quantified sentence. The t argument is added to    all instantiation predicates and predicates that use this relation.        ## Example            Class: nucleus        SubClassOf: part_of some cell            forall t :          forall n :            instance_of(n,Nucleus,t)             implies            exists c :              instance_of(c,Cell,t)              part_of(n,c,t)        ## Notes        This interpretation is *not* the same as an at-all-times relation        	
+INFO	lowercase_definition	RO:0001902	IAO:0000115	        ## Elucidation        This is used when the first-order logic form of the relation is    binary, and takes no temporal argument.        ## Example:            Class: limb        SubClassOf: develops_from some lateral-plate-mesoderm             forall t, t2:          forall x :            instance_of(x,Limb,t)             implies            exists y :              instance_of(y,LPM,t2)              develops_from(x,y)            	
+INFO	lowercase_definition	RO:0002000	IAO:0000115	a relation between a 2D immaterial entity (the boundary) and a material entity, in which the boundary delimits the material entity@en	
+INFO	lowercase_definition	RO:0002002	IAO:0000115	a relation between a material entity and a 2D immaterial entity (the boundary), in which the boundary delimits the material entity@en	
+INFO	lowercase_definition	RO:0002217	IAO:0000115	x actively participates in y if and only if x participates in y and x realizes some active role	
+INFO	lowercase_definition	RO:0002218	IAO:0000115	x has participant y if and only if x realizes some active role that inheres in y	
+INFO	lowercase_definition	RO:0002223	IAO:0000115	inverse of starts with	
+INFO	lowercase_definition	RO:0002229	IAO:0000115	inverse of ends with	
+INFO	lowercase_definition	RO:0002350	IAO:0000115	is member of is a mereological relation between a item and a collection.	
+INFO	lowercase_definition	RO:0002351	IAO:0000115	has member is a mereological relation between a collection and an item.	

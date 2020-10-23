@@ -1,39 +1,36 @@
-
-Prefix(:=<http://purl.obolibrary.org/obo/omrse.owl#>)
+Prefix(:=<http://purl.obolibrary.org/obo/omrse.owl/>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
-Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(terms:=<http://purl.org/dc/terms/>)
+Prefix(protege:=<http://protege.stanford.edu/plugins/owl/protege#>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse.owl>
 
-Import(<http://purl.obolibrary.org/obo/omrse/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/omrse/dev/education.owl>)
+Import(<http://purl.obolibrary.org/obo/omrse/dev/language.owl>)
+Import(<http://purl.obolibrary.org/obo/omrse/dev/omrse-core.owl>)
 
-Import(<http://purl.obolibrary.org/obo/omrse/imports/bfo_import.owl>)
+Annotation(dc:contributor "Daniel Welch")
+Annotation(dc:creator "Amanda Hicks")
+Annotation(dc:creator "Mathias Brochhausen"@en)
+Annotation(dc:creator "Shariq Tariq"@en)
+Annotation(dc:creator "Swetha Garimalla"@en)
+Annotation(dc:creator "William Hogan"@en)
+Annotation(terms:license "https://creativecommons.org/licenses/by/4.0/")
+Annotation(rdfs:comment "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"@en)
+Annotation(rdfs:label "The Ontology of Medically Related Social Entities"@en)
+Annotation(owl:versionInfo "2020-01-30")
 
-Import(<http://purl.obolibrary.org/obo/omrse/imports/obi_import.owl>)
-
-
-
-Annotation(dce:title "The Ontology of Medically Related Social Entities")
-Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
-Annotation(dce:description "None")
-
-Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000000>))
-
-
-############################
-#   Classes
-############################
-
-# Class: <http://purl.obolibrary.org/obo/OMRSE_00000000>
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000000> "root node"@en)
-
+Declaration(AnnotationProperty(dc:contributor))
+Declaration(AnnotationProperty(dc:license))
+Declaration(AnnotationProperty(foaf:mbox))
 
 )
-
