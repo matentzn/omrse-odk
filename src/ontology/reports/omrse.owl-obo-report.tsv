@@ -3,8 +3,8 @@ ERROR	duplicate_definition	IAO:0000603	IAO:0000115	Add as annotation triples in 
 ERROR	duplicate_definition	IAO:0100001	IAO:0000115	Add as annotation triples in the granting ontology@en
 ERROR	duplicate_definition	OBI:0000299	IAO:0000115	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en
 ERROR	duplicate_definition	OBI:0000312	IAO:0000115	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en
-ERROR	multiple_equivalent_classes	OMRSE:00000201	owl:equivalentClass	269a0ff0-d575-4923-8de2-2a6b20f30380genid996
-ERROR	multiple_equivalent_classes	OMRSE:00000201	owl:equivalentClass	269a0ff0-d575-4923-8de2-2a6b20f30380genid997
+ERROR	multiple_equivalent_classes	OMRSE:00000201	owl:equivalentClass	97740a3b-dd23-4ec1-8e69-249ac45d0c37genid996
+ERROR	multiple_equivalent_classes	OMRSE:00000201	owl:equivalentClass	97740a3b-dd23-4ec1-8e69-249ac45d0c37genid997
 ERROR	deprecated_property_reference	OMRSE:00000020	owl:equivalentProperty	<http://purl.obolibrary.org/obo/BFO_0000075>
 ERROR	missing_label	http://example.com/bfo-spec-label	rdfs:label	
 ERROR	missing_label	BFO:0000134	rdfs:label	

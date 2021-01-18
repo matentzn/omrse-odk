@@ -5,6 +5,7 @@ repo: omrse-odk-test
 report_fail_on: None
 export_formats:
   - owl
+  - obo
   - json
 release_artefacts: 
   - base
