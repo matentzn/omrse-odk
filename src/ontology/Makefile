@@ -35,9 +35,9 @@ OBODATE ?= $(shell date +'%d:%m:%Y %H:%M')
 VERSION=$(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 # seed.txt contains all referenced entities
-IMPORTSEED=seed.txt
+IMPORTSEED=tmp/seed.txt
 SRCMERGED=tmp/merged-$(SRC)
-SIMPLESEED=simple_seed.txt
+SIMPLESEED=tmp/simple_seed.txt
 PRESEED=tmp/pre_seed.txt
 
 FORMATS = $(sort  owl obo json owl)
