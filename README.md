@@ -1,30 +1,40 @@
-[![Build Status](https://travis-ci.org/matentzn/omrse-odk-test.svg?branch=master)](https://travis-ci.org/matentzn/omrse-odk-test)
-[![DOI](https://zenodo.org/badge/13996/matentzn/omrse-odk-test.svg)](https://zenodo.org/badge/latestdoi/13996/matentzn/omrse-odk-test)
+# OMRSE -- The Ontology of Medically Related Social Entities
 
-# The Ontology of Medically Related Social Entities
+The Ontology of Medically Related Social Entities represents social entities relevant to health care, such as health-care related roles, gender roles, marriage contracts. It grew out of efforts to represent the reality underlying the demographic information required by the federal government's "meaningful use" criteria for electronic medical records.
 
-This ontology... YOUR DESCRIPTION HERE
+OMRSE Google Group: http://groups.google.com/group/omrse-discuss Click the "Apply for Membership" link to join. 
 
-More information can be found at http://obofoundry.org/ontology/omrse
+Monthly meetings occur on the first Wednesday of each month at 10:00 ET and last one hour
+Agenda: https://docs.google.com/document/d/1UUD-53SaioJO7btrs8ie3yjFYJIF6HV3RUU3A7A_w2Y/edit#
 
-## Versions
+## Projects and ontologies that use OMRSE
 
-### Stable release versions
+[Apollo Structured Vocabulary](https://github.com/ApolloDev)
 
-The latest version of the ontology can always be found at:
+[OBIB](https://github.com/biobanking/biobanking): Ontology for Biobanking
 
-http://purl.obolibrary.org/obo/omrse.owl
+[OntoNeo](https://ontoneo.com/): Obstetric and Neonatal Ontology
 
-(note this will not show up until the request has been approved by obofoundry.org)
+[Oral Health and Disease Ontology](https://github.com/wdduncan/ohd-ontology)
 
-### Editors' version
+[OOSTT](https://github.com/OOSTT/): Ontology of Organizational Structures of Trauma centers and Trauma systems
 
-Editors of this ontology should use the edit version, [src/ontology/omrse-edit.owl](src/ontology/omrse-edit.owl)
+## Preparing a new OMRSE release
 
-## Contact
+1. Make sure that all of your changes in the devel branch are committed and pushed to origin/devel.
 
-Please use this GitHub repository's [Issue tracker](https://github.com/matentzn/omrse-odk-test/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+2. In terminal, on the devel branch:  
+`git merge master`
 
-## Acknowledgements
+3. When you are prompted to enter a commit message, press “i” to enable insertions, then type the commit message. Then, hit “escape” to exit insert mode and type “:wq” and press enter to save the file and quit Vim.
 
-This ontology repository was created using the [ontology starter kit](https://github.com/INCATools/ontology-starter-kit)
+4. If there are conflicts, resolve them (see Github docs for more information: https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line).
+
+5. Then, checkout the master branch:  
+`git checkout master`
+
+6. Next, merge master with devel:  
+`git merge devel`
+
+7. Finally, push the changes:
+`git push`
