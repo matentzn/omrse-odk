@@ -119,8 +119,7 @@ show_assets:
 # Release Management
 # ----------------------------------------
 
-KEEPRELATIONS=keeprelations.txt
-ONTOLOGYTERMS=ontologyterms.txt
+ONTOLOGYTERMS=tmp/ontologyterms.txt
 
 # This should be executed by the release manager whenever time comes to make a release.
 # It will ensure that all assets/files are fresh, and will copy to release folder
