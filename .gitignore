@@ -37,3 +37,5 @@ src/patterns/data/**/*.txt
 src/patterns/pattern_owl_seed.txt
 src/patterns/all_pattern_terms.txt
 src/scripts/pull_changes_from_master.sh
+src/_patterns
+src/_sparql

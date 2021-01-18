@@ -15,7 +15,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:language-individuals="http://purl.obolibrary.org/obo/omrse/language-individuals/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2020-10-23/omrse-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-01-18/omrse-simple.owl"/>
         <dc:contributor>Daniel Welch</dc:contributor>
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
@@ -25,8 +25,8 @@
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
-        <owl:versionInfo>2020-01-30</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-10-23</owl:versionInfo>
+        <owl:versionInfo>2020-10-27</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2280,11 +2280,9 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000022">
         <obo:IAO_0000115 xml:lang="en">An object aggregate of objectual organisms.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An object aggregate of organisms.</obo:IAO_0000115>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse.owl</obo:IAO_0000412>
         <rdfs:comment xml:lang="en">Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  </rdfs:comment>
         <rdfs:label xml:lang="en">aggregate of objectual organisms</rdfs:label>
-        <rdfs:label xml:lang="en">collection of organisms</rdfs:label>
     </owl:Class>
     
 
@@ -2295,7 +2293,6 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000022"/>
         <obo:IAO_0000115 xml:lang="en">An object aggregate all of whose components are human beings.</obo:IAO_0000115>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse.owl</obo:IAO_0000412>
-        <rdfs:comment xml:lang="en">An object aggregate all of whose components are human beings.</rdfs:comment>
         <rdfs:label xml:lang="en">collection of humans</rdfs:label>
     </owl:Class>
     
@@ -3054,6 +3051,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000001"/>
         <obo:IAO_0000115 xml:lang="en">A human social role that is created by a deontic declaration performed by an organization.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">human organizational role</obo:IAO_0000118>
         <rdfs:label xml:lang="en">human role within an organization</rdfs:label>
     </owl:Class>
     
@@ -3847,7 +3845,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000140">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000139"/>
         <obo:IAO_0000115 xml:lang="en">A surgeon role realized by its bearer using performing neurosurgery.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">neurosurgereon role</rdfs:label>
+        <rdfs:label xml:lang="en">neurosurgeon role</rdfs:label>
     </owl:Class>
     
 

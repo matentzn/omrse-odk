@@ -14,7 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:language-individuals="http://purl.obolibrary.org/obo/omrse/language-individuals/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2020-10-23/omrse-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-01-18/omrse-base.owl"/>
         <dc:contributor>Daniel Welch</dc:contributor>
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
@@ -25,8 +25,8 @@
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
-        <owl:versionInfo>2020-01-30</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-10-23</owl:versionInfo>
+        <owl:versionInfo>2020-10-27</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1661,7 +1661,6 @@ It is important to note that this going out of existence of s is complete and un
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000020">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <obo:IAO_0000231 xml:lang="en">BFO relation takes precedence.</obo:IAO_0000231>
         <rdfs:comment xml:lang="en">We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.
 </rdfs:comment>
@@ -7969,7 +7968,6 @@ Is part_of the appropriate relation to use for data items and documented identit
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000112 xml:lang="en">Colonel Klink giving Sergeant Schultz an order, Jake promising Jill to take her to the junior prom</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process that is carried out by a conscious being or an organization, and is self-generated, directed towards another conscious being or an aggregate of conscious beings, an organization or an aggregate of organizations, and that is in need of being perceived.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A planned process that is carried out by a conscious being or an organization, and is self-generated, directed towards another conscious being or an aggregate of conscious beings, an organization or an aggregate of organizations, and that needs to be perceived.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">The phrase &quot;in need of being perceived&quot; does not imply that only planned processes that are in fact perceived can be social acts. Reinach clarifies that by exemplifying these matters for commands: &quot;The command is according to its essence in need of being heard (vernehmungsbedürtig&quot;. It can of course happen that commands are given without being heard. Then they fail to fulfil their purpose. They are like thrown spears which fall to the ground without hitting their target.&quot; (A. Reinach: The Apriori Foundations of the Civil Law.&quot; Edited by J. Crosby, Heusenstamm: ontos Verlag, 2012).
 Reinach clearly does not imply that a command that does not fulfill its prupose would not be a command.
@@ -9286,14 +9284,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000022">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
@@ -9308,11 +9299,9 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An object aggregate of objectual organisms.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An object aggregate of organisms.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/omrse.owl</obo:IAO_0000412>
         <rdfs:comment xml:lang="en">Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  </rdfs:comment>
         <rdfs:label xml:lang="en">aggregate of objectual organisms</rdfs:label>
-        <rdfs:label xml:lang="en">collection of organisms</rdfs:label>
     </owl:Class>
     
 
@@ -9320,12 +9309,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000022"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -9335,7 +9318,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An object aggregate all of whose components are human beings.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/omrse.owl</obo:IAO_0000412>
-        <rdfs:comment xml:lang="en">An object aggregate all of whose components are human beings.</rdfs:comment>
         <rdfs:label xml:lang="en">collection of humans</rdfs:label>
     </owl:Class>
     
@@ -9524,12 +9506,6 @@ Ditto for its current descendants.</rdfs:comment>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-            </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115 xml:lang="en">An aggregate of organizations that have some feature in common, but is not itself an organization.</obo:IAO_0000115>
@@ -10557,6 +10533,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A human social role that is created by a deontic declaration performed by an organization.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">human organizational role</obo:IAO_0000118>
         <rdfs:label xml:lang="en">human role within an organization</rdfs:label>
     </owl:Class>
     
@@ -11386,14 +11363,6 @@ last accessed June 30, 2015</obo:IAO_0000119>
                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
@@ -11648,7 +11617,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000140">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000139"/>
         <obo:IAO_0000115 xml:lang="en">A surgeon role realized by its bearer using performing neurosurgery.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">neurosurgereon role</rdfs:label>
+        <rdfs:label xml:lang="en">neurosurgeon role</rdfs:label>
     </owl:Class>
     
 
@@ -14015,8 +13984,7 @@ It indicates that a person has completed only early childhood education and noth
         <obo:IAO_0000116>May be replaced by a BFO class, as discussed in http://www.jbiomedsem.com/content/4/1/43</obo:IAO_0000116>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/4/1/43</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ro/releases/2020-02-26/ro.owl</obo:IAO_0000412>
-        <rdfs:comment xml:lang="en">The system as a whole is a configuration of particulars, at least one of which is material entity that is the bearer of a function.  Realization of functions of the particulars in the system contribute to the realization of one or more functions of the system a a whole.</rdfs:comment>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl</obo:IAO_0000412>
         <rdfs:label>system</rdfs:label>
     </owl:Class>
     
@@ -19798,13 +19766,13 @@ binary, and takes no temporal argument.
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <obo:IAO_0000118 xml:lang="aa">’Afar Af</obo:IAO_0000118>
-        <obo:OMRSE_00002026>aar</obo:OMRSE_00002026>
         <obo:IAO_0000115 xml:lang="en">A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant&apos;s subjective sense of gender.</obo:IAO_0000115>
+        <obo:OMRSE_00002026>aar</obo:OMRSE_00002026>
         <obo:OMRSE_00002027>aar</obo:OMRSE_00002027>
         <obo:IAO_0000111 xml:lang="en">non-binary gender identity datum</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="aa">Qafar af</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">obsolete non-binary gender identity datum</rdfs:label>
         <obo:IAO_0000118 xml:lang="aa">Qafaraf</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">obsolete non-binary gender identity datum</rdfs:label>
         <obo:OMRSE_00002025>aa</obo:OMRSE_00002025>
         <rdfs:comment xml:lang="en">Alternatively: A gender identity datum stating that a person&apos;s subjective sense of gender is non-binary.)
 

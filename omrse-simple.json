@@ -52,6 +52,9 @@
           "xrefs" : [ ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "human organizational role"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Amanda Hicks"
         } ]
@@ -4252,7 +4255,7 @@
         }
       },
       "type" : "CLASS",
-      "lbl" : "neurosurgereon role"
+      "lbl" : "neurosurgeon role"
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000024",
       "meta" : {
@@ -4293,7 +4296,6 @@
           "val" : "An object aggregate all of whose components are human beings.",
           "xrefs" : [ ]
         },
-        "comments" : [ "An object aggregate all of whose components are human beings." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
           "val" : "http://purl.obolibrary.org/obo/omrse.owl"
@@ -4318,21 +4320,6 @@
       },
       "type" : "CLASS",
       "lbl" : "family identifier"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000022",
-      "meta" : {
-        "definition" : {
-          "val" : "An object aggregate of organisms.",
-          "xrefs" : [ ]
-        },
-        "comments" : [ "Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  " ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/omrse.owl"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "aggregate of objectual organisms"
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000143",
       "meta" : {
@@ -4375,6 +4362,21 @@
       },
       "type" : "PROPERTY",
       "lbl" : "is about"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000022",
+      "meta" : {
+        "definition" : {
+          "val" : "An object aggregate of objectual organisms.",
+          "xrefs" : [ ]
+        },
+        "comments" : [ "Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  " ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/omrse.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "aggregate of objectual organisms"
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000142",
       "meta" : {
@@ -6499,13 +6501,13 @@
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002036"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000026",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000024"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002350",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002351"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000026",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000024"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00002038",
       "pred" : "is_a",
@@ -6551,13 +6553,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000153"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000199",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000198"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000213",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000204"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000199",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000198"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00002046",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
@@ -6783,13 +6785,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000025"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000131",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000099"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000056",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000053",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000054"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000131",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000099"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000504",
       "pred" : "is_a",
@@ -7512,12 +7514,12 @@
         "val" : "The Ontology of Medically Related Social Entities"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2020-01-30"
+        "val" : "2020-10-27"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2020-10-23"
+        "val" : "2021-01-18"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2020-10-23/omrse-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2021-01-18/omrse-simple.json"
     },
     "equivalentNodesSets" : [ ],
     "logicalDefinitionAxioms" : [ ],
