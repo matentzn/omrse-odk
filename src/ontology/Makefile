@@ -23,7 +23,7 @@ TMPDIR=                     tmp
 SPARQLDIR =                 ../sparql
 REPORT_FAIL_ON =            None
 OBO_FORMAT_OPTIONS =        
-SPARQL_VALIDATION_CHECKS =  equivalent-classes trailing-whitespace owldef-self-reference xref-syntax nolabels
+SPARQL_VALIDATION_CHECKS =  
 SPARQL_EXPORTS =            basic-report class-count-by-prefix edges xrefs obsoletes synonyms
 ODK_VERSION_MAKEFILE =      v1.2.24
 
@@ -94,7 +94,7 @@ SUBSET_FILES = $(foreach n,$(SUBSET_ROOTS), $(foreach f,$(FORMATS_INCL_TSV), $(n
 
 all_subsets: $(SUBSET_FILES)
 
-OBO_REPORT = $(SRC)-obo-report
+OBO_REPORT = $(SRC)-obo-report $(ONT).owl-obo-report
 REPORTS = $(OBO_REPORT)
 REPORT_FILES = $(patsubst %, $(REPORTDIR)/%.tsv, $(REPORTS))
 
@@ -336,7 +336,9 @@ release: $(ONT).owl $(ONT).obo
 #  run all violation checks
 SPARQL_VALIDATION_QUERIES = $(foreach V,$(SPARQL_VALIDATION_CHECKS),$(SPARQLDIR)/$V-violation.sparql)
 sparql_test: $(SRC)
-	$(ROBOT) verify  --catalog catalog-v001.xml -i $< --queries $(SPARQL_VALIDATION_QUERIES) -O reports/
+	if [ -n "$$SPARQL_VALIDATION_QUERIES" ]; then \
+		$(ROBOT) verify  --catalog catalog-v001.xml -i $< --queries $(SPARQL_VALIDATION_QUERIES) -O reports/; \
+	fi
 
 # ----------------------------------------
 # ROBOT report
