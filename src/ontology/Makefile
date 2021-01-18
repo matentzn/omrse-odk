@@ -143,17 +143,20 @@ $(ONT)-base.obo: $(ONT)-base.owl
 	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 $(ONT)-base.json: $(ONT)-base.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f json -o $@.tmp.json && mv $@.tmp.json $@
+		convert --check false -f json -o $@.tmp.json &&\
+	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $@ && rm $@.tmp.json
 $(ONT)-full.obo: $(ONT)-full.owl
 	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 $(ONT)-full.json: $(ONT)-full.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f json -o $@.tmp.json && mv $@.tmp.json $@
+		convert --check false -f json -o $@.tmp.json &&\
+	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $@ && rm $@.tmp.json
 $(ONT)-simple.obo: $(ONT)-simple.owl
 	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 $(ONT)-simple.json: $(ONT)-simple.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f json -o $@.tmp.json && mv $@.tmp.json $@
+		convert --check false -f json -o $@.tmp.json &&\
+	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $@ && rm $@.tmp.json
 # Main release artefacts
 $(ONT).owl: $(ONT)-full.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
@@ -163,7 +166,8 @@ $(ONT).obo: $(ONT).owl
 	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 $(ONT).json: $(ONT)-full.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f json -o $@.tmp.json && mv $@.tmp.json $@
+		convert --check false -f json -o $@.tmp.json &&\
+	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $@ && rm $@.tmp.json
 # ----------------------------------------
 # Initiating Step: Reason over source
 # ----------------------------------------

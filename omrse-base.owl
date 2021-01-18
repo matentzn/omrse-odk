@@ -19764,8 +19764,8 @@ binary, and takes no temporal argument.
         <obo:IAO_0000118 xml:lang="aa">Afaraf</obo:IAO_0000118>
         <obo:IAO_0000117 xml:lang="en">Paul Fabry</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="aa">’Afar Af</obo:IAO_0000118>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000118 xml:lang="aa">’Afar Af</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant&apos;s subjective sense of gender.</obo:IAO_0000115>
         <obo:OMRSE_00002026>aar</obo:OMRSE_00002026>
         <obo:OMRSE_00002027>aar</obo:OMRSE_00002027>
