@@ -3,8 +3,8 @@ ERROR	duplicate_definition	is allocated id range	definition	Add as annotation tr
 ERROR	duplicate_definition	term replaced by	definition	Add as annotation triples in the granting ontology@en
 ERROR	duplicate_definition	has_specified_output	definition	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en
 ERROR	duplicate_definition	is_specified_output_of	definition	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en
-ERROR	multiple_equivalent_classes	admission process	owl:equivalentClass	d79e8ee6-c6f9-49c5-8088-910dd81c7aacgenid996
-ERROR	multiple_equivalent_classes	admission process	owl:equivalentClass	d79e8ee6-c6f9-49c5-8088-910dd81c7aacgenid997
+ERROR	multiple_equivalent_classes	admission process	owl:equivalentClass	b119460b-925d-4ba5-8ee2-1931cfd8317bgenid996
+ERROR	multiple_equivalent_classes	admission process	owl:equivalentClass	b119460b-925d-4ba5-8ee2-1931cfd8317bgenid997
 ERROR	deprecated_property_reference	obsolete is-aggregate-of	owl:equivalentProperty	<http://purl.obolibrary.org/obo/BFO_0000075>
 ERROR	missing_label	http://example.com/bfo-spec-label	label	
 ERROR	missing_label	BFO:0000134	label	
