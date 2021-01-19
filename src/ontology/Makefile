@@ -42,7 +42,7 @@ PRESEED=tmp/pre_seed.txt
 
 FORMATS = $(sort  owl obo json owl)
 FORMATS_INCL_TSV = $(sort $(FORMAT) tsv)
-RELEASE_ARTEFACTS = $(sort  base full simple base full)
+RELEASE_ARTEFACTS = $(sort  base full)
 
 # ----------------------------------------
 # Top-level targets
@@ -343,7 +343,9 @@ release: $(ONT).owl $(ONT).obo
 #  run all violation checks
 SPARQL_VALIDATION_QUERIES = $(foreach V,$(SPARQL_VALIDATION_CHECKS),$(SPARQLDIR)/$V-violation.sparql)
 sparql_test: $(SRC)
-	$(ROBOT) verify  --catalog catalog-v001.xml -i $< --queries $(SPARQL_VALIDATION_QUERIES) -O reports/
+	if [ -n "$$SPARQL_VALIDATION_QUERIES" ]; then \
+		$(ROBOT) verify  --catalog catalog-v001.xml -i $< --queries $(SPARQL_VALIDATION_QUERIES) -O reports/; \
+	fi
 
 # ----------------------------------------
 # ROBOT report
