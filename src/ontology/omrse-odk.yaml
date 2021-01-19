@@ -10,7 +10,6 @@ export_formats:
 release_artefacts: 
   - base
   - full
-  - simple
 import_group:
   products:
     - id: ro
