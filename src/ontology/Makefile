@@ -106,7 +106,6 @@ all_reports: all_reports_onestep $(REPORT_FILES)
 ## -- all files/assets --
 
 ASSETS = \
-  $(IMPORT_FILES) \
   $(MAIN_FILES) \
   $(REPORT_FILES) \
   $(SUBSET_FILES)
