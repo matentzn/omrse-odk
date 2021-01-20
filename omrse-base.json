@@ -6740,11 +6740,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-01-19"
+            "val": "2021-01-20"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-01-19/omrse-base.json",
+        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-01-20/omrse-base.json",
         "xrefs": []
       },
       "nodes": [

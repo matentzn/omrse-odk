@@ -3,8 +3,8 @@ ERROR	duplicate_definition	is allocated id range	definition	Add as annotation tr
 ERROR	duplicate_definition	term replaced by	definition	Add as annotation triples in the granting ontology@en
 ERROR	duplicate_definition	has_specified_output	definition	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en
 ERROR	duplicate_definition	is_specified_output_of	definition	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en
-ERROR	multiple_equivalent_classes	admission process	owl:equivalentClass	c0e89f05-279c-44e2-8ed8-28c06c97500dgenid996
-ERROR	multiple_equivalent_classes	admission process	owl:equivalentClass	c0e89f05-279c-44e2-8ed8-28c06c97500dgenid997
+ERROR	multiple_equivalent_classes	admission process	owl:equivalentClass	16e88a81-670f-4bc9-aee7-a1ed27cf21bbgenid996
+ERROR	multiple_equivalent_classes	admission process	owl:equivalentClass	16e88a81-670f-4bc9-aee7-a1ed27cf21bbgenid997
 ERROR	deprecated_property_reference	obsolete is-aggregate-of	owl:equivalentProperty	<http://purl.obolibrary.org/obo/BFO_0000075>
 ERROR	missing_label	http://example.com/bfo-spec-label	label	
 ERROR	missing_label	BFO:0000134	label	
@@ -43,7 +43,7 @@ ERROR	deprecated_class_reference	obsolete OMB racial identity datum	rdfs:subClas
 ERROR	deprecated_class_reference	obsolete OMB racial identity datum	rdfs:subClassOf	<http://purl.obolibrary.org/obo/OMRSE_00000182>
 ERROR	deprecated_class_reference	obsolete OMB racial identity datum	rdfs:subClassOf	<http://purl.obolibrary.org/obo/OMRSE_00000183>
 ERROR	deprecated_class_reference	obsolete OMB racial identity datum	rdfs:subClassOf	<http://purl.obolibrary.org/obo/OMRSE_00000184>
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/omrse.owl	dc11:description	
+ERROR	missing_ontology_description	obo:omrse.owl	dc11:description	
 ERROR	multiple_definitions	independent continuant	definition	A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.@en
 ERROR	multiple_definitions	independent continuant	definition	<b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en>
 ERROR	multiple_definitions	process	definition	An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.@en
@@ -73,7 +73,7 @@ ERROR	multiple_definitions	term replaced by	definition	Add as annotation triples
 ERROR	multiple_definitions	term replaced by	definition	Use on obsolete terms, relating the term to another term that can be used as a substitute@en
 ERROR	multiple_definitions	aggregate of organizations	definition	An aggregate of organizations that have some feature in common, but is not itself an organization.@en
 ERROR	multiple_definitions	aggregate of organizations	definition	An object aggregate that is not itself an organization and whose members are only organizations that have some feature in common@en
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/omrse.owl	dc11:title	
+ERROR	missing_ontology_title	obo:omrse.owl	dc11:title	
 ERROR	multiple_labels	fiat object part	label	fiat object@en
 ERROR	multiple_labels	fiat object part	label	fiat object part@en
 ERROR	multiple_labels	editor preferred term	label	editor preferred label@en
