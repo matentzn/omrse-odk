@@ -39,3 +39,4 @@ src/patterns/all_pattern_terms.txt
 src/scripts/pull_changes_from_master.sh
 src/_patterns
 src/_sparql
+.cogs

@@ -4856,11 +4856,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-01-19"
+            "val": "2021-02-03"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-01-19/omrse-full.json",
+        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-02-03/omrse-full.json",
         "xrefs": []
       },
       "nodes": [

@@ -11,16 +11,25 @@ release_artefacts:
   - base
   - full
 import_group:
+  module_type: minimal
   products:
     - id: ro
-    - id: bfo
+    - id: ogms
     - id: obi
+    - id: apollo_sv
+    - id: iao
+    - id: omiabis
+    - id: go
+    - id: oae
+    - id: pco
+    - id: bfo
 components:
   products:
     - filename: education/omrse-education.owl
     - filename: language/language-individuals.owl
     - filename: language/omrse-language.owl
     - filename: omrse-core.owl
+    - filename: import_terms.owl
 robot_java_args: '-Xmx8G'
 
 

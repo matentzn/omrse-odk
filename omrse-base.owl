@@ -14,7 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:language-individuals="http://purl.obolibrary.org/obo/omrse/language-individuals/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-01-19/omrse-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-02-03/omrse-base.owl"/>
         <dc:contributor>Daniel Welch</dc:contributor>
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
@@ -26,7 +26,7 @@
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <owl:versionInfo>2020-10-27</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-19</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-02-03</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2295,6 +2295,12 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <rdfs:label xml:lang="en">has member</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002577"/>
     
 
 
@@ -13980,12 +13986,6 @@ It indicates that a person has completed only early childhood education and noth
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>A material entity consisting of multiple components that are causally integrated.</obo:IAO_0000115>
-        <obo:IAO_0000116>May be replaced by a BFO class, as discussed in http://www.jbiomedsem.com/content/4/1/43</obo:IAO_0000116>
-        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/4/1/43</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl</obo:IAO_0000412>
-        <rdfs:label>system</rdfs:label>
     </owl:Class>
     
 
@@ -19764,8 +19764,8 @@ binary, and takes no temporal argument.
         <obo:IAO_0000118 xml:lang="aa">Afaraf</obo:IAO_0000118>
         <obo:IAO_0000117 xml:lang="en">Paul Fabry</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="aa">’Afar Af</obo:IAO_0000118>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000118 xml:lang="aa">’Afar Af</obo:IAO_0000118>
         <obo:OMRSE_00002026>aar</obo:OMRSE_00002026>
         <obo:IAO_0000115 xml:lang="en">A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant&apos;s subjective sense of gender.</obo:IAO_0000115>
         <obo:OMRSE_00002027>aar</obo:OMRSE_00002027>
@@ -19779,6 +19779,14 @@ binary, and takes no temporal argument.
 Examples of usage: ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)</rdfs:comment>
         <obo:IAO_0100001 xml:lang="en">non-binary gender identity information content entity</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Afar</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
+        <obo:IAO_0000116>May be replaced by a BFO class, as discussed in http://www.jbiomedsem.com/content/4/1/43</obo:IAO_0000116>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/4/1/43</obo:IAO_0000119>
+        <obo:IAO_0000115>A material entity consisting of multiple components that are causally integrated.</obo:IAO_0000115>
+        <rdfs:label>system</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl</obo:IAO_0000412>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl">
         <obo:IAO_0000603 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0021000-IAO_0021999</obo:IAO_0000603>
