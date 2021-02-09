@@ -11,9 +11,9 @@
 #
 # #### Edit
 #
-# * [Prepare release](prepare_release)
-# * [Refresh imports](all_imports)
-# * [Update repo to latest ODK](update_repo)
+# 1. [Prepare release](prepare_release)
+# 2. [Refresh imports](all_imports)
+# 3. [Update repo to latest ODK](update_repo)
 
 
 # ----------------------------------------
