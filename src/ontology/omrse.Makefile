@@ -3,6 +3,17 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+### Workflow
+# The following workflow defines all tasks necessary to upload,
+# preprocess, share, and map a new data dictionary.
+#
+# 1. [Prepare release](prepare_release)
+
+#### Other tasks
+# * [Refresh imports](all_imports)
+# * [Update repo to latest ODK](update_repo)
+
+
 
 ####################################
 #### Handling OBO format error #####
