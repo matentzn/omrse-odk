@@ -9,9 +9,7 @@
 # The following workflow defines all tasks necessary to upload,
 # preprocess, share, and map a new data dictionary.
 #
-# 1. [Prepare release](prepare_release)
-
-#### Other tasks
+# * [Prepare release](prepare_release)
 # * [Refresh imports](all_imports)
 # * [Update repo to latest ODK](update_repo)
 
