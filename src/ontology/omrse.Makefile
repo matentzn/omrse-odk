@@ -8,6 +8,7 @@
 #### Handling OBO format error #####
 # OBO format does not handle at all inverse property expressions in class expressions
 
+IMP=false
 
 tmp/$(ONT).ofn: $(ONT)-full.owl
 	$(ROBOT) convert -i $< -o $@
@@ -55,55 +56,57 @@ diff: reports/release-diff.txt
 # and replacing by dynamic import
 # ----------------------------------------
 
-# 1. make seed of all terms currently used in the ontology, for example all HP terms. 
-# For this you need to create the respective xyz_terms.sparql query.
+## The extract-external goal creates a bunch of tsv files with external axioms that are easy to review
+.PHONY: extract-external
+extract-external: tmp/external-omrse-core.tsv
+extract-external: tmp/external-language-individuals.tsv
+extract-external: tmp/external-omrse-language.tsv
+extract-external: tmp/external-omrse-education.tsv
 
-# this is only used to create initial term list and then never again
-%_terms_in_src: $(SRC) $(SPARQLDIR)/%_terms.sparql
-	$(ROBOT) query -i $< --use-graphs true -q $(SPARQLDIR)/$*_terms.sparql tmp/$*_terms.txt
+extract-external-summary: tmp/summary-external-omrse-core.tsv
 
-tmp/filtered-%-mirror.owl: mirror/%.owl tmp/%_terms.txt
-	$(ROBOT) filter -i mirror/$*.owl -T tmp/$*_terms.txt --trim false -o $@
+OMRSE_BASE_IRI=http://purl.obolibrary.org/obo/OMRSE_
 
-tmp/edit-without-%.owl: $(SRC) tmp/filtered-%-mirror.owl
-	$(ROBOT) remove -i $< --select imports --trim false unmerge -i tmp/filtered-$*-mirror.owl -o $@
+tmp/external-%.tsv: tmp/external-%.owl
+	$(ROBOT) query -i $< -q ../sparql/triple-table.sparql $@
+	python ../scripts/summarize-table.py sort --input $@
 
-tmp/remaining-%.ofn: tmp/edit-without-%.owl tmp/%_terms.txt
-	$(ROBOT) filter -i $< --term-file tmp/$*_terms.txt --trim false -o $@
+tmp/external-omrse-core.owl: components/omrse-core.owl
+	$(ROBOT) remove --input $< \
+		--base-iri $(OMRSE_BASE_IRI) --axioms internal --preserve-structure false --trim false \
+		remove --select ontology remove --select imports --output $@
 
-#These are only the x-refs that are NOT in the ontology mirror
-tmp/preserve-axioms-%.ttl: tmp/remaining-%.ofn
-	$(ROBOT) query -i $< -c $(SPARQLDIR)/preserve_$*_axioms.sparql $@
+tmp/external-omrse-education.owl: components/education/omrse-education.owl
+	$(ROBOT) remove --input $< \
+		--base-iri $(OMRSE_BASE_IRI) --axioms internal --preserve-structure false --trim false \
+		remove --select ontology remove --select imports --output $@
 
-tmp/preserve-axioms-%.owl: tmp/preserve-axioms-%.ttl
-	$(ROBOT) convert -i $< -f owl -o $@
+tmp/external-omrse-language.owl: components/language/omrse-language.owl
+	$(ROBOT) remove --input $< \
+		--base-iri $(OMRSE_BASE_IRI) --axioms internal --preserve-structure false --trim false \
+		remove --select ontology remove --select imports --output $@
 
-# 2. Dump all axioms from the ontology apart from the set of preserved axioms. 
-# Preserved axioms are extracted using the preserve_xyz_axioms.sparql query (for example xrefs.)
+tmp/external-language-individuals.owl: components/language/language-individuals.owl
+	$(ROBOT) remove --input $< \
+		--base-iri $(OMRSE_BASE_IRI) --axioms internal --preserve-structure false --trim false \
+		remove --select ontology remove --select imports --output $@
 
-dump_%: $(SRC) tmp/preserve-axioms-%.owl
-	$(ROBOT) remove -i $< -T tmp/$*_terms.txt --axioms "annotation" --trim true  --preserve-structure false \
-		remove -T tmp/$*_terms.txt --trim false --preserve-structure false \
-		merge -i tmp/preserve-axioms-$*.owl --collapse-import-closure false -o $(SRC)
-		
-#tmp/edit-functional.owl: $(SRC)
-#	$(ROBOT) convert -i $(SRC) -f ofn -o $@
+components/import_terms.owl: ../templates/import_terms.tsv
+	$(ROBOT) template --template $< \
+  --ontology-iri "$(ONTBASE)/import_terms.owl" \
+  --output $@
 
+# Needs custom solution due to https://github.com/ontodev/robot/issues/820
+imports/omiabis_import.owl: mirror/omiabis.owl imports/omiabis_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
+		extract -T imports/omiabis_terms_combined.txt --force true --copy-ontology-annotations true --method BOT \
+		remove --base-iri $(URIBASE)"/$(shell echo omiabis | tr a-z A-Z)_" --axioms external --preserve-structure false --trim false \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		remove --term rdfs:label -T imports/omiabis_terms_combined.txt --select complement --select "classes individuals annotation-properties" \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-#############
-## TO DO ####
-#############
+c: components/import_terms.owl
+	make IMP=true MIR=false all_imports -B
 	
-EFO_MASTER=https://raw.githubusercontent.com/EBISPOT/efo/master/src/ontology/edit.owl
-
-master-$(SRC):
-	wget $(EFO_MASTER) -O $@
-
-efo_edit_git_diff.txt:
-	git diff $(SRC) > efo_edit_git_diff.txt
-
-efo_edit_robot_diff.txt: master-$(SRC) $(SRC)
-	$(ROBOT) diff --left $(SRC) --right master-$(SRC) -o $@
-
-edit_diff: efo_edit_git_diff.txt efo_edit_robot_diff.txt
-
+refresh-%:
+	make IMP=true MIR=false imports/$*_import.owl -B
