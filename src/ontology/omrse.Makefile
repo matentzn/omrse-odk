@@ -43,10 +43,10 @@ tmp/$(ONT)-build.owl:
 tmp/$(ONT)-release.owl:
 	$(ROBOT) merge -I http://purl.obolibrary.org/obo/omrse.owl -o $@
 
-reports/release-diff.txt: tmp/$(ONT)-release.owl tmp/$(ONT)-build.owl
-	$(ROBOT) diff --left $< --right tmp/$(ONT)-build.owl -o $@
+reports/release-diff.md: tmp/$(ONT)-release.owl tmp/$(ONT)-build.owl
+	$(ROBOT) diff --left $< --right tmp/$(ONT)-build.owl -f markdown -o $@
 
-diff: reports/release-diff.txt
+release_diff: reports/release-diff.md
 	
 	
 	
