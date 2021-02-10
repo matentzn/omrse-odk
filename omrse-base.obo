@@ -4210,6 +4210,7 @@ is_a: BFO:0000038 ! one-dimensional temporal region
 [Term]
 id: OMRSE:00000085
 name: obsolete socio-legal human social role
+is_a: ObsoleteClass ! Obsolete Class
 is_a: OMRSE:00000001 ! human social role
 property_value: IAO:0000117 "A role that concretizes a socio-lega generically dependent continuant" xsd:string
 property_value: IAO:0000117 "Amanda Hicks" xsd:string

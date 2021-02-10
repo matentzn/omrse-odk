@@ -10497,6 +10497,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000085">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000001"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000117 xml:lang="en">A role that concretizes a socio-lega generically dependent continuant</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">obsolete socio-legal human social role</rdfs:label>
@@ -19771,8 +19772,8 @@ binary, and takes no temporal argument.
         <obo:OMRSE_00002027>aar</obo:OMRSE_00002027>
         <obo:IAO_0000111 xml:lang="en">non-binary gender identity datum</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="aa">Qafar af</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">obsolete non-binary gender identity datum</rdfs:label>
         <obo:IAO_0000118 xml:lang="aa">Qafaraf</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">obsolete non-binary gender identity datum</rdfs:label>
         <obo:OMRSE_00002025>aa</obo:OMRSE_00002025>
         <rdfs:comment xml:lang="en">Alternatively: A gender identity datum stating that a person&apos;s subjective sense of gender is non-binary.)
 
