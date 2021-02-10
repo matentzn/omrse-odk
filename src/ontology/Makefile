@@ -247,7 +247,6 @@ mirror/ro.trigger: $(SRC)
 
 mirror/ro.owl: mirror/ro.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/ro.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 .PRECIOUS: mirror/%.owl
 
 
@@ -257,7 +256,6 @@ mirror/ogms.trigger: $(SRC)
 
 mirror/ogms.owl: mirror/ogms.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/ogms.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 .PRECIOUS: mirror/%.owl
 
 
@@ -267,7 +265,6 @@ mirror/obi.trigger: $(SRC)
 
 mirror/obi.owl: mirror/obi.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/obi.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 .PRECIOUS: mirror/%.owl
 
 
@@ -277,7 +274,6 @@ mirror/apollo_sv.trigger: $(SRC)
 
 mirror/apollo_sv.owl: mirror/apollo_sv.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/apollo_sv.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 .PRECIOUS: mirror/%.owl
 
 
@@ -287,7 +283,6 @@ mirror/iao.trigger: $(SRC)
 
 mirror/iao.owl: mirror/iao.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/iao.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 .PRECIOUS: mirror/%.owl
 
 
@@ -297,7 +292,6 @@ mirror/omiabis.trigger: $(SRC)
 
 mirror/omiabis.owl: mirror/omiabis.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/omiabis.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 .PRECIOUS: mirror/%.owl
 
 
@@ -307,7 +301,6 @@ mirror/go.trigger: $(SRC)
 
 mirror/go.owl: mirror/go.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/go.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 .PRECIOUS: mirror/%.owl
 
 
@@ -317,7 +310,6 @@ mirror/oae.trigger: $(SRC)
 
 mirror/oae.owl: mirror/oae.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/oae.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 .PRECIOUS: mirror/%.owl
 
 
@@ -327,7 +319,6 @@ mirror/pco.trigger: $(SRC)
 
 mirror/pco.owl: mirror/pco.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/pco.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 .PRECIOUS: mirror/%.owl
 
 
@@ -337,7 +328,6 @@ mirror/bfo.trigger: $(SRC)
 
 mirror/bfo.owl: mirror/bfo.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/bfo.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 .PRECIOUS: mirror/%.owl
 
 
@@ -347,7 +337,6 @@ mirror/oostt.trigger: $(SRC)
 
 mirror/oostt.owl: mirror/oostt.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/oostt.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 .PRECIOUS: mirror/%.owl
 
 
