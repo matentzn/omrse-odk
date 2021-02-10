@@ -23,6 +23,7 @@ import_group:
     - id: oae
     - id: pco
     - id: bfo
+    - id: oostt
 components:
   products:
     - filename: education/omrse-education.owl
@@ -31,5 +32,14 @@ components:
     - filename: omrse-core.owl
     - filename: import_terms.owl
 robot_java_args: '-Xmx8G'
-
+custom_makefile_header: |
+  ### Workflow
+  #
+  # Tasks to edit and release OMRSE.
+  #
+  # #### Edit
+  #
+  # 1. [Prepare release](prepare_release)
+  # 2. [Refresh imports](all_imports)
+  # 3. [Update repo to latest ODK](update_repo)
 
