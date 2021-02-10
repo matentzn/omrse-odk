@@ -2351,11 +2351,6 @@
         {
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000001",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000085"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000001",
-          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000103"
         },
         {
@@ -4287,6 +4282,11 @@
           "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000047"
+        },
+        {
+          "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000085"
         },
         {
           "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty",

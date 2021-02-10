@@ -6198,6 +6198,11 @@
         {
           "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000085"
+        },
+        {
+          "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role"
         },
         {
