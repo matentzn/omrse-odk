@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/omrse.owl/>)
+Prefix(:=<http://purl.obolibrary.org/obo/omrse.owl#>)
 Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
@@ -35,49 +35,9 @@ Annotation(rdfs:comment "This ontology grew out of efforts to represent the real
 Annotation(rdfs:label "The Ontology of Medically Related Social Entities"@en)
 Annotation(owl:versionInfo "2020-10-27")
 
-Declaration(Class(obo:APOLLO_SV_00000480))
-Declaration(Class(obo:APOLLO_SV_00000532))
-Declaration(Class(obo:BFO_0000015))
-Declaration(Class(obo:BFO_0000016))
-Declaration(Class(obo:BFO_0000023))
-Declaration(Class(obo:BFO_0000027))
-Declaration(Class(obo:BFO_0000029))
-Declaration(Class(obo:BFO_0000034))
-Declaration(Class(obo:BFO_0000040))
-Declaration(Class(obo:GO_0007610))
-Declaration(Class(obo:GO_0008150))
-Declaration(Class(obo:IAO_0000001))
-Declaration(Class(obo:IAO_0000005))
-Declaration(Class(obo:IAO_0000007))
-Declaration(Class(obo:IAO_0000027))
-Declaration(Class(obo:IAO_0000030))
-Declaration(Class(obo:IAO_0000104))
-Declaration(Class(obo:IAO_0000310))
-Declaration(Class(obo:IAO_0000416))
-Declaration(Class(obo:IAO_0000572))
-Declaration(Class(obo:IAO_0000578))
-Declaration(Class(obo:IAO_0020021))
 Declaration(Class(obo:IAO_0020022))
-Declaration(Class(obo:IAO_0020023))
-Declaration(Class(obo:IAO_0020024))
-Declaration(Class(obo:IAO_0021001))
 Declaration(Class(obo:IAO_0021003))
 Declaration(Class(obo:IAO_0021009))
-Declaration(Class(obo:NCBITaxon_9606))
-Declaration(Class(obo:OAE_0000002))
-Declaration(Class(obo:OAE_0000067))
-Declaration(Class(obo:OAE_0002807))
-Declaration(Class(obo:OBI_0000011))
-Declaration(Class(obo:OBI_0000245))
-Declaration(Class(obo:OBI_0100026))
-Declaration(Class(obo:OBI_0200000))
-Declaration(Class(obo:OBI_0600052))
-Declaration(Class(obo:OGMS_0000097))
-Declaration(Class(obo:OGMS_0000100))
-Declaration(Class(obo:OGMS_0000102))
-Declaration(Class(obo:OMIABIS_0000060))
-Declaration(Class(obo:OMIABIS_0001025))
-Declaration(Class(obo:OMIABIS_0001035))
 Declaration(Class(obo:OMRSE_00000000))
 Declaration(Class(obo:OMRSE_00000001))
 Declaration(Class(obo:OMRSE_00000002))
@@ -340,26 +300,17 @@ Declaration(Class(obo:OMRSE_00002054))
 Declaration(Class(obo:OMRSE_00002055))
 Declaration(Class(obo:OMRSE_00002056))
 Declaration(Class(obo:OMRSE_00002057))
-Declaration(Class(obo:OOSTT_00000074))
-Declaration(Class(obo:OOSTT_00000081))
-Declaration(Class(obo:OOSTT_00000082))
-Declaration(Class(obo:OOSTT_00000083))
-Declaration(Class(obo:OOSTT_00000084))
-Declaration(Class(obo:OOSTT_00000086))
-Declaration(Class(obo:PCO_0000020))
-Declaration(Class(obo:RO_0002577))
-Declaration(Class(oboInOwl:ObsoleteClass))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:BFO_0000051))
 Declaration(ObjectProperty(obo:BFO_0000054))
 Declaration(ObjectProperty(obo:BFO_0000055))
+Declaration(ObjectProperty(obo:BFO_0000066))
+Declaration(ObjectProperty(obo:BFO_0000067))
 Declaration(ObjectProperty(obo:BFO_0000075))
 Declaration(ObjectProperty(obo:IAO_0000136))
-Declaration(ObjectProperty(obo:IAO_0021011))
-Declaration(ObjectProperty(obo:IAO_0021012))
+Declaration(ObjectProperty(obo:IAO_0000219))
 Declaration(ObjectProperty(obo:OBI_0000299))
 Declaration(ObjectProperty(obo:OBI_0000312))
-Declaration(ObjectProperty(obo:OBI_0000846))
 Declaration(ObjectProperty(obo:OBI_0001688))
 Declaration(ObjectProperty(obo:OMIABIS_0000008))
 Declaration(ObjectProperty(obo:OMIABIS_0000009))
@@ -373,12 +324,11 @@ Declaration(ObjectProperty(obo:OMRSE_00000167))
 Declaration(ObjectProperty(obo:RO_0000052))
 Declaration(ObjectProperty(obo:RO_0000053))
 Declaration(ObjectProperty(obo:RO_0000056))
+Declaration(ObjectProperty(obo:RO_0000057))
+Declaration(ObjectProperty(obo:RO_0000058))
 Declaration(ObjectProperty(obo:RO_0000059))
-Declaration(ObjectProperty(obo:RO_0002081))
 Declaration(ObjectProperty(obo:RO_0002083))
-Declaration(ObjectProperty(obo:RO_0002217))
 Declaration(ObjectProperty(obo:RO_0002218))
-Declaration(ObjectProperty(obo:RO_0002222))
 Declaration(ObjectProperty(obo:RO_0002223))
 Declaration(ObjectProperty(obo:RO_0002229))
 Declaration(ObjectProperty(obo:RO_0002350))
@@ -386,85 +336,26 @@ Declaration(ObjectProperty(obo:RO_0002351))
 Declaration(DataProperty(obo:OMRSE_00000136))
 Declaration(DataProperty(obo:OMRSE_00000137))
 Declaration(AnnotationProperty(obo:IAO_0000111))
+Declaration(AnnotationProperty(obo:IAO_0000112))
 Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(obo:IAO_0000116))
 Declaration(AnnotationProperty(obo:IAO_0000117))
-Declaration(AnnotationProperty(obo:OAE_0004334))
+Declaration(AnnotationProperty(obo:IAO_0000118))
+Declaration(AnnotationProperty(obo:IAO_0000119))
+Declaration(AnnotationProperty(obo:IAO_0000231))
+Declaration(AnnotationProperty(obo:IAO_0000600))
+Declaration(AnnotationProperty(obo:IAO_0100001))
 Declaration(AnnotationProperty(obo:OMRSE_00000080))
 Declaration(AnnotationProperty(obo:OMRSE_00002025))
 Declaration(AnnotationProperty(obo:OMRSE_00002026))
 Declaration(AnnotationProperty(obo:OMRSE_00002027))
 Declaration(AnnotationProperty(obo:OMRSE_00002028))
-Declaration(AnnotationProperty(obo:OOSTT_00000030))
 Declaration(AnnotationProperty(dc:contributor))
-Declaration(AnnotationProperty(dc:creator))
 Declaration(AnnotationProperty(dc:date))
-Declaration(AnnotationProperty(dc:license))
-Declaration(AnnotationProperty(dc:title))
 Declaration(AnnotationProperty(terms:license))
-Declaration(AnnotationProperty(terms:source))
-Declaration(AnnotationProperty(oboInOwl:created_by))
-Declaration(AnnotationProperty(oboInOwl:creation_date))
-Declaration(AnnotationProperty(oboInOwl:hasAlternativeId))
-Declaration(AnnotationProperty(oboInOwl:hasDbXref))
-Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
-Declaration(AnnotationProperty(oboInOwl:hasOBONamespace))
-Declaration(AnnotationProperty(oboInOwl:hasRelatedSynonym))
-Declaration(AnnotationProperty(oboInOwl:id))
-Declaration(AnnotationProperty(oboInOwl:inSubset))
-Declaration(AnnotationProperty(rdfs:comment))
-Declaration(AnnotationProperty(rdfs:label))
-Declaration(AnnotationProperty(owl:deprecated))
-Declaration(AnnotationProperty(foaf:mbox))
 ############################
 #   Annotation Properties
 ############################
-
-# Annotation Property: obo:IAO_0000111 (editor preferred term)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000111 "editor preferred term"@en)
-
-# Annotation Property: obo:IAO_0000112 (example of usage)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000112 "example of usage"@en)
-
-# Annotation Property: obo:IAO_0000114 (has curation status)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000114 "has curation status"@en)
-
-# Annotation Property: obo:IAO_0000115 (definition)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "textual definition"^^xsd:string)
-
-# Annotation Property: obo:IAO_0000116 (editor note)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000116 "editor note")
-AnnotationAssertion(rdfs:label obo:IAO_0000116 "editor note"@en)
-
-# Annotation Property: obo:IAO_0000117 (term editor)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000117 "definition editor")
-AnnotationAssertion(rdfs:label obo:IAO_0000117 "definition editor"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000117 "term editor"@en)
-
-# Annotation Property: obo:IAO_0000118 (alternative term)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000118 "alternative term"@en)
-
-# Annotation Property: obo:IAO_0000119 (definition source)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source")
-AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source"@en)
-
-# Annotation Property: obo:IAO_0000232 (curator note)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000232 "curator note")
-AnnotationAssertion(rdfs:label obo:IAO_0000232 "curator note"@en)
-
-# Annotation Property: obo:IAO_0000412 (imported from)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 
 # Annotation Property: obo:OMRSE_00000080 (U.S. Census PUMS serial number)
 
@@ -487,76 +378,26 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00002027 "ISO 639-2/T code"@en)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00002028 "ISO 639-3 code"@en)
 
-# Annotation Property: obo:OOSTT_00000030 (OOSTT user-centered description)
-
-AnnotationAssertion(rdfs:label obo:OOSTT_00000030 "OOSTT user-centered description"@en)
-
-# Annotation Property: oboInOwl:inSubset (in_subset)
-
-AnnotationAssertion(rdfs:label oboInOwl:inSubset "in_subset"^^xsd:string)
-
-# Annotation Property: rdfs:label (label)
-
-AnnotationAssertion(rdfs:label rdfs:label "label")
-
 
 ############################
 #   Object Properties
 ############################
 
-# Object Property: obo:BFO_0000075 (is aggregate of)
+# Object Property: obo:BFO_0000075 (obo:BFO_0000075)
 
-AnnotationAssertion(obo:IAO_0000118 obo:BFO_0000075 "aggregate of"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:BFO_0000075 "aggregate_of"@en)
-AnnotationAssertion(rdfs:label obo:BFO_0000075 "is aggregate of"@en)
 EquivalentObjectProperties(obo:BFO_0000075 obo:OMRSE_00000020)
-SubObjectPropertyOf(obo:BFO_0000075 owl:topObjectProperty)
-
-# Object Property: obo:OBI_0000846 (is member of organization)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000846 "is member of organization"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000846 "Relating a legal person to an organization in the case where the legal person has a role as member of the organization"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000846 "2009/10/01 Alan Ruttenberg. Barry prefers generic is-member-of. Question of what the range should be. For now organization. Is organization a population? Would the same relation be used to record members of a population"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000846 "Person:Alan Ruttenberg"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000846 "Person:Helen Parkinson"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000846 "Person:Alan Ruttenberg"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000846 "Person:Helen Parkinson"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:OBI_0000846 "is member of organization"^^xsd:string)
-InverseObjectProperties(obo:OBI_0000846 obo:OBI_0001688)
-ObjectPropertyDomain(obo:OBI_0000846 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245))
-ObjectPropertyRange(obo:OBI_0000846 obo:OBI_0000245)
-
-# Object Property: obo:OBI_0001688 (has organization member)
-
-AnnotationAssertion(rdfs:label obo:OBI_0001688 "has organization member"@en)
-ObjectPropertyDomain(obo:OBI_0001688 obo:OBI_0000245)
-ObjectPropertyRange(obo:OBI_0001688 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245))
 
 # Object Property: obo:OMIABIS_0000008 (owns)
 
-AnnotationAssertion(obo:IAO_0000119 obo:OMIABIS_0000008 "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204."@en)
-AnnotationAssertion(obo:IAO_0000600 obo:OMIABIS_0000008 "This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. "@en)
-AnnotationAssertion(rdfs:label obo:OMIABIS_0000008 "owns"@en)
-InverseObjectProperties(obo:OMIABIS_0000008 obo:OMIABIS_0000048)
 ObjectPropertyDomain(obo:OMIABIS_0000008 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245 obo:OMRSE_00000023 obo:OMRSE_00000033))
-ObjectPropertyRange(obo:OMIABIS_0000008 ObjectUnionOf(obo:BFO_0000040 obo:IAO_0000030))
 
 # Object Property: obo:OMIABIS_0000009 (administrates)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMIABIS_0000009 "a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a."@en)
-AnnotationAssertion(rdfs:comment obo:OMIABIS_0000009 "A definition of \"tranfers\" object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl"@en)
-AnnotationAssertion(rdfs:label obo:OMIABIS_0000009 "administrates"@en)
 InverseObjectProperties(obo:OMIABIS_0000009 obo:OMRSE_00000068)
-AsymmetricObjectProperty(obo:OMIABIS_0000009)
 ObjectPropertyDomain(obo:OMIABIS_0000009 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245 obo:OMRSE_00000023 obo:OMRSE_00000033))
-ObjectPropertyRange(obo:OMIABIS_0000009 ObjectUnionOf(obo:BFO_0000040 obo:IAO_0000030))
 
 # Object Property: obo:OMIABIS_0000048 (is owned by)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMIABIS_0000048 "a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OMIABIS_0000048 "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204."@en)
-AnnotationAssertion(rdfs:label obo:OMIABIS_0000048 "is owned by"@en)
-ObjectPropertyDomain(obo:OMIABIS_0000048 ObjectUnionOf(obo:BFO_0000040 obo:IAO_0000030))
 ObjectPropertyRange(obo:OMIABIS_0000048 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245 obo:OMRSE_00000023 obo:OMRSE_00000033))
 
 # Object Property: obo:OMRSE_00000020 (is-aggregate-of)
@@ -600,124 +441,6 @@ ObjectPropertyRange(obo:OMRSE_00000071 obo:OMRSE_00000056)
 
 AnnotationAssertion(rdfs:label obo:OMRSE_00000167 "provides service"@en)
 
-# Object Property: obo:RO_0000052 (inheres in)
-
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000052 "'inheres in at all times'"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000052 "inheres_in"@en)
-AnnotationAssertion(rdfs:label obo:RO_0000052 "inheres in"@en)
-InverseObjectProperties(obo:RO_0000052 obo:RO_0000053)
-FunctionalObjectProperty(obo:RO_0000052)
-
-# Object Property: obo:RO_0000053 (bearer of)
-
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000053 "bearer of"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000053 "bearer_of"@en)
-AnnotationAssertion(rdfs:label obo:RO_0000053 "is bearer of"@en)
-
-# Object Property: obo:RO_0000058 (is concretized as)
-
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000058 "concretized by at some time"@en)
-
-# Object Property: obo:RO_0000059 (concretizes)
-
-AnnotationAssertion(rdfs:comment obo:RO_0000059 "It is recommended to not use this if possible in OMRSE.  According to OntoBee this relation has been obsoleted and replaced with 'concretization of at all times'.  As of Dec. 2, 2013 iao-main still uses this relation.  "@en)
-
-# Object Property: obo:RO_0002081 (before or simultaneous with)
-
-AnnotationAssertion(obo:IAO_0000117 obo:RO_0002081 "David Osumi-Sutherland")
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0002081 "<="@en)
-AnnotationAssertion(obo:IAO_0000412 obo:RO_0002081 "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"^^xsd:string)
-AnnotationAssertion(oboInOwl:inSubset obo:RO_0002081 <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
-AnnotationAssertion(rdfs:comment obo:RO_0002081 "Primitive instance level timing relation between events")
-AnnotationAssertion(rdfs:label obo:RO_0002081 "before or simultaneous with"@en)
-SubObjectPropertyOf(obo:RO_0002081 obo:RO_0002222)
-
-# Object Property: obo:RO_0002083 (before)
-
-AnnotationAssertion(obo:IAO_0000117 obo:RO_0002083 "David Osumi-Sutherland")
-AnnotationAssertion(obo:IAO_0000412 obo:RO_0002083 "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"^^xsd:string)
-AnnotationAssertion(oboInOwl:inSubset obo:RO_0002083 <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
-AnnotationAssertion(rdfs:comment obo:RO_0002083 "t1 before t2 iff:=  t1 before_or_simulataneous_with t2  and not (t1 simultaeous_with t2)"@en)
-AnnotationAssertion(rdfs:label obo:RO_0002083 "before"@en)
-SubObjectPropertyOf(obo:RO_0002083 obo:RO_0002081)
-
-# Object Property: obo:RO_0002217 (obsolete actively participates in)
-
-AnnotationAssertion(obo:IAO_0000114 obo:RO_0002217 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0002217 "x actively participates in y if and only if x participates in y and x realizes some active role")
-AnnotationAssertion(obo:IAO_0000117 obo:RO_0002217 "Chris Mungall")
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0002217 "agent in")
-AnnotationAssertion(rdfs:label obo:RO_0002217 "actively participates in"@en)
-SubObjectPropertyOf(obo:RO_0002217 obo:RO_0000056)
-InverseObjectProperties(obo:RO_0002217 obo:RO_0002218)
-
-# Object Property: obo:RO_0002218 (obsolete has active participant)
-
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0002218 "'heart development' has active participant some Shh protein")
-AnnotationAssertion(obo:IAO_0000114 obo:RO_0002218 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0002218 "x has participant y if and only if x realizes some active role that inheres in y")
-AnnotationAssertion(obo:IAO_0000116 obo:RO_0002218 "This may be obsoleted and replaced by the original 'has agent' relation")
-AnnotationAssertion(obo:IAO_0000117 obo:RO_0002218 "Chris Mungall")
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0002218 "has agent")
-AnnotationAssertion(oboInOwl:inSubset obo:RO_0002218 <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
-AnnotationAssertion(rdfs:label obo:RO_0002218 "has active participant"@en)
-SubObjectPropertyOf(obo:RO_0002218 obo:RO_0000057)
-
-# Object Property: obo:RO_0002222 (temporally related to)
-
-AnnotationAssertion(obo:IAO_0000114 obo:RO_0002222 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000117 obo:RO_0002222 "Chris Mungall")
-AnnotationAssertion(obo:IAO_0000119 obo:RO_0002222 <https://en.wikipedia.org/wiki/Allen%27s_interval_algebra>)
-AnnotationAssertion(obo:IAO_0000232 obo:RO_0002222 "Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends.")
-AnnotationAssertion(obo:IAO_0000412 obo:RO_0002222 "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"^^xsd:string)
-AnnotationAssertion(terms:source obo:RO_0002222 "https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1"^^xsd:anyURI)
-AnnotationAssertion(oboInOwl:inSubset obo:RO_0002222 <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
-AnnotationAssertion(rdfs:comment obo:RO_0002222 "A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.")
-AnnotationAssertion(rdfs:label obo:RO_0002222 "temporally related to"@en)
-SubObjectPropertyOf(obo:RO_0002222 owl:topObjectProperty)
-
-# Object Property: obo:RO_0002223 (starts)
-
-AnnotationAssertion(obo:IAO_0000114 obo:RO_0002223 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0002223 "inverse of starts with")
-AnnotationAssertion(obo:IAO_0000117 obo:RO_0002223 "Chris Mungall")
-AnnotationAssertion(obo:IAO_0000119 obo:RO_0002223 "Allen")
-AnnotationAssertion(obo:IAO_0000412 obo:RO_0002223 "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"^^xsd:string)
-AnnotationAssertion(oboInOwl:inSubset obo:RO_0002223 <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
-AnnotationAssertion(rdfs:label obo:RO_0002223 "starts"@en)
-SubObjectPropertyOf(obo:RO_0002223 obo:BFO_0000050)
-
-# Object Property: obo:RO_0002229 (ends)
-
-AnnotationAssertion(obo:IAO_0000114 obo:RO_0002229 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0002229 "inverse of ends with")
-AnnotationAssertion(obo:IAO_0000117 obo:RO_0002229 "Chris Mungall")
-AnnotationAssertion(obo:IAO_0000412 obo:RO_0002229 "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"^^xsd:string)
-AnnotationAssertion(oboInOwl:inSubset obo:RO_0002229 <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
-AnnotationAssertion(rdfs:label obo:RO_0002229 "ends"@en)
-SubObjectPropertyOf(obo:RO_0002229 obo:BFO_0000050)
-
-# Object Property: obo:RO_0002350 (member of)
-
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0002350 "An organism that is a member of a population of organisms")
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0002350 "is member of is a mereological relation between a item and a collection.")
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0002350 "is member of")
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0002350 "member part of")
-AnnotationAssertion(obo:IAO_0000119 obo:RO_0002350 "SIO")
-AnnotationAssertion(obo:RO_0001900 obo:RO_0002350 obo:RO_0001901)
-AnnotationAssertion(rdfs:label obo:RO_0002350 "member of"@en)
-SubObjectPropertyOf(obo:RO_0002350 obo:BFO_0000050)
-InverseObjectProperties(obo:RO_0002350 obo:RO_0002351)
-
-# Object Property: obo:RO_0002351 (has member)
-
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0002351 "has member is a mereological relation between a collection and an item.")
-AnnotationAssertion(obo:IAO_0000119 obo:RO_0002351 "SIO")
-AnnotationAssertion(obo:RO_0001900 obo:RO_0002351 obo:RO_0001901)
-AnnotationAssertion(rdfs:label obo:RO_0002351 "has member"@en)
-SubObjectPropertyOf(obo:RO_0002351 obo:BFO_0000051)
-IrreflexiveObjectProperty(obo:RO_0002351)
-
 
 ############################
 #   Data Properties
@@ -742,298 +465,6 @@ DataPropertyRange(obo:OMRSE_00000137 xsd:string)
 ############################
 #   Classes
 ############################
-
-# Class: obo:APOLLO_SV_00000480 (geographical migration of organism)
-
-AnnotationAssertion(obo:IAO_0000115 obo:APOLLO_SV_00000480 "A behavior of one or more organisms that is characterized by the displacement from one geographic region to some target geographic region, and is the realization of either a biological function or (a concretization of) an objective specification."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:APOLLO_SV_00000480 "Matthew Diller")
-AnnotationAssertion(obo:IAO_0000117 obo:APOLLO_SV_00000480 "William R. Hogan")
-AnnotationAssertion(obo:IAO_0000600 obo:APOLLO_SV_00000480 "A behavior of one or more organisms that is characterized by the displacement from one geographic region to some target geographic region, and is the realization of either a biological function or (a concretization of) an objective specification."@en)
-AnnotationAssertion(rdfs:label obo:APOLLO_SV_00000480 "geographical migration of organism"@en)
-SubClassOf(obo:APOLLO_SV_00000480 obo:GO_0007610)
-
-# Class: obo:APOLLO_SV_00000532 (human travel)
-
-AnnotationAssertion(obo:IAO_0000115 obo:APOLLO_SV_00000532 "A geographical migration of an organism belonging to the species Homo sapiens."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:APOLLO_SV_00000532 "Matthew Diller")
-AnnotationAssertion(obo:IAO_0000117 obo:APOLLO_SV_00000532 "William R. Hogan")
-AnnotationAssertion(rdfs:label obo:APOLLO_SV_00000532 "human travel"@en)
-SubClassOf(obo:APOLLO_SV_00000532 obo:APOLLO_SV_00000480)
-
-# Class: obo:GO_0007610 (behavior)
-
-AnnotationAssertion(obo:IAO_0000115 obo:GO_0007610 "The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity."^^xsd:string)
-AnnotationAssertion(oboInOwl:created_by obo:GO_0007610 "janelomax"^^xsd:string)
-AnnotationAssertion(oboInOwl:creation_date obo:GO_0007610 "2012-09-20T14:06:08Z"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasAlternativeId obo:GO_0007610 "GO:0044708"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasDbXref obo:GO_0007610 "Wikipedia:Behavior"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0007610 "behavioral response to stimulus"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0007610 "behaviour"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0007610 "behavioural response to stimulus"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasOBONamespace obo:GO_0007610 "biological_process"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:GO_0007610 "single-organism behavior"^^xsd:string)
-AnnotationAssertion(oboInOwl:id obo:GO_0007610 "GO:0007610"^^xsd:string)
-AnnotationAssertion(oboInOwl:inSubset obo:GO_0007610 <http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate>)
-AnnotationAssertion(oboInOwl:inSubset obo:GO_0007610 <http://purl.obolibrary.org/obo/go#goslim_agr>)
-AnnotationAssertion(oboInOwl:inSubset obo:GO_0007610 <http://purl.obolibrary.org/obo/go#goslim_plant>)
-AnnotationAssertion(oboInOwl:inSubset obo:GO_0007610 <http://purl.obolibrary.org/obo/go#gosubset_prok>)
-AnnotationAssertion(rdfs:comment obo:GO_0007610 "1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.
-2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis)."^^xsd:string)
-AnnotationAssertion(rdfs:label obo:GO_0007610 "behavior"^^xsd:string)
-SubClassOf(obo:GO_0007610 obo:GO_0008150)
-
-# Class: obo:GO_0008150 (biological_process)
-
-AnnotationAssertion(obo:IAO_0000115 obo:GO_0008150 "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end."^^xsd:string)
-AnnotationAssertion(oboInOwl:created_by obo:GO_0008150 "janelomax"^^xsd:string)
-AnnotationAssertion(oboInOwl:creation_date obo:GO_0008150 "2012-09-19T15:05:24Z"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasAlternativeId obo:GO_0008150 "GO:0000004"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasAlternativeId obo:GO_0008150 "GO:0007582"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasAlternativeId obo:GO_0008150 "GO:0044699"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasDbXref obo:GO_0008150 "Wikipedia:Biological_process"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0008150 "biological process"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0008150 "physiological process"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasOBONamespace obo:GO_0008150 "biological_process"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:GO_0008150 "single organism process"^^xsd:string)
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:GO_0008150 "single-organism process"^^xsd:string)
-AnnotationAssertion(oboInOwl:id obo:GO_0008150 "GO:0008150"^^xsd:string)
-AnnotationAssertion(oboInOwl:inSubset obo:GO_0008150 <http://purl.obolibrary.org/obo/go#goslim_aspergillus>)
-AnnotationAssertion(oboInOwl:inSubset obo:GO_0008150 <http://purl.obolibrary.org/obo/go#goslim_candida>)
-AnnotationAssertion(oboInOwl:inSubset obo:GO_0008150 <http://purl.obolibrary.org/obo/go#goslim_chembl>)
-AnnotationAssertion(oboInOwl:inSubset obo:GO_0008150 <http://purl.obolibrary.org/obo/go#goslim_generic>)
-AnnotationAssertion(oboInOwl:inSubset obo:GO_0008150 <http://purl.obolibrary.org/obo/go#goslim_metagenomics>)
-AnnotationAssertion(oboInOwl:inSubset obo:GO_0008150 <http://purl.obolibrary.org/obo/go#goslim_pir>)
-AnnotationAssertion(oboInOwl:inSubset obo:GO_0008150 <http://purl.obolibrary.org/obo/go#goslim_plant>)
-AnnotationAssertion(oboInOwl:inSubset obo:GO_0008150 <http://purl.obolibrary.org/obo/go#goslim_pombe>)
-AnnotationAssertion(oboInOwl:inSubset obo:GO_0008150 <http://purl.obolibrary.org/obo/go#goslim_yeast>)
-AnnotationAssertion(oboInOwl:inSubset obo:GO_0008150 <http://purl.obolibrary.org/obo/go#gosubset_prok>)
-AnnotationAssertion(rdfs:comment obo:GO_0008150 "Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this."^^xsd:string)
-AnnotationAssertion(rdfs:label obo:GO_0008150 "biological_process"^^xsd:string)
-SubClassOf(obo:GO_0008150 obo:BFO_0000015)
-
-# Class: obo:IAO_0000578 (centrally registered identifier)
-
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000578 "Entries in a Column of which the header is \"Pubmed ID\" "@en)
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000578 "PMID:12345"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000578 "The following URL: \"http://www.ncbi.nlm.nih.gov/pubmed/19918065\""@en)
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000578 "The following sentence contains a CRID: \"The article with Pubmed ID: 19918065\". "@en)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000578 "An information content entity that consists of a CRID symbol and additional information about which CRID registry it belongs. "@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000578 "Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation. 
-"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000578 "Note, IAO call 20101124: URIs are not always CRID, as not centrally registered. We acknowledge that CRID is a subset of a larger identifier class, but this subset fulfills our current needs. OBI PURLs are CRID as they are registered with OCLC. UPCs (Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000578 "PERSON: Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000578 "PERSON: Bill Hogan"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000578 "PERSON: Bjoern Peters"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000578 "PERSON: Melanie Courtot"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:IAO_0000578 "Centrally Registered IDentifier")
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000578 "Original proposal from Bjoern, discussions at IAO calls"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000578 "http://purl.obolibrary.org/obo/iao.owl"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:IAO_0000578 "CRID"@en)
-
-# Class: obo:IAO_0020021 (identity document)
-
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0020021 "a document that denotes some identity and is concretized by the bearer of some credential role"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0020021 "Amanda Hicks")
-AnnotationAssertion(rdfs:label obo:IAO_0020021 "identity document"@en)
-EquivalentClasses(obo:IAO_0020021 ObjectIntersectionOf(obo:IAO_0000310 ObjectSomeValuesFrom(obo:IAO_0000136 obo:IAO_0020022) ObjectSomeValuesFrom(obo:RO_0000058 ObjectIntersectionOf(obo:BFO_0000020 ObjectSomeValuesFrom(obo:RO_0000052 ObjectSomeValuesFrom(obo:RO_0000053 obo:IAO_0020024)))) ObjectAllValuesFrom(obo:RO_0000058 ObjectIntersectionOf(obo:BFO_0000020 ObjectSomeValuesFrom(obo:RO_0000052 ObjectSomeValuesFrom(obo:RO_0000053 obo:IAO_0020024))))))
-
-# Class: obo:IAO_0020022 (documented identity)
-
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0020022 "a documented identity is the aggregate of all data items about an entity.  Notice that a documented identity is not itself a document since a document is intended to be understood as a whole and data items about an individual are usually scattered across different documents."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0020022 "Amanda Hicks")
-AnnotationAssertion(rdfs:comment obo:IAO_0020022 "is an aggregate of ICEs also an ICE? yes
-Is part_of the appropriate relation to use for data items and documented identities?"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0020022 "documented identity"@en)
-SubClassOf(obo:IAO_0020022 obo:IAO_0000030)
-SubClassOf(obo:IAO_0020022 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000030) ObjectSomeValuesFrom(ObjectInverseOf(obo:IAO_0000136) obo:IAO_0020021) ObjectAllValuesFrom(obo:BFO_0000051 obo:IAO_0000030)))
-
-# Class: obo:IAO_0020023 (authentication)
-
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0020023 " I order a beer and the bartender authenticates my age by looking at my DOB on my driver's license.  I sign into my email account, and the system authenticates my permission to read the email by checking the password I enter against my password listed in the database.")
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0020023 "Authentication is the act of checking or verifying an identity claim (that is either tacit or explicit). 
-"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0020023 "Amanda Hicks")
-AnnotationAssertion(rdfs:label obo:IAO_0020023 "authentication"@en)
-SubClassOf(obo:IAO_0020023 obo:BFO_0000015)
-SubClassOf(obo:IAO_0020023 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:BFO_0000055 obo:IAO_0020024) ObjectSomeValuesFrom(obo:RO_0000057 obo:IAO_0000027) ObjectSomeValuesFrom(obo:RO_0000057 ObjectSomeValuesFrom(ObjectInverseOf(obo:IAO_0000136) obo:IAO_0000027))))
-
-# Class: obo:IAO_0020024 (credential role)
-
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0020024 " a role that inheres in a concretization of an identity document and is realized by an authentication process"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0020024 "Amanda Hicks"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0020024 "credential role"@en)
-EquivalentClasses(obo:IAO_0020024 ObjectIntersectionOf(obo:BFO_0000023 ObjectSomeValuesFrom(obo:BFO_0000054 obo:IAO_0020023) ObjectSomeValuesFrom(obo:RO_0000052 ObjectSomeValuesFrom(obo:RO_0000053 ObjectSomeValuesFrom(obo:RO_0000059 obo:IAO_0020021)))))
-SubClassOf(obo:IAO_0020024 obo:BFO_0000023)
-
-# Class: obo:OAE_0000002 (medical intervention)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OAE_0000002 "medical intervention is a planned process that has the goal of diagnosing, preventing or relieving illness or injury. ")
-AnnotationAssertion(obo:IAO_0000116 obo:OAE_0000002 "The act of intervening, interfering or interceding with the intent of modifying the outcome. In medicine, an intervention is usually undertaken to help treat or cure a condition. For example, \"Acupuncture as a therapeutic intervention is widely practiced in the United States,\" 
-Reference:
-http://www.medterms.com/script/main/art.asp?articlekey=34214 . Some interventions can be used for diagnosis. ")
-AnnotationAssertion(obo:IAO_0000117 obo:OAE_0000002 "YH")
-AnnotationAssertion(obo:IAO_0000119 obo:OAE_0000002 "WEB: http://wiki.answers.com/Q/What_is_medical_intervention")
-AnnotationAssertion(rdfs:label obo:OAE_0000002 "medical intervention")
-SubClassOf(obo:OAE_0000002 obo:OBI_0000011)
-
-# Class: obo:OAE_0000067 (surgery)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OAE_0000067 "Surgery is a medical procedure that uses operative manual and instrumental techniques on a patient to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance. The key difference between a surgery and a general procedure is the need for an incision. Making an incision, or cutting into the skin to gain access to the body’s deeper tissues or organs, is a defining characteristic of surgery.")
-AnnotationAssertion(obo:IAO_0000117 obo:OAE_0000067 "YH, SS")
-AnnotationAssertion(obo:IAO_0000118 obo:OAE_0000067 "surgical procedure")
-AnnotationAssertion(obo:IAO_0000119 obo:OAE_0000067 "WEB: http://en.wikipedia.org/wiki/Surgery")
-AnnotationAssertion(obo:IAO_0000119 obo:OAE_0000067 "WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm")
-AnnotationAssertion(obo:OAE_0004334 obo:OAE_0000067 "10042609"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:OAE_0000067 "surgery")
-SubClassOf(obo:OAE_0000067 obo:OAE_0002807)
-
-# Class: obo:OAE_0002807 (medical procedure)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OAE_0002807 "a medical intervention that refers to any series of pre-defined steps that should be followed to achieve a desired result.")
-AnnotationAssertion(obo:IAO_0000117 obo:OAE_0002807 "YH, SS")
-AnnotationAssertion(obo:IAO_0000119 obo:OAE_0002807 "WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm")
-AnnotationAssertion(rdfs:label obo:OAE_0002807 "medical procedure"@en)
-SubClassOf(obo:OAE_0002807 obo:OAE_0000002)
-
-# Class: obo:OBI_0000245 (organization)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000245 "organization"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000245 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000245 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000245 "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000245 "BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that.  The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based:
-
-1) there are organization_member_roles (president, treasurer, branch
-editor), with individual persons as bearers
-
-2) there are organization_roles (employer, owner, vendor, patent holder)
-
-3) an organization has a charter / rules / bylaws, which specify what roles
-there are, how they should be realized, and how to modify the
-charter/rules/bylaws themselves.
-
-It is debatable what the organization itself is (some kind of dependent
-continuant or an aggregate of people). This also determines who/what the
-bearer of organization_roles' are. My personal favorite is still to define
-organization as a kind of 'legal entity', but thinking it through leads to
-all kinds of questions that are clearly outside the scope of OBI.
-
-Interestingly enough, it does not seem to matter much where we place
-organization itself, as long as we can subclass it (University, Corporation,
-Government Agency, Hospital), instantiate it (Affymetrix, NCBI, NIH, ISO,
-W3C, University of Oklahoma), and have it play roles.
-
-This leads to my proposal: We define organization through the statements 1 -
-3 above, but without an 'is a' statement for now. We can leave it in its
-current place in the is_a hierarchy (material entity) or move it up to
-'continuant'. We leave further clarifications to BFO, and close this issue
-for now."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000245 "PERSON: Alan Ruttenberg"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000245 "PERSON: Bjoern Peters"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000245 "PERSON: Philippe Rocca-Serra"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000245 "PERSON: Susanna Sansone"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000245 "GROUP: OBI"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:OBI_0000245 "organization"@en)
-SubClassOf(obo:OBI_0000245 obo:BFO_0000040)
-
-# Class: obo:OBI_0100026 (organism)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0100026 "organism"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0100026 "animal"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0100026 "fungus"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0100026 "plant"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0100026 "virus"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0100026 obo:IAO_0000121)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0100026 "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0100026 "10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and 'other organisms')"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0100026 "13-02-2009:
-OBI doesn't take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
-This issue is outside the scope of OBI."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0100026 "GROUP: OBI Biomaterial Branch"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0100026 "WEB: http://en.wikipedia.org/wiki/Organism"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0100026 "organism"@en)
-
-# Class: obo:OBI_0200000 (data transformation)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0200000 "data transformation"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0200000 "The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0200000 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0200000 "A planned process that produces output data from input data."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "Elisabetta Manduchi"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "Helen Parkinson"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "James Malone"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "Melanie Courtot"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "Philippe Rocca-Serra"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "Richard Scheuermann"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "Ryan Brinkman"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "Tina Hernandez-Boussard"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0200000 "data analysis"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0200000 "data processing"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0200000 "Branch editors"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:OBI_0200000 "http://purl.obolibrary.org/obo/obi/2020-08-24/obi.owl"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:OBI_0200000 "data transformation"@en)
-SubClassOf(obo:OBI_0200000 obo:OBI_0000011)
-
-# Class: obo:OBI_0600052 (dialysis)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0600052 "A protocol application that uses diffusion through a semi-permeable membrane to separate an input material into two fractions of different composition"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0600052 "dialysis"@en)
-SubClassOf(obo:OBI_0600052 obo:OBI_0000011)
-
-# Class: obo:OGMS_0000097 (health care encounter)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000097 "A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000097 "Albert Goldfain")
-AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000097 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6")
-AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000097 "creation date: 2011-02-21T09:57:44Z")
-AnnotationAssertion(rdfs:label obo:OGMS_0000097 "health care encounter")
-SubClassOf(obo:OGMS_0000097 obo:OBI_0000011)
-
-# Class: obo:OGMS_0000100 (inpatient encounter)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000100 "TODO"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000100 "Albert Goldfain")
-AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000100 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6")
-AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000100 "creation date: 2011-02-21T09:57:44Z")
-AnnotationAssertion(obo:IAO_0000412 obo:OGMS_0000100 "https://github.com/OGMS/ogms/releases/tag/v2019-04-30"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:OGMS_0000100 "inpatient encounter")
-SubClassOf(obo:OGMS_0000100 obo:OGMS_0000097)
-
-# Class: obo:OGMS_0000102 (injury)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000102 "A part of an organism that has undergone a change in structural integrity and has a higher chance of dysfunction or causing dysfunction in another structure."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OGMS_0000102 "At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making 'injury' a subtype of 'disorder'.")
-AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000102 "Albert Goldfain")
-AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000102 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5")
-AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000102 "creation date: 2011-09-20T09:57:44Z")
-AnnotationAssertion(obo:IAO_0000412 obo:OGMS_0000102 "http://purl.obolibrary.org/obo/ogms.owl"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:OGMS_0000102 "injury")
-SubClassOf(obo:OGMS_0000102 obo:BFO_0000040)
-
-# Class: obo:OMIABIS_0000060 (survey data)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMIABIS_0000060 "A data set that contains the outcome of a survey."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMIABIS_0000060 "Alice Nzinga"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMIABIS_0000060 "Mathias Brochhausen"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:OMIABIS_0000060 "http://purl.obolibrary.org/obo/omiabis.owl"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:OMIABIS_0000060 "survey data"@en)
-SubClassOf(obo:OMIABIS_0000060 obo:IAO_0000027)
-
-# Class: obo:OMIABIS_0001025 (survey plan specification)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMIABIS_0001025 "A plan specification that is realized by  process of gathering information (e.g. by asking questions)."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMIABIS_0001025 "Alice Nzinga"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMIABIS_0001025 "Mathias Brochhausen"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:OMIABIS_0001025 "http://purl.obolibrary.org/obo/omiabis.owl"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:OMIABIS_0001025 "survey plan specification"@en)
-SubClassOf(obo:OMIABIS_0001025 obo:IAO_0000104)
-
-# Class: obo:OMIABIS_0001035 (survey execution)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMIABIS_0001035 "A planned process that realizes the concretization of a survey to generate an output(survey data.)"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:OMIABIS_0001035 "http://purl.obolibrary.org/obo/omiabis.owl"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:OMIABIS_0001035 "survey execution"@en)
-SubClassOf(obo:OMIABIS_0001035 obo:OBI_0000011)
 
 # Class: obo:OMRSE_00000000 (social security number)
 
@@ -1735,6 +1166,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000085 "A role that concretizes 
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000085 "Amanda Hicks"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000085 "obsolete socio-legal human social role"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000085 "true"^^xsd:boolean)
+SubClassOf(obo:OMRSE_00000085 obo:OMRSE_00000001)
 SubClassOf(obo:OMRSE_00000085 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000086 (human role within an organization)
@@ -3331,86 +2763,9 @@ AnnotationAssertion(rdfs:comment obo:OMRSE_00002057 "Note: The requirement for t
 AnnotationAssertion(rdfs:label obo:OMRSE_00002057 "highest level of education is completion of pre-kindergarten data item"@en)
 SubClassOf(obo:OMRSE_00002057 obo:OMRSE_00002045)
 
-# Class: obo:OOSTT_00000074 (academic degree)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000074 "An information content entity that is the specified outcome of and documents the sucessful completion of a tertiary education program."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000074 "John Judkins"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000074 "Mathias Brochhausen"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000074 "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"^^xsd:string)
-AnnotationAssertion(obo:OOSTT_00000030 obo:OOSTT_00000074 "Recognized degree awarded after successful completion of a college or post-graduate porgram."@en)
-AnnotationAssertion(rdfs:label obo:OOSTT_00000074 "academic degree"@en)
-SubClassOf(obo:OOSTT_00000074 obo:IAO_0000030)
-
-# Class: obo:OOSTT_00000081 (associate degree)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000081 "An academic degree awarded by colleges and universities upon completion of a program of study lasting two years."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000081 "John Judkins"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000081 "Mathias Brochhausen"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OOSTT_00000081 "https://en.wikipedia.org/w/index.php?title=Associate_degree&oldid=723897149"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000081 "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"^^xsd:string)
-AnnotationAssertion(obo:OOSTT_00000030 obo:OOSTT_00000081 "Recognition awarded after completion of a specific curriculum from an accredited tertiary education provider that falls between high school and bachelor's degree program."@en)
-AnnotationAssertion(rdfs:label obo:OOSTT_00000081 "associate degree"@en)
-SubClassOf(obo:OOSTT_00000081 obo:OOSTT_00000074)
-
-# Class: obo:OOSTT_00000082 (master's degree)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000082 "An academic degree awarded by universities upon completion of a course of study demonstrating a mastery or high-order overview of a specific field of study or area of professional practice.[1] Within the area studied, graduates are posited to possess advanced knowledge of a specialized body of theoretical and applied topics; high order skills in analysis, critical evaluation, or professional application; and the ability to solve complex problems and think rigorously and independently."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000082 "John Judkins"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000082 "Mathias Brochhausen"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OOSTT_00000082 "https://en.wikipedia.org/w/index.php?title=Master%27s_degree&oldid=726036185"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000082 "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:OOSTT_00000082 "master's degree"@en)
-SubClassOf(obo:OOSTT_00000082 obo:OOSTT_00000074)
-
-# Class: obo:OOSTT_00000083 (bachelor's degree)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000083 "An academic degree awarded by colleges and universities upon completion of a course of study lasting three to seven years."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000083 "John Judkins"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000083 "Mathias Brochhausen"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OOSTT_00000083 "https://en.wikipedia.org/w/index.php?title=Bachelor%27s_degree&oldid=725713923"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000083 "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:OOSTT_00000083 "bachelor's degree"@en)
-SubClassOf(obo:OOSTT_00000083 obo:OOSTT_00000074)
-
-# Class: obo:OOSTT_00000084 (bachelor's of nursing degree)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000084 "An academic degree in the science and principles of nursing, granted by an accredited tertiary education provider after the successful completion of a bachelor's of nursing program."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000084 "John Judkins"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000084 "Mathias Brochhausen"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OOSTT_00000084 "https://en.wikipedia.org/w/index.php?title=Bachelor_of_Science_in_Nursing&oldid=725962822"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000084 "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:OOSTT_00000084 "bachelor's of nursing degree"@en)
-SubClassOf(obo:OOSTT_00000084 obo:OOSTT_00000083)
-
-# Class: obo:OOSTT_00000086 (master's in the science of nursing degree)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000086 "An academic degree in the science and principles of nursing, granted by an accredited tertiary education provider after the successful completion of a master's of nursing program."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000086 "John Judkins"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000086 "Mathias Brochhausen"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000086 "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"^^xsd:string)
-AnnotationAssertion(obo:OOSTT_00000030 obo:OOSTT_00000086 "An advanced academic degree in the principles and practices of nursing, with a focus on administration, education, or advanced nursing practice, granted by an accredited college or university after the successful completion of a master's of nursing program."@en)
-AnnotationAssertion(rdfs:label obo:OOSTT_00000086 "master's in the science of nursing degree"@en)
-SubClassOf(obo:OOSTT_00000086 obo:OOSTT_00000082)
-
 # Class: obo:PCO_0000020 (family)
 
-AnnotationAssertion(obo:IAO_0000114 obo:PCO_0000020 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:PCO_0000020 "A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:PCO_0000020 "Needs axioms for family relationships."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:PCO_0000020 "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25173"@en)
-AnnotationAssertion(rdfs:comment obo:PCO_0000020 "Family membership through marriage or adoption apply primarily to human families. In most species, family membership is defined by common anscestry.")
-AnnotationAssertion(rdfs:label obo:PCO_0000020 "family"@en)
 SubClassOf(obo:PCO_0000020 obo:OMRSE_00000022)
-
-# Class: obo:RO_0002577 (system)
-
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0002577 "A material entity consisting of multiple components that are causally integrated.")
-AnnotationAssertion(obo:IAO_0000116 obo:RO_0002577 "May be replaced by a BFO class, as discussed in http://www.jbiomedsem.com/content/4/1/43")
-AnnotationAssertion(obo:IAO_0000117 obo:RO_0002577 "Chris Mungall")
-AnnotationAssertion(obo:IAO_0000119 obo:RO_0002577 "http://www.jbiomedsem.com/content/4/1/43")
-AnnotationAssertion(obo:IAO_0000412 obo:RO_0002577 "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:RO_0002577 "system")
-SubClassOf(obo:RO_0002577 obo:BFO_0000040)
 
 
 )
