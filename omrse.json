@@ -58,18 +58,6 @@
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002351"
         },
         {
-          "domainClassIds": [
-            "http://purl.obolibrary.org/obo/OBI_0000245"
-          ],
-          "predicateId": "http://purl.obolibrary.org/obo/OBI_0001688"
-        },
-        {
-          "predicateId": "http://purl.obolibrary.org/obo/OBI_0000846",
-          "rangeClassIds": [
-            "http://purl.obolibrary.org/obo/OBI_0000245"
-          ]
-        },
-        {
           "predicateId": "http://purl.obolibrary.org/obo/OMRSE_00000070",
           "rangeClassIds": [
             "http://purl.obolibrary.org/obo/OMRSE_00000057"
@@ -196,16 +184,6 @@
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/GO_0008150"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/IAO_0020023"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
-          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OBI_0000011"
         },
         {
@@ -277,11 +255,6 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000442"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/IAO_0020024"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
@@ -876,11 +849,6 @@
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/IAO_0020022"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
-          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000142"
         },
         {
@@ -1456,11 +1424,6 @@
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000310",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/IAO_0020021"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000310",
-          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000089"
         },
         {
@@ -1859,16 +1822,6 @@
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000132"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0020022",
-          "pred": "http://purl.obolibrary.org/obo/IAO_0000136",
-          "sub": "http://purl.obolibrary.org/obo/IAO_0020021"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0020023",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000054",
-          "sub": "http://purl.obolibrary.org/obo/IAO_0020024"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/IAO_0021001",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000126"
@@ -2214,11 +2167,6 @@
           "sub": "http://purl.obolibrary.org/obo/IAO_0000318"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/OBI_0001688",
-          "pred": "inverseOf",
-          "sub": "http://purl.obolibrary.org/obo/OBI_0000846"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/OBI_0100026",
           "pred": "http://purl.obolibrary.org/obo/RO_0000052",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000049"
@@ -2309,11 +2257,6 @@
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000126"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/OMIABIS_0000048",
-          "pred": "inverseOf",
-          "sub": "http://purl.obolibrary.org/obo/OMIABIS_0000008"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/OMIABIS_0000060",
           "pred": "http://purl.obolibrary.org/obo/OBI_0000299",
           "sub": "http://purl.obolibrary.org/obo/OMIABIS_0001035"
@@ -2347,6 +2290,11 @@
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000001",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000082"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000001",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000085"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000001",
@@ -3510,11 +3458,6 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0000053",
-          "pred": "inverseOf",
-          "sub": "http://purl.obolibrary.org/obo/RO_0000052"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/RO_0000053",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0000085"
         },
@@ -3546,11 +3489,6 @@
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0000056",
           "pred": "subPropertyOf",
-          "sub": "http://purl.obolibrary.org/obo/RO_0002217"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/RO_0000056",
-          "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002331"
         },
         {
@@ -3567,11 +3505,6 @@
           "obj": "http://purl.obolibrary.org/obo/RO_0000057",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/OBI_0000299"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/RO_0000057",
-          "pred": "subPropertyOf",
-          "sub": "http://purl.obolibrary.org/obo/RO_0002218"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0000057",
@@ -3682,11 +3615,6 @@
           "obj": "http://purl.obolibrary.org/obo/RO_0002216",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002215"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/RO_0002218",
-          "pred": "inverseOf",
-          "sub": "http://purl.obolibrary.org/obo/RO_0002217"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0002222",
@@ -3852,11 +3780,6 @@
           "obj": "http://purl.obolibrary.org/obo/RO_0002336",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002015"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/RO_0002351",
-          "pred": "inverseOf",
-          "sub": "http://purl.obolibrary.org/obo/RO_0002350"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0002404",
@@ -4311,22 +4234,12 @@
         {
           "obj": "http://www.w3.org/2002/07/owl#topObjectProperty",
           "pred": "subPropertyOf",
-          "sub": "http://purl.obolibrary.org/obo/BFO_0000075"
-        },
-        {
-          "obj": "http://www.w3.org/2002/07/owl#topObjectProperty",
-          "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/OMIABIS_0000008"
         },
         {
           "obj": "http://www.w3.org/2002/07/owl#topObjectProperty",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000071"
-        },
-        {
-          "obj": "http://www.w3.org/2002/07/owl#topObjectProperty",
-          "pred": "subPropertyOf",
-          "sub": "http://purl.obolibrary.org/obo/RO_0002222"
         }
       ],
       "equivalentNodesSets": [],
@@ -4360,19 +4273,6 @@
           ],
           "restrictions": [
             null
-          ]
-        },
-        {
-          "definedClassId": "http://purl.obolibrary.org/obo/IAO_0020024",
-          "genusIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000023"
-          ],
-          "restrictions": [
-            null,
-            {
-              "fillerId": "http://purl.obolibrary.org/obo/IAO_0020023",
-              "propertyId": "http://purl.obolibrary.org/obo/BFO_0000054"
-            }
           ]
         },
         {
@@ -4733,11 +4633,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-02-10"
+            "val": "2021-02-15"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-02-10/omrse.json",
+        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-02-15/omrse.json",
         "xrefs": []
       },
       "nodes": [
@@ -6326,23 +6226,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/BFO_0000075",
-          "lbl": "is aggregate of",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "aggregate of"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "aggregate_of"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/BFO_0000140",
           "lbl": "continuant fiat boundary",
           "meta": {
@@ -6744,10 +6627,6 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "janelomax"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
                 "val": "jl"
               },
               {
@@ -6785,9 +6664,7 @@
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate",
-              "http://purl.obolibrary.org/obo/go#goslim_agr",
-              "http://purl.obolibrary.org/obo/go#goslim_plant",
-              "http://purl.obolibrary.org/obo/go#gosubset_prok"
+              "http://purl.obolibrary.org/obo/go#goslim_agr"
             ],
             "synonyms": [
               {
@@ -6826,10 +6703,6 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "janelomax"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
                 "val": "jl"
               },
               {
@@ -6854,7 +6727,6 @@
               }
             ],
             "comments": [
-              "Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.",
               "Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this."
             ],
             "definition": {
@@ -6872,8 +6744,7 @@
               "http://purl.obolibrary.org/obo/go#goslim_pir",
               "http://purl.obolibrary.org/obo/go#goslim_plant",
               "http://purl.obolibrary.org/obo/go#goslim_pombe",
-              "http://purl.obolibrary.org/obo/go#goslim_yeast",
-              "http://purl.obolibrary.org/obo/go#gosubset_prok"
+              "http://purl.obolibrary.org/obo/go#goslim_yeast"
             ],
             "synonyms": [
               {
@@ -9045,7 +8916,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/IAO_0000117",
-          "lbl": "definition editor",
+          "lbl": "term editor",
           "meta": {
             "basicPropertyValues": [
               {
@@ -12355,25 +12226,9 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/IAO_0000578",
-          "lbl": "CRID",
+          "lbl": "centrally registered identifier",
           "meta": {
             "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "Entries in a Column of which the header is \"Pubmed ID\" "
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "PMID:12345"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "The following URL: \"http://www.ncbi.nlm.nih.gov/pubmed/19918065\""
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "The following sentence contains a CRID: \"The article with Pubmed ID: 19918065\". "
-              },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
                 "val": "The sentence \"The article has Pubmed ID 12345.\" contains a CRID that has two parts: one part is the CRID symbol, which is '12345'; the other part denotes the CRID registry, which is Pubmed."
@@ -12389,10 +12244,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation. \n"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
@@ -12419,16 +12270,8 @@
                 "val": "CRID"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "Centrally Registered IDentifier"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "Original proposal from Bjoern, discussions at IAO calls"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/iao.owl"
               }
             ],
             "definition": {
@@ -14837,81 +14680,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/IAO_0020021",
-          "lbl": "identity document",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Amanda Hicks"
-              }
-            ],
-            "definition": {
-              "val": "a document that denotes some identity and is concretized by the bearer of some credential role",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/IAO_0020022",
-          "lbl": "documented identity",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Amanda Hicks"
-              }
-            ],
-            "comments": [
-              "is an aggregate of ICEs also an ICE? yes\nIs part_of the appropriate relation to use for data items and documented identities?"
-            ],
-            "definition": {
-              "val": "a documented identity is the aggregate of all data items about an entity.  Notice that a documented identity is not itself a document since a document is intended to be understood as a whole and data items about an individual are usually scattered across different documents.",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/IAO_0020023",
-          "lbl": "authentication",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": " I order a beer and the bartender authenticates my age by looking at my DOB on my driver's license.  I sign into my email account, and the system authenticates my permission to read the email by checking the password I enter against my password listed in the database."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Amanda Hicks"
-              }
-            ],
-            "definition": {
-              "val": "Authentication is the act of checking or verifying an identity claim (that is either tacit or explicit). \n",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/IAO_0020024",
-          "lbl": "credential role",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Amanda Hicks"
-              }
-            ],
-            "definition": {
-              "val": " a role that inheres in a concretization of an identity document and is realized by an authentication process",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/IAO_0100001",
           "lbl": "term replaced by",
           "meta": {
@@ -16118,10 +15886,6 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000121"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
                 "val": "http://purl.obolibrary.org/obo/IAO_0000122"
               },
               {
@@ -16212,10 +15976,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
                 "val": "http://purl.obolibrary.org/obo/obi.owl"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/obi/2020-08-24/obi.owl"
               }
             ],
             "definition": {
@@ -16344,10 +16104,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
                 "val": "creation date: 2011-02-21T09:57:44Z"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "https://github.com/OGMS/ogms/releases/tag/v2019-04-30"
               }
             ],
             "definition": {
@@ -16364,15 +16120,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making 'injury' a subtype of 'disorder'."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making 'injury' a subtype of 'disorder'.\n\nNote: Adopted subtype of disorder, and injury can occur at the scale of organism down to cellular level."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Albert Goldfain"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -16380,27 +16128,15 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5\n\nOGMS call adoption- 16 SEPT 2015\nhttps://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/edit"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
-                "val": "creation date: 2011-09-20T09:57:44Z"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
                 "val": "creation date: 2011-09-20T09:57:44Z\nedited date: 30 SEPT 2015"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/ogms.owl"
               }
             ],
             "definition": {
-              "val": "A part of an organism that has undergone a change in structural integrity and has a higher chance of dysfunction or causing dysfunction in another structure.",
+              "val": "A disorder that involves some structural damage that is immediately caused by a catastrophic external force.",
               "xrefs": []
             }
           },
@@ -16414,10 +16150,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Mathias Brochhausen"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
@@ -16463,10 +16195,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204."
               }
             ],
             "definition": {
@@ -16488,10 +16216,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Mathias Brochhausen"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/omiabis.owl"
               }
             ],
             "definition": {
@@ -16513,10 +16237,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Mathias Brochhausen"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/omiabis.owl"
               }
             ],
             "definition": {
@@ -16530,12 +16250,6 @@
           "id": "http://purl.obolibrary.org/obo/OMIABIS_0001035",
           "lbl": "survey execution",
           "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/omiabis.owl"
-              }
-            ],
             "definition": {
               "val": "A planned process that realizes the concretization of a survey to generate an output(survey data.)",
               "xrefs": []
@@ -21342,10 +21056,6 @@
                 "val": "Mathias Brochhausen"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/OOSTT_00000030",
                 "val": "Recognized degree awarded after successful completion of a college or post-graduate porgram."
               }
@@ -21375,10 +21085,6 @@
                 "val": "https://en.wikipedia.org/w/index.php?title=Associate_degree&oldid=723897149"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/OOSTT_00000030",
                 "val": "Recognition awarded after completion of a specific curriculum from an accredited tertiary education provider that falls between high school and bachelor's degree program."
               }
@@ -21406,10 +21112,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "https://en.wikipedia.org/w/index.php?title=Master%27s_degree&oldid=726036185"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"
               }
             ],
             "definition": {
@@ -21435,10 +21137,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "https://en.wikipedia.org/w/index.php?title=Bachelor%27s_degree&oldid=725713923"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"
               }
             ],
             "definition": {
@@ -21464,10 +21162,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "https://en.wikipedia.org/w/index.php?title=Bachelor_of_Science_in_Nursing&oldid=725962822"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"
               }
             ],
             "definition": {
@@ -21489,10 +21183,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Mathias Brochhausen"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/OOSTT_00000030",
@@ -21557,10 +21247,6 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "'inheres in at all times'"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "inheres_in"
               },
               {
@@ -21595,10 +21281,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "bearer of"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
@@ -21706,10 +21388,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
                 "val": "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "concretized by at some time"
               }
             ],
             "definition": {
@@ -21732,9 +21410,6 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
                 "val": "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."
               }
-            ],
-            "comments": [
-              "It is recommended to not use this if possible in OMRSE.  According to OntoBee this relation has been obsoleted and replaced with 'concretization of at all times'.  As of Dec. 2, 2013 iao-main still uses this relation.  "
             ],
             "definition": {
               "val": "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.",
@@ -22480,10 +22155,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "<="
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"
               }
             ],
             "comments": [
@@ -22503,10 +22174,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "David Osumi-Sutherland"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"
               }
             ],
             "comments": [
@@ -22822,13 +22489,9 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002217",
-          "lbl": "actively participates in",
+          "lbl": "obsolete actively participates in",
           "meta": {
             "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000125"
-              },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Chris Mungall"
@@ -22842,7 +22505,7 @@
               "Obsoleted as the inverse property was obsoleted."
             ],
             "definition": {
-              "val": "x actively participates in y if and only if x participates in y and x realizes some active role",
+              "val": "OBSOLETE x actively participates in y if and only if x participates in y and x realizes some active role",
               "xrefs": []
             },
             "deprecated": true
@@ -22851,7 +22514,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002218",
-          "lbl": "has active participant",
+          "lbl": "obsolete has active participant",
           "meta": {
             "basicPropertyValues": [
               {
@@ -22908,10 +22571,6 @@
                 "val": "Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends."
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"
-              },
-              {
                 "pred": "http://purl.org/dc/terms/source",
                 "val": "https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1"
               }
@@ -22941,10 +22600,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "Allen"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"
               }
             ],
             "definition": {
@@ -23001,10 +22656,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Chris Mungall"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"
               }
             ],
             "definition": {
@@ -24246,10 +23897,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "http://www.jbiomedsem.com/content/4/1/43"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"
               }
             ],
             "definition": {
@@ -25108,16 +24755,6 @@
         {
           "id": "http://purl.obolibrary.org/obo/PCO_0000055",
           "lbl": "has member of",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://www.geneontology.org/formats/oboInOwl#inSubset",
-          "lbl": "in_subset",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://www.w3.org/2000/01/rdf-schema#label",
-          "lbl": "label",
           "type": "PROPERTY"
         },
         {

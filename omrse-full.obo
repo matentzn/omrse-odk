@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2021-02-10/omrse-full.owl
+data-version: omrse/releases/2021-02-15/omrse-full.owl
 remark: This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt
 ontology: omrse/omrse-full
 property_value: http://purl.org/dc/elements/1.1/contributor "Daniel Welch" xsd:string
@@ -10,7 +10,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:s
 property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
 property_value: owl:versionInfo "2020-10-27" xsd:string
-property_value: owl:versionInfo "2021-02-10" xsd:string
+property_value: owl:versionInfo "2021-02-15" xsd:string
 name: The Ontology of Medically Related Social Entities
 
 [Term]
@@ -629,15 +629,12 @@ def: "The internally coordinated responses (actions or inactions) of animals (in
 comment: 1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.\n2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).
 subset: gocheck_do_not_manually_annotate
 subset: goslim_agr
-subset: goslim_plant
-subset: gosubset_prok
 synonym: "behavioral response to stimulus" EXACT []
 synonym: "behaviour" EXACT []
 synonym: "behavioural response to stimulus" EXACT []
 synonym: "single-organism behavior" RELATED []
 xref: Wikipedia:Behavior
 is_a: GO:0008150 ! biological_process
-created_by: janelomax
 created_by: jl
 creation_date: 2012-09-20T14:06:08Z
 
@@ -649,8 +646,6 @@ alt_id: GO:0000004
 alt_id: GO:0007582
 alt_id: GO:0044699
 def: "A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
-def: "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." []
-comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
 comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
 subset: goslim_aspergillus
 subset: goslim_candida
@@ -661,15 +656,12 @@ subset: goslim_pir
 subset: goslim_plant
 subset: goslim_pombe
 subset: goslim_yeast
-subset: gosubset_prok
 synonym: "biological process" EXACT []
 synonym: "physiological process" EXACT []
 synonym: "single organism process" RELATED []
 synonym: "single-organism process" RELATED []
 xref: Wikipedia:Biological_process
-is_a: BFO:0000015 ! process
 disjoint_from: OBI:0000011 ! planned process
-created_by: janelomax
 created_by: jl
 creation_date: 2012-09-19T15:05:24Z
 
@@ -2078,29 +2070,20 @@ property_value: IAO:0000119 "Original proposal from Bjoern, discussions at IAO c
 [Term]
 id: IAO:0000578
 name: centrally registered identifier
-name: CRID
 def: "An information content entity that consists of a CRID symbol and additional information about the CRID registry to which it belongs." []
-def: "An information content entity that consists of a CRID symbol and additional information about which CRID registry it belongs. " []
 is_a: IAO:0020000 ! identifier
 relationship: BFO:0000051 IAO:0000577 ! centrally registered identifier symbol
-property_value: IAO:0000112 "Entries in a Column of which the header is \"Pubmed ID\" " xsd:string
-property_value: IAO:0000112 PMID:12345 xsd:string
-property_value: IAO:0000112 "The following sentence contains a CRID: \"The article with Pubmed ID: 19918065\". " xsd:string
-property_value: IAO:0000112 "The following URL: \"http://www.ncbi.nlm.nih.gov/pubmed/19918065\"" xsd:string
 property_value: IAO:0000112 "The sentence \"The article has Pubmed ID 12345.\" contains a CRID that has two parts: one part is the CRID symbol, which is '12345'; the other part denotes the CRID registry, which is Pubmed." xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000116 "2014-05-05: In defining this term we take no position on what the CRID denotes. In particular do not assume it denotes a *record* in the CRID registry (since the registry might not have 'records')." xsd:string
 property_value: IAO:0000116 "Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation." xsd:string
-property_value: IAO:0000116 "Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation. \n" xsd:string
 property_value: IAO:0000116 "Note, IAO call 20101124: URIs are not always CRID, as not centrally registered. We acknowledge that CRID is a subset of a larger identifier class, but this subset fulfills our current needs. OBI PURLs are CRID as they are registered with OCLC. UPCs (Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered." xsd:string
 property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON: Bill Hogan" xsd:string
 property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
 property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
-property_value: IAO:0000118 "Centrally Registered IDentifier" xsd:string
 property_value: IAO:0000118 "CRID" xsd:string
 property_value: IAO:0000119 "Original proposal from Bjoern, discussions at IAO calls" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl xsd:string
 
 [Term]
 id: IAO:0000579
@@ -2775,38 +2758,6 @@ property_value: IAO:0000111 "identifier" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao/pno.owl
 
 [Term]
-id: IAO:0020021
-name: identity document
-def: "a document that denotes some identity and is concretized by the bearer of some credential role" []
-is_a: IAO:0000310 ! document
-relationship: IAO:0000136 IAO:0020022 ! is about documented identity
-property_value: IAO:0000117 "Amanda Hicks" xsd:string
-
-[Term]
-id: IAO:0020022
-name: documented identity
-def: "a documented identity is the aggregate of all data items about an entity.  Notice that a documented identity is not itself a document since a document is intended to be understood as a whole and data items about an individual are usually scattered across different documents." []
-comment: is an aggregate of ICEs also an ICE? yes\nIs part_of the appropriate relation to use for data items and documented identities?
-is_a: IAO:0000030 ! information content entity
-property_value: IAO:0000117 "Amanda Hicks" xsd:string
-
-[Term]
-id: IAO:0020023
-name: authentication
-def: "Authentication is the act of checking or verifying an identity claim (that is either tacit or explicit). \n" []
-is_a: BFO:0000015 ! process
-property_value: IAO:0000112 " I order a beer and the bartender authenticates my age by looking at my DOB on my driver's license.  I sign into my email account, and the system authenticates my permission to read the email by checking the password I enter against my password listed in the database." xsd:string
-property_value: IAO:0000117 "Amanda Hicks" xsd:string
-
-[Term]
-id: IAO:0020024
-name: credential role
-def: " a role that inheres in a concretization of an identity document and is realized by an authentication process" []
-is_a: BFO:0000023 ! role
-relationship: BFO:0000054 IAO:0020023 ! authentication
-property_value: IAO:0000117 "Amanda Hicks" xsd:string
-
-[Term]
 id: IAO:8000000
 name: ontology module
 is_a: IAO:0000102 ! data about an ontology part
@@ -3038,7 +2989,6 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 id: OBI:0000245
 name: organization
 def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
-def: "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
 is_a: BFO:0000040 ! material entity
 property_value: IAO:0000111 "organization" xsd:string
 property_value: IAO:0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods." xsd:string
@@ -3073,7 +3023,6 @@ property_value: IAO:0000112 "animal" xsd:string
 property_value: IAO:0000112 "fungus" xsd:string
 property_value: IAO:0000112 "plant" xsd:string
 property_value: IAO:0000112 "virus" xsd:string
-property_value: IAO:0000114 IAO:0000121
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000116 "10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and 'other organisms')" xsd:string
 property_value: IAO:0000116 "13-02-2009:\nOBI doesn't take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.\nThis issue is outside the scope of OBI." xsd:string
@@ -3101,7 +3050,6 @@ property_value: IAO:0000118 "data analysis" xsd:string
 property_value: IAO:0000118 "data processing" xsd:string
 property_value: IAO:0000119 "Branch editors" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi/2020-08-24/obi.owl xsd:string
 
 [Term]
 id: OBI:0500000
@@ -3120,7 +3068,6 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 [Term]
 id: OBI:0600052
 name: dialysis
-def: "A protocol application that uses diffusion through a semi-permeable membrane to separate an input material into two fractions of different composition" []
 def: "a protocol application that uses diffusion through a semi-permeable membrane to separate an input material into two fractions of different composition" []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
@@ -3149,23 +3096,16 @@ is_a: OGMS:0000097 ! health care encounter
 property_value: IAO:0000117 "Albert Goldfain" xsd:string
 property_value: IAO:0000119 http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6 xsd:string
 property_value: IAO:0000232 "creation date: 2011-02-21T09:57:44Z" xsd:string
-property_value: IAO:0000412 https://github.com/OGMS/ogms/releases/tag/v2019-04-30 xsd:string
 
 [Term]
 id: OGMS:0000102
 name: injury
 def: "A disorder that involves some structural damage that is immediately caused by a catastrophic external force." []
-def: "A part of an organism that has undergone a change in structural integrity and has a higher chance of dysfunction or causing dysfunction in another structure." []
 is_a: BFO:0000040 ! material entity
-property_value: IAO:0000116 "At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making 'injury' a subtype of 'disorder'." xsd:string
 property_value: IAO:0000116 "At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making 'injury' a subtype of 'disorder'.\n\nNote: Adopted subtype of disorder, and injury can occur at the scale of organism down to cellular level." xsd:string
-property_value: IAO:0000117 "Albert Goldfain" xsd:string
 property_value: IAO:0000117 "Albert Goldfain\nSagar Jain" xsd:string
-property_value: IAO:0000119 http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5 xsd:string
 property_value: IAO:0000119 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5\n\nOGMS call adoption- 16 SEPT 2015\nhttps://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/edit" xsd:string
-property_value: IAO:0000232 "creation date: 2011-09-20T09:57:44Z" xsd:string
 property_value: IAO:0000232 "creation date: 2011-09-20T09:57:44Z\nedited date: 30 SEPT 2015" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ogms.owl xsd:string
 
 [Term]
 id: OMIABIS:0000060
@@ -3174,7 +3114,6 @@ def: "A data set that contains the outcome of a survey." []
 is_a: IAO:0000027 ! data item
 property_value: IAO:0000117 "Alice Nzinga" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/omiabis.owl xsd:string
 
 [Term]
 id: OMIABIS:0001025
@@ -3183,7 +3122,6 @@ def: "A plan specification that is realized by  process of gathering information
 is_a: IAO:0000104 ! plan specification
 property_value: IAO:0000117 "Alice Nzinga" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/omiabis.owl xsd:string
 
 [Term]
 id: OMIABIS:0001035
@@ -3191,7 +3129,6 @@ name: survey execution
 def: "A planned process that realizes the concretization of a survey to generate an output(survey data.)" []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000299 OMIABIS:0000060 ! has_specified_output survey data
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/omiabis.owl xsd:string
 
 [Term]
 id: OMRSE:00000000
@@ -3657,8 +3594,8 @@ name: hospital organization
 def: "An organization that is the bearer of a hospital role." []
 is_a: OBI:0000245 ! organization
 intersection_of: OBI:0000245 ! organization
-intersection_of: RO:0000053 OMRSE:00000054 ! is bearer of hospital role
-relationship: RO:0000053 OMRSE:00000054 ! is bearer of hospital role
+intersection_of: RO:0000053 OMRSE:00000054 ! bearer of hospital role
+relationship: RO:0000053 OMRSE:00000054 ! bearer of hospital role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
@@ -3667,8 +3604,8 @@ name: school organization
 def: "An organization that is the bearer of a school role." []
 is_a: OBI:0000245 ! organization
 intersection_of: OBI:0000245 ! organization
-intersection_of: RO:0000053 OMRSE:00000055 ! is bearer of school role
-relationship: RO:0000053 OMRSE:00000055 ! is bearer of school role
+intersection_of: RO:0000053 OMRSE:00000055 ! bearer of school role
+relationship: RO:0000053 OMRSE:00000055 ! bearer of school role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
@@ -3705,9 +3642,9 @@ name: facility
 def: "An architectural structure that bears some function." []
 is_a: OMRSE:00000061 ! architectural structure
 intersection_of: OMRSE:00000061 ! architectural structure
-intersection_of: RO:0000053 BFO:0000034 ! is bearer of function
+intersection_of: RO:0000053 BFO:0000034 ! bearer of function
 relationship: OMRSE:00000068 OBI:0000245 {http://www.w3.org/2002/07/owl#versionInfo="09/09/2017"} ! is administered by organization
-relationship: RO:0000053 BFO:0000034 ! is bearer of function
+relationship: RO:0000053 BFO:0000034 ! bearer of function
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
@@ -3716,7 +3653,7 @@ name: hospital facility
 def: "A health care facility that bears the function to provide acute and intensive healthcare services and that is run by a hospital organization and is the bearer of a hospital function." []
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OMRSE:00000160 ! acute care encounter
-relationship: RO:0000053 OMRSE:00000052 ! is bearer of hospital function
+relationship: RO:0000053 OMRSE:00000052 ! bearer of hospital function
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
 
@@ -3725,7 +3662,7 @@ id: OMRSE:00000064
 name: school facility
 def: "A facility that is run by a school organization and is the bearer of a school function." []
 is_a: OMRSE:00000062 ! facility
-relationship: RO:0000053 OMRSE:00000053 ! is bearer of school function
+relationship: RO:0000053 OMRSE:00000053 ! bearer of school function
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
@@ -3814,7 +3751,7 @@ property_value: IAO:0000118 "employee" xsd:string
 id: OMRSE:00000078
 name: workplace facility
 is_a: OMRSE:00000062 ! facility
-relationship: RO:0000053 OMRSE:00000079 ! is bearer of workplace function
+relationship: RO:0000053 OMRSE:00000079 ! bearer of workplace function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -3859,6 +3796,7 @@ is_a: BFO:0000038 ! one-dimensional temporal region
 id: OMRSE:00000085
 name: obsolete socio-legal human social role
 is_a: ObsoleteClass
+is_a: OMRSE:00000001 ! human social role
 property_value: IAO:0000117 "A role that concretizes a socio-lega generically dependent continuant" xsd:string
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
@@ -3982,7 +3920,7 @@ name: hospice facility
 def: "A health care facility that bears a function to provide healthcare to the sick or terminally ill" []
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OMRSE:00000152 ! skilled nursing encounter
-relationship: RO:0000053 OMRSE:00000117 ! is bearer of hospice function
+relationship: RO:0000053 OMRSE:00000117 ! bearer of hospice function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Emma Norris" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
@@ -3993,7 +3931,7 @@ id: OMRSE:00000105
 name: skilled nursing facility
 is_a: OMRSE:00000150 ! community living health care facility
 relationship: BFO:0000067 OMRSE:00000152 ! skilled nursing encounter
-relationship: RO:0000053 OMRSE:00000123 ! is bearer of skilled nursing function
+relationship: RO:0000053 OMRSE:00000123 ! bearer of skilled nursing function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -4002,7 +3940,7 @@ name: rehabilitation facility
 def: "A facility to assist in physical or addiction recovery" []
 is_a: OMRSE:00000150 ! community living health care facility
 relationship: BFO:0000067 OMRSE:00000152 ! skilled nursing encounter
-relationship: RO:0000053 OMRSE:00000122 ! is bearer of rehabilitation function
+relationship: RO:0000053 OMRSE:00000122 ! bearer of rehabilitation function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Emma Norris" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
@@ -4014,7 +3952,7 @@ name: nursing home facility
 def: "A facility that is run by a nursing home organization and is the bearer of a nursing home function." []
 is_a: OMRSE:00000150 ! community living health care facility
 relationship: BFO:0000067 OMRSE:00000152 ! skilled nursing encounter
-relationship: RO:0000053 OMRSE:00000125 ! is bearer of nursing home function
+relationship: RO:0000053 OMRSE:00000125 ! bearer of nursing home function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -4022,7 +3960,7 @@ id: OMRSE:00000108
 name: residential health care facility
 def: "A community living health care facility that provides health care services in a home-like setting" []
 is_a: OMRSE:00000150 ! community living health care facility
-relationship: RO:0000053 OMRSE:00000124 ! is bearer of residential function
+relationship: RO:0000053 OMRSE:00000124 ! bearer of residential function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
 
@@ -4032,7 +3970,7 @@ name: overnight dialysis facility
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OBI:0600052 ! dialysis
 relationship: BFO:0000067 OMRSE:00000152 ! skilled nursing encounter
-relationship: RO:0000053 OMRSE:00000121 ! is bearer of overnight dialysis function
+relationship: RO:0000053 OMRSE:00000121 ! bearer of overnight dialysis function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -4041,7 +3979,7 @@ name: outpatient clinic facility
 def: "A health care facility that bears a function to provide low intensity healthcare services to patients on a short-term basis, with patients leaving on the same date as arriving (i.e., without them staying overnight)" []
 comment: Broadened from treatment to healthcare services generally.  "Low intensity" is not defined at the moment, but is needed to differentiate from same-day surgery centers or observation stays in hospitals that last <24 hours.  The idea is that few invasive procedures are performed, and the ones that are invasive are not typically much worse than a blood draw.  Maybe bone marrow biopsy is as aggressive as it gets.  I wonder if hematologists do that on an outpatient basis.
 is_a: OMRSE:00000102 ! health care facility
-relationship: RO:0000053 OMRSE:00000120 ! is bearer of outpatient clinic function
+relationship: RO:0000053 OMRSE:00000120 ! bearer of outpatient clinic function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Emma Norris" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
@@ -4051,7 +3989,7 @@ property_value: IAO:0000119 "Human Behaviour Change Project" xsd:string
 id: OMRSE:00000111
 name: physician office facility
 is_a: OMRSE:00000102 ! health care facility
-relationship: RO:0000053 OMRSE:00000119 ! is bearer of physician office function
+relationship: RO:0000053 OMRSE:00000119 ! bearer of physician office function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -4059,14 +3997,14 @@ id: OMRSE:00000112
 name: ambulatory surgery facility
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OAE:0000067 ! surgery
-relationship: RO:0000053 OMRSE:00000116 ! is bearer of ambulatory surgery function
+relationship: RO:0000053 OMRSE:00000116 ! bearer of ambulatory surgery function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
 id: OMRSE:00000113
 name: urgent care facility
 is_a: OMRSE:00000102 ! health care facility
-relationship: RO:0000053 OMRSE:00000115 ! is bearer of urgent care function
+relationship: RO:0000053 OMRSE:00000115 ! bearer of urgent care function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -4075,7 +4013,7 @@ name: emergency department facility
 def: "A health care facility that bears a function to provide emergency healthcare services and the acute care of patients who present without prior appointment, having arrived either by their own means or by ambulance" []
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OMRSE:00000160 ! acute care encounter
-relationship: RO:0000053 OMRSE:00000118 ! is bearer of emergency department function
+relationship: RO:0000053 OMRSE:00000118 ! bearer of emergency department function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Emma Norris" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
@@ -4190,7 +4128,7 @@ id: OMRSE:00000132
 name: obsolete identity datum
 def: "An identity datum is an information content entity that is the output of some identitification process and is intended to be a truthful statement about a person's social identity.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
 is_a: OMRSE:00000179 ! answer to identity question
-relationship: BFO:0000050 IAO:0020022 ! documented identity
+relationship: BFO:0000050 IAO:0020022
 relationship: IAO:0000136 NCBITaxon:9606 ! is about
 property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
 is_obsolete: true
@@ -4308,7 +4246,7 @@ id: OMRSE:00000148
 name: adult foster home facility
 def: "a facility that is run by an adult foster home organization and is the bearer of an adult foster home organization" []
 is_a: OMRSE:00000150 ! community living health care facility
-relationship: RO:0000053 OMRSE:00000149 ! is bearer of adult foster home function
+relationship: RO:0000053 OMRSE:00000149 ! bearer of adult foster home function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -4323,7 +4261,7 @@ def: "a health care facility that also bears a residence function and thus one i
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OMRSE:00000154 ! assistance with activities of daily living care encounter
 relationship: BFO:0000067 OMRSE:00000155 ! assistance with instrumental activities of daily living encounter
-relationship: RO:0000053 OMRSE:00000075 ! is bearer of residence function
+relationship: RO:0000053 OMRSE:00000075 ! bearer of residence function
 
 [Term]
 id: OMRSE:00000151
@@ -4404,7 +4342,7 @@ relationship: RO:0000056 OMRSE:00000168 ! participates in questions asking proce
 id: OMRSE:00000164
 name: home health care organization
 is_a: OBI:0000245 ! organization
-relationship: RO:0000053 BFO:0000034 ! is bearer of function
+relationship: RO:0000053 BFO:0000034 ! bearer of function
 
 [Term]
 id: OMRSE:00000165
@@ -4445,7 +4383,7 @@ is_a: OGMS:0000097 ! health care encounter
 id: OMRSE:00000171
 name: hospice organization
 is_a: OBI:0000245 ! organization
-relationship: RO:0000053 OMRSE:00000117 ! is bearer of hospice function
+relationship: RO:0000053 OMRSE:00000117 ! bearer of hospice function
 
 [Term]
 id: OMRSE:00000172
@@ -4630,7 +4568,7 @@ id: OMRSE:00000195
 name: linguistic community
 def: "A maximal aggregate of material entities such that each member bears a linguistic competence for the same language." []
 is_a: BFO:0000040 ! material entity
-relationship: RO:0000053 OMRSE:00000194 ! is bearer of language
+relationship: RO:0000053 OMRSE:00000194 ! bearer of language
 property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
@@ -5448,7 +5386,6 @@ def: "An information content entity that is the specified outcome of and documen
 is_a: IAO:0000030 ! information content entity
 property_value: IAO:0000117 "John Judkins" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl xsd:string
 property_value: OOSTT:00000030 "Recognized degree awarded after successful completion of a college or post-graduate porgram." xsd:string
 
 [Term]
@@ -5459,7 +5396,6 @@ is_a: OOSTT:00000074 ! academic degree
 property_value: IAO:0000117 "John Judkins" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 https://en.wikipedia.org/w/index.php?title=Associate_degree&oldid=723897149 xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl xsd:string
 property_value: OOSTT:00000030 "Recognition awarded after completion of a specific curriculum from an accredited tertiary education provider that falls between high school and bachelor's degree program." xsd:string
 
 [Term]
@@ -5470,7 +5406,6 @@ is_a: OOSTT:00000074 ! academic degree
 property_value: IAO:0000117 "John Judkins" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 https://en.wikipedia.org/w/index.php?title=Master%27s_degree&oldid=726036185 xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl xsd:string
 
 [Term]
 id: OOSTT:00000083
@@ -5480,7 +5415,6 @@ is_a: OOSTT:00000074 ! academic degree
 property_value: IAO:0000117 "John Judkins" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 https://en.wikipedia.org/w/index.php?title=Bachelor%27s_degree&oldid=725713923 xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl xsd:string
 
 [Term]
 id: OOSTT:00000084
@@ -5490,7 +5424,6 @@ is_a: OOSTT:00000083 ! bachelor's degree
 property_value: IAO:0000117 "John Judkins" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 https://en.wikipedia.org/w/index.php?title=Bachelor_of_Science_in_Nursing&oldid=725962822 xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl xsd:string
 
 [Term]
 id: OOSTT:00000086
@@ -5499,7 +5432,6 @@ def: "An academic degree in the science and principles of nursing, granted by an
 is_a: OOSTT:00000082 ! master's degree
 property_value: IAO:0000117 "John Judkins" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl xsd:string
 property_value: OOSTT:00000030 "An advanced academic degree in the principles and practices of nursing, with a focus on administration, education, or advanced nursing practice, granted by an accredited college or university after the successful completion of a master's of nursing program." xsd:string
 
 [Term]
@@ -5520,13 +5452,9 @@ is_a: BFO:0000040 ! material entity
 property_value: IAO:0000116 "May be replaced by a BFO class, as discussed in http://www.jbiomedsem.com/content/4/1/43" xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://www.jbiomedsem.com/content/4/1/43 xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl xsd:string
 
 [Typedef]
 id: BFO:0000075
-name: is aggregate of
-property_value: IAO:0000118 "aggregate of" xsd:string
-property_value: IAO:0000118 "aggregate_of" xsd:string
 equivalent_to: OMRSE:00000020 ! is-aggregate-of
 
 [Typedef]
@@ -5764,7 +5692,6 @@ property_value: IAO:0000119 "OBI" xsd:string
 id: OBI:0000846
 name: is member of organization
 def: "Relating a legal person or organization to an organization in the case where the legal person or organization has a role as member of the organization." []
-def: "Relating a legal person to an organization in the case where the legal person has a role as member of the organization" []
 property_value: IAO:0000111 "is member of organization" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000116 "2009/10/01 Alan Ruttenberg. Barry prefers generic is-member-of. Question of what the range should be. For now organization. Is organization a population? Would the same relation be used to record members of a population" xsd:string
@@ -5774,8 +5701,6 @@ property_value: IAO:0000117 "Person:Helen Parkinson" xsd:string
 property_value: IAO:0000119 "Person:Alan Ruttenberg" xsd:string
 property_value: IAO:0000119 "Person:Helen Parkinson" xsd:string
 property_value: IAO:0000232 "2009/09/28 Alan Ruttenberg. Fucoidan-use-case" xsd:string
-range: OBI:0000245 ! organization
-inverse_of: OBI:0001688 ! has organization member
 
 [Typedef]
 id: OBI:0001688
@@ -5785,7 +5710,6 @@ property_value: IAO:0000111 "has organization member" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000116 "See tracker:\nhttps://sourceforge.net/tracker/index.php?func=detail&aid=3512902&group_id=177891&atid=886178" xsd:string
 property_value: IAO:0000117 "Person: Jie Zheng" xsd:string
-domain: OBI:0000245 ! organization
 
 [Typedef]
 id: OBI:0001938
@@ -5802,9 +5726,7 @@ id: OMIABIS:0000008
 name: owns
 property_value: http://purl.org/dc/elements/1.1/source "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000119 "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204." xsd:string
 property_value: IAO:0000600 "This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. " xsd:string
-inverse_of: OMIABIS:0000048 ! is owned by
 
 [Typedef]
 id: OMIABIS:0000009
@@ -5814,13 +5736,11 @@ comment: A definition of "tranfers" object property can be found in d-acts: http
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 inverse_of: OMRSE:00000068 ! is administered by
-is_asymmetric: true
 
 [Typedef]
 id: OMIABIS:0000048
 name: is owned by
 def: "a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b." []
-property_value: IAO:0000119 "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204." xsd:string
 property_value: IAO:0000119 "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204." xsd:string
 
 [Typedef]
@@ -5868,23 +5788,18 @@ property_value: IAO:0000111 "inheres in" xsd:string
 property_value: IAO:0000112 "this fragility inheres in this vase" xsd:string
 property_value: IAO:0000112 "this red color inheres in this apple" xsd:string
 property_value: IAO:0000116 "A dependent inheres in its bearer at all times for which the dependent exists." xsd:string
-property_value: IAO:0000118 "'inheres in at all times'" xsd:string
 property_value: IAO:0000118 "inheres_in" xsd:string
 property_value: RO:0001900 RO:0001901
-is_functional: true
 is_a: RO:0002314 ! inheres in part of
-inverse_of: RO:0000053 ! is bearer of
 
 [Typedef]
 id: RO:0000053
 name: bearer of
-name: is bearer of
 def: "a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence" []
 property_value: IAO:0000111 "bearer of" xsd:string
 property_value: IAO:0000112 "this apple is bearer of this red color" xsd:string
 property_value: IAO:0000112 "this vase is bearer of this fragility" xsd:string
 property_value: IAO:0000116 "A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist." xsd:string
-property_value: IAO:0000118 "bearer of" xsd:string
 property_value: IAO:0000118 "bearer_of" xsd:string
 property_value: IAO:0000118 "is bearer of" xsd:string
 property_value: RO:0001900 RO:0001901
@@ -5917,13 +5832,11 @@ name: is concretized as
 def: "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants." []
 property_value: IAO:0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)." xsd:string
 property_value: IAO:0000112 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)." xsd:string
-property_value: IAO:0000118 "concretized by at some time" xsd:string
 
 [Typedef]
 id: RO:0000059
 name: concretizes
 def: "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant." []
-comment: It is recommended to not use this if possible in OMRSE.  According to OntoBee this relation has been obsoleted and replaced with 'concretization of at all times'.  As of Dec. 2, 2013 iao-main still uses this relation.  
 property_value: IAO:0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)." xsd:string
 property_value: IAO:0000112 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)." xsd:string
 
@@ -5964,7 +5877,7 @@ def: "a relation between an independent continuant (the bearer) and a function, 
 property_value: IAO:0000112 "this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)" xsd:string
 property_value: IAO:0000116 "A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can exist when the bearer does not exist. A function need not be realized at all the times that the function exists." xsd:string
 property_value: IAO:0000118 "has_function" xsd:string
-is_a: RO:0000053 ! is bearer of
+is_a: RO:0000053 ! bearer of
 
 [Typedef]
 id: RO:0000086
@@ -5973,7 +5886,7 @@ def: "a relation between an independent continuant (the bearer) and a quality, i
 property_value: IAO:0000112 "this apple has quality this red color" xsd:string
 property_value: IAO:0000116 "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist." xsd:string
 property_value: IAO:0000118 "has_quality" xsd:string
-is_a: RO:0000053 ! is bearer of
+is_a: RO:0000053 ! bearer of
 
 [Typedef]
 id: RO:0000087
@@ -5982,13 +5895,13 @@ def: "a relation between an independent continuant (the bearer) and a role, in w
 property_value: IAO:0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)" xsd:string
 property_value: IAO:0000116 "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists." xsd:string
 property_value: IAO:0000118 "has_role" xsd:string
-is_a: RO:0000053 ! is bearer of
+is_a: RO:0000053 ! bearer of
 
 [Typedef]
 id: RO:0000091
 name: has disposition
 def: "a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence" []
-is_a: RO:0000053 ! is bearer of
+is_a: RO:0000053 ! bearer of
 
 [Typedef]
 id: RO:0000092
@@ -6173,7 +6086,6 @@ comment: Primitive instance level timing relation between events
 subset: ro-eco
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "<=" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl xsd:string
 is_a: RO:0002222 ! temporally related to
 
 [Typedef]
@@ -6182,7 +6094,6 @@ name: before
 comment: t1 before t2 iff:=  t1 before_or_simulataneous_with t2  and not (t1 simultaeous_with t2)
 subset: ro-eco
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl xsd:string
 is_a: RO:0002081 ! before or simultaneous with
 
 [Typedef]
@@ -6295,21 +6206,15 @@ is_a: RO:0002500 ! causal agent in process
 
 [Typedef]
 id: RO:0002217
-name: actively participates in
 name: obsolete actively participates in
 def: "OBSOLETE x actively participates in y if and only if x participates in y and x realizes some active role" []
-def: "x actively participates in y if and only if x participates in y and x realizes some active role" []
 comment: Obsoleted as the inverse property was obsoleted.
-property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "agent in" xsd:string
-is_a: RO:0000056 ! participates in
-inverse_of: RO:0002218 ! has active participant
 is_obsolete: true
 
 [Typedef]
 id: RO:0002218
-name: has active participant
 name: obsolete has active participant
 def: "x has participant y if and only if x realizes some active role that inheres in y" []
 subset: ro-eco
@@ -6318,7 +6223,6 @@ property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "This may be obsoleted and replaced by the original 'has agent' relation" xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "has agent" xsd:string
-is_a: RO:0000057 ! has participant
 is_obsolete: true
 
 [Typedef]
@@ -6331,7 +6235,6 @@ property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 https://en.wikipedia.org/wiki/Allen%27s_interval_algebra
 property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends." xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl xsd:string
 
 [Typedef]
 id: RO:0002223
@@ -6341,7 +6244,6 @@ subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 "Allen" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl xsd:string
 is_a: BFO:0000050
 is_a: RO:0002222 ! temporally related to
 
@@ -6364,7 +6266,6 @@ def: "inverse of ends with" []
 subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl xsd:string
 is_a: BFO:0000050
 is_a: RO:0002222 ! temporally related to
 
@@ -6539,7 +6440,6 @@ property_value: IAO:0000118 "member part of" xsd:string
 property_value: IAO:0000119 "SIO" xsd:string
 property_value: RO:0001900 RO:0001901
 is_a: BFO:0000050
-inverse_of: RO:0002351 ! has member
 
 [Typedef]
 id: RO:0002351
