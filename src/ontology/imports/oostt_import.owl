@@ -154,6 +154,70 @@
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">academic degree</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OOSTT_00000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OOSTT_00000074"/>
+        <obo:IAO_0000115 xml:lang="en">An academic degree awarded by colleges and universities upon completion of a program of study lasting two years.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/w/index.php?title=Associate_degree&amp;oldid=723897149</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">associate degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OOSTT_00000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OOSTT_00000074"/>
+        <obo:IAO_0000115 xml:lang="en">An academic degree awarded by universities upon completion of a course of study demonstrating a mastery or high-order overview of a specific field of study or area of professional practice.[1] Within the area studied, graduates are posited to possess advanced knowledge of a specialized body of theoretical and applied topics; high order skills in analysis, critical evaluation, or professional application; and the ability to solve complex problems and think rigorously and independently.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/w/index.php?title=Master%27s_degree&amp;oldid=726036185</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">master&apos;s degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OOSTT_00000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OOSTT_00000074"/>
+        <obo:IAO_0000115 xml:lang="en">An academic degree awarded by colleges and universities upon completion of a course of study lasting three to seven years.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/w/index.php?title=Bachelor%27s_degree&amp;oldid=725713923</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">bachelor&apos;s degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OOSTT_00000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OOSTT_00000083"/>
+        <obo:IAO_0000115 xml:lang="en">An academic degree in the science and principles of nursing, granted by an accredited tertiary education provider after the successful completion of a bachelor&apos;s of nursing program.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/w/index.php?title=Bachelor_of_Science_in_Nursing&amp;oldid=725962822</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">bachelor&apos;s of nursing degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OOSTT_00000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OOSTT_00000082"/>
+        <obo:IAO_0000115 xml:lang="en">An academic degree in the science and principles of nursing, granted by an accredited tertiary education provider after the successful completion of a master&apos;s of nursing program.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">master&apos;s in the science of nursing degree</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 

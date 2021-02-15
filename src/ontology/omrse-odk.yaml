@@ -19,6 +19,8 @@ import_group:
     - IAO:0000111
   products:
     - id: ro
+      module_type: slme
+      slme_individuals: exclude
     - id: ogms
     - id: obi
     - id: apollo_sv
@@ -28,6 +30,8 @@ import_group:
     - id: oae
     - id: pco
     - id: bfo
+      module_type: slme
+      slme_individuals: exclude
     - id: oostt
     - id: omo
       module_type: mirror

@@ -5823,6 +5823,36 @@ It indicates that a person has completed only early childhood education and noth
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OOSTT_00000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000081"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OOSTT_00000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000082"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OOSTT_00000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000083"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OOSTT_00000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000084"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OOSTT_00000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000086"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PCO_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000020">

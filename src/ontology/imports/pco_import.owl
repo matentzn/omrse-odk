@@ -132,7 +132,6 @@
         <obo:IAO_0000115 xml:lang="en">A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Needs axioms for family relationships.</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25173</obo:IAO_0000119>
-        <rdfs:comment>Family membership through marriage or adoption apply primarily to human families. In most species, family membership is defined by common anscestry.</rdfs:comment>
         <rdfs:label xml:lang="en">family</rdfs:label>
     </owl:Class>
 </rdf:RDF>

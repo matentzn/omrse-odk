@@ -81,21 +81,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000234 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000234"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/source -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
     
 
 
@@ -107,12 +95,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
     
 
 
@@ -149,21 +131,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000124 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000124">
-        <obo:IAO_0000111>is_supported_by_data</obo:IAO_0000111>
-        <obo:IAO_0000112>The relation between the conclusion &quot;Gene tpbA is involved in EPS production&quot; and the data items produced using two sets of organisms, one being a tpbA knockout, the other being tpbA wildtype tested in polysacharide production assays and analyzed using an ANOVA. </obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>The relation between a data item and a conclusion where the conclusion is the output of a data interpreting process and the data item is used as an input to that process</obo:IAO_0000115>
-        <obo:IAO_0000117>OBI</obo:IAO_0000117>
-        <obo:IAO_0000119>OBI</obo:IAO_0000119>
-        <obo:IAO_0000119>Philly 2011 workshop</obo:IAO_0000119>
-        <rdfs:label>is_supported_by_data</rdfs:label>
-    </owl:ObjectProperty>
     
 
 
@@ -331,12 +298,6 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056"/>
@@ -449,18 +410,6 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
@@ -473,39 +422,9 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000037 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000037"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000038 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000038"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000098 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000098"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000101 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000101"/>
     
 
 
@@ -515,51 +434,9 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000144 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000144"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000179 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000179"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000180 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000180"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000183 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000183"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000184 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000184"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000572 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000572"/>
     
 
 
@@ -598,37 +475,6 @@ objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000232 xml:lang="en">This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">planned process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000066 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000572"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000471"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000111 xml:lang="en">investigation</obo:IAO_0000111>
-        <obo:IAO_0000112>Lung cancer investigation using expression profiling, a stem cell transplant investigation, biobanking is not an investigation, though it may be part of an investigation</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
-        <obo:IAO_0000232>Could add specific objective specification</obo:IAO_0000232>
-        <obo:IAO_0000232 xml:lang="en">Following OBI call November 2012,26th: it was decided there was no need for adding &quot;achieves objective of drawing conclusion&quot; as existing relations were providing equivalent ability. this note closes the issue and validates the class definition to be part of the OBI core
-editor = PRS</obo:IAO_0000232>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">investigation</rdfs:label>
     </owl:Class>
     
 
@@ -678,39 +524,6 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000471 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000471">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000111>study design execution</obo:IAO_0000111>
-        <obo:IAO_0000112>injecting a mouse with PBS solution, weighing it, and recording the weight according to a study design.</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>a planned process that carries out a study design</obo:IAO_0000115>
-        <obo:IAO_0000116>removed axiom has_part some (assay or &apos;data transformation&apos;) per discussion on protocol application mailing list to improve reasoner performance. The axiom is still desired.</obo:IAO_0000116>
-        <obo:IAO_0000119>branch derived</obo:IAO_0000119>
-        <obo:IAO_0000232>6/11/9: edited at workshop. Used to be: study design execution is a process with the objective to generate data according to a concretized study design. The execution of a study design is part of an investigation, and minimally consists of an assay or data transformation.</obo:IAO_0000232>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label>study design execution</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
@@ -739,27 +552,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
@@ -781,24 +573,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">Branch editors</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">data transformation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <obo:IAO_0000111 xml:lang="en">study design</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">a matched pairs study design describes criteria by which subjects are identified as pairs which then undergo the same protocols, and the data generated is analyzed by comparing the differences between the paired subjects, which constitute the results of the executed study design.</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.</obo:IAO_0000115>
-        <obo:IAO_0000116>Editor note: there is at least an implicit restriction on the kind of data transformations that can be done based on the measured data available.</obo:IAO_0000116>
-        <obo:IAO_0000117>PERSON: Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">experimental design</obo:IAO_0000118>
-        <obo:IAO_0000232 xml:lang="en">rediscussed at length (MC/JF/BP). 12/9/08). The definition was clarified to differentiate it from protocol.</obo:IAO_0000232>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">study design</rdfs:label>
     </owl:Class>
     
 

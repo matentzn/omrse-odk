@@ -51,12 +51,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
@@ -107,12 +101,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219"/>
     
 
 
@@ -230,12 +218,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
@@ -245,12 +227,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000024"/>
     
 
 
@@ -272,27 +248,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000594 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000594"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020000"/>
     
 
 
@@ -305,12 +263,6 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
     
 
 

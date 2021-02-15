@@ -70,3 +70,8 @@ RO:0002229	owl:ObjectProperty
 RO:0002350	owl:ObjectProperty
 RO:0002351	owl:ObjectProperty
 RO:0002577	owl:ObjectProperty
+OOSTT:00000081	owl:Class
+OOSTT:00000082	owl:Class
+OOSTT:00000083	owl:Class
+OOSTT:00000084	owl:Class
+OOSTT:00000086	owl:Class
