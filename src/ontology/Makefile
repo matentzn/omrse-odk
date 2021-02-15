@@ -188,6 +188,8 @@ $(IMPORTSEED): $(PRESEED)
 	if [ $(IMP) = true ]; then cat $(PRESEED) | sort | uniq > $@; fi
 
 
+ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 IAO:0000116 IAO:0000111 
+
 # -- Generate Import Modules --
 #
 # This pattern uses ROBOT to generate an import module
@@ -202,27 +204,27 @@ imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
 		extract -T imports/$*_terms_combined.txt --force true --copy-ontology-annotations true --method BOT \
 		remove --base-iri $(URIBASE)"/$(shell echo $* | tr a-z A-Z)_" --axioms external --preserve-structure false --trim false \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		remove --term rdfs:label -T imports/$*_terms_combined.txt --select complement --select "classes individuals annotation-properties" \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T imports/$*_terms_combined.txt --select complement --select "classes individuals annotation-properties" \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: imports/%_import.owl
-## Special treatment for ontology: omo
+## Special treatment for ontology: omiabis
+
+imports/omiabis_import.owl: mirror/omiabis.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in omrse.Makefile!" && false## Special treatment for ontology: omo
 
 imports/omo_import.owl: mirror/omo.owl imports/omo_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		remove --term rdfs:label -T imports/omo_terms_combined.txt --select complement --select "classes individuals annotation-properties" \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 ## Special treatment for ontology: pno
 
 imports/pno_import.owl: mirror/pno.owl imports/pno_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		remove --term rdfs:label -T imports/pno_terms_combined.txt --select complement --select "classes individuals annotation-properties" \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 ## Special treatment for ontology: d-acts
 
 imports/d-acts_import.owl: mirror/d-acts.owl imports/d-acts_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		remove --term rdfs:label -T imports/d-acts_terms_combined.txt --select complement --select "classes individuals annotation-properties" \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 

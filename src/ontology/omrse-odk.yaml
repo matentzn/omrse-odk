@@ -12,25 +12,31 @@ release_artefacts:
   - full
 import_group:
   module_type: minimal
+  annotation_properties:
+    - rdfs:label
+    - IAO:0000115
+    - IAO:0000116
+    - IAO:0000111
   products:
     - id: ro
     - id: ogms
     - id: obi
     - id: apollo_sv
     - id: omiabis
+      module_type: custom
     - id: go
     - id: oae
     - id: pco
     - id: bfo
     - id: oostt
     - id: omo
-      module_type: filter
+      module_type: mirror
     - id: pno
-      module_type: filter
       mirror_from: http://purl.obolibrary.org/obo/iao/pno.owl
+      module_type: mirror
     - id: d-acts
-      module_type: filter
       mirror_from: http://purl.obolibrary.org/obo/iao/d-acts/release/2020-10-14/d-acts.owl
+      module_type: mirror
 components:
   products:
     #- filename: education/omrse-education.owl
