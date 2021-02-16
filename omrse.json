@@ -68,11 +68,6 @@
               "obj": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
               "pred": "http://purl.obolibrary.org/obo/RO_0002351",
               "sub": "http://purl.obolibrary.org/obo/OMRSE_00000023"
-            },
-            {
-              "obj": "http://purl.obolibrary.org/obo/OMRSE_00000193",
-              "pred": "http://purl.obolibrary.org/obo/RO_0002351",
-              "sub": "http://purl.obolibrary.org/obo/OMRSE_00000194"
             }
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002351"
@@ -2854,6 +2849,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000196"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000202"
         },
         {
@@ -3890,11 +3890,6 @@
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000194",
           "pred": "http://purl.obolibrary.org/obo/RO_0000053",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000195"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000196",
-          "pred": "http://purl.obolibrary.org/obo/OBI_0000312",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000197"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000198",
@@ -21148,7 +21143,7 @@
               }
             ],
             "definition": {
-              "val": "A communication in which some participant states a preference for some communicative process to be in a certain language.",
+              "val": "A communication in which some participant states a preference for some communicative process to be in a certain language, and that has a concretization of a preferred language information content entity as its specified output.",
               "xrefs": []
             }
           },
@@ -21177,7 +21172,7 @@
               }
             ],
             "definition": {
-              "val": "An information content entity that (i) is the specified output of an expression of preferred language; (ii) is about some person, some language, and some linguistic competence; and (iii) conveys the language with which that person prefers to communicate within some given context.",
+              "val": "An information content entity that (i) is about some person, some language, and some linguistic competence; and (ii) conveys the language with which that person prefers to communicate within some given context.",
               "xrefs": []
             }
           },
@@ -26835,11 +26830,11 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485055"
+                "val": "_:genid2147485071"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485056"
+                "val": "_:genid2147485072"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",

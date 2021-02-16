@@ -1936,8 +1936,8 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000194 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000194 "S. Clint Dowland"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000194 "language"@en)
 SubClassOf(obo:OMRSE_00000194 obo:BFO_0000016)
+SubClassOf(obo:OMRSE_00000194 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0002351 obo:OMRSE_00000193) ObjectAllValuesFrom(obo:RO_0002351 obo:OMRSE_00000193)))
 SubClassOf(obo:OMRSE_00000194 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OMRSE_00000192))
-SubClassOf(obo:OMRSE_00000194 ObjectAllValuesFrom(obo:RO_0002351 obo:OMRSE_00000193))
 
 # Class: obo:OMRSE_00000195 (linguistic community)
 
@@ -1948,22 +1948,23 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000195 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000195 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000195 "linguistic community"@en)
 SubClassOf(obo:OMRSE_00000195 obo:BFO_0000040)
+SubClassOf(obo:OMRSE_00000195 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0002351 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000193))) ObjectAllValuesFrom(obo:RO_0002351 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000193)))))
 SubClassOf(obo:OMRSE_00000195 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000194))
-SubClassOf(obo:OMRSE_00000195 ObjectAllValuesFrom(obo:RO_0002351 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000193))))
 
 # Class: obo:OMRSE_00000196 (expression of preferred language)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000196 "A communication in which some participant states a preference for some communicative process to be in a certain language."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000196 "A communication in which some participant states a preference for some communicative process to be in a certain language, and that has a concretization of a preferred language information content entity as its specified output."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000196 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000196 "Mathias Brochhausen"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000196 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000196 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000196 "expression of preferred language"@en)
 SubClassOf(obo:OMRSE_00000196 obo:OMRSE_00000192)
+SubClassOf(obo:OMRSE_00000196 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:BFO_0000020 ObjectSomeValuesFrom(obo:RO_0000059 obo:OMRSE_00000197))))
 
 # Class: obo:OMRSE_00000197 (preferred language information content entity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000197 "An information content entity that (i) is the specified output of an expression of preferred language; (ii) is about some person, some language, and some linguistic competence; and (iii) conveys the language with which that person prefers to communicate within some given context."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000197 "An information content entity that (i) is about some person, some language, and some linguistic competence; and (ii) conveys the language with which that person prefers to communicate within some given context."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000197 "Mathias Brochhausen"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000197 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000197 "S. Clint Dowland"@en)
@@ -1973,7 +1974,7 @@ SubClassOf(obo:OMRSE_00000197 obo:IAO_0000030)
 SubClassOf(obo:OMRSE_00000197 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000193))
 SubClassOf(obo:OMRSE_00000197 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000194))
 SubClassOf(obo:OMRSE_00000197 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000193))))
-SubClassOf(obo:OMRSE_00000197 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OMRSE_00000196))
+
 
 # Class: obo:OMRSE_00000198 (information content entity-request process)
 

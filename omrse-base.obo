@@ -1440,7 +1440,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000196
 name: expression of preferred language
-def: "A communication in which some participant states a preference for some communicative process to be in a certain language." []
+def: "A communication in which some participant states a preference for some communicative process to be in a certain language, and that has a concretization of a preferred language information content entity as its specified output." []
 is_a: OMRSE:00000192 ! communication
 property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
@@ -1450,11 +1450,10 @@ property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 [Term]
 id: OMRSE:00000197
 name: preferred language information content entity
-def: "An information content entity that (i) is the specified output of an expression of preferred language; (ii) is about some person, some language, and some linguistic competence; and (iii) conveys the language with which that person prefers to communicate within some given context." []
+def: "An information content entity that (i) is about some person, some language, and some linguistic competence; and (ii) conveys the language with which that person prefers to communicate within some given context." []
 is_a: IAO:0000030
 relationship: IAO:0000136 OMRSE:00000193 ! linguistic competence
 relationship: IAO:0000136 OMRSE:00000194 ! language
-relationship: OBI:0000312 OMRSE:00000196 ! expression of preferred language
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
