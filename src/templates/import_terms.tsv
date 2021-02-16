@@ -2,6 +2,8 @@ ID	Entity Type
 ID	TYPE
 APOLLO_SV:00000480	owl:Class
 APOLLO_SV:00000532	owl:Class
+BFO:0000040	owl:Class
+BFO:0000020	owl:Class
 BFO:0000050	owl:ObjectProperty
 BFO:0000051	owl:ObjectProperty
 BFO:0000054	owl:ObjectProperty
@@ -77,3 +79,5 @@ RO:0002229	owl:ObjectProperty
 RO:0002350	owl:ObjectProperty
 RO:0002351	owl:ObjectProperty
 RO:0002577	owl:ObjectProperty
+
+
