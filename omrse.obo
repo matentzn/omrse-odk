@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2021-02-15/omrse-full.owl
+data-version: omrse/releases/2021-02-16/omrse-full.owl
 subsetdef: attribute_slim ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -17,7 +17,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:s
 property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
 property_value: owl:versionInfo "2020-10-27" xsd:string
-property_value: owl:versionInfo "2021-02-15" xsd:string
+property_value: owl:versionInfo "2021-02-16" xsd:string
 name: The Ontology of Medically Related Social Entities
 
 [Term]
@@ -3376,6 +3376,7 @@ property_value: IAO:0000117 "YH, SS" xsd:string
 property_value: IAO:0000118 "surgical procedure" xsd:string
 property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Surgery" xsd:string
 property_value: IAO:0000119 "WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm" xsd:string
+property_value: OAE:0004334 "10042609" xsd:string
 
 [Term]
 id: OAE:0002807
@@ -3457,7 +3458,6 @@ id: OBI:0200000
 name: data transformation
 def: "A planned process that produces output data from input data." []
 is_a: OBI:0000011 ! planned process
-relationship: OBI:0000293 IAO:0000027 ! has_specified_input data item
 property_value: IAO:0000111 "data transformation" xsd:string
 property_value: IAO:0000112 "The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3487,8 +3487,6 @@ id: OBI:0600052
 name: dialysis
 def: "a protocol application that uses diffusion through a semi-permeable membrane to separate an input material into two fractions of different composition" []
 is_a: OBI:0000011 ! planned process
-relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
-relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
 relationship: OBI:0000299 BFO:0000040 ! has_specified_output material entity
 property_value: IAO:0000111 "dialysis" xsd:string
 property_value: IAO:0000112 "the use of a dialysis bag of select pore size to remove salt from collagen isolated from mouse cartilage" xsd:string
@@ -3500,7 +3498,6 @@ property_value: IAO:0000119 "OBI branch derived" xsd:string
 id: OGMS:0000097
 name: health care encounter
 def: "A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter" []
-is_a: OBI:0000011 ! planned process
 property_value: IAO:0000117 "Albert Goldfain" xsd:string
 property_value: IAO:0000119 http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6 xsd:string
 property_value: IAO:0000232 "creation date: 2011-02-21T09:57:44Z" xsd:string
@@ -3518,7 +3515,6 @@ property_value: IAO:0000232 "creation date: 2011-02-21T09:57:44Z" xsd:string
 id: OGMS:0000102
 name: injury
 def: "A disorder that involves some structural damage that is immediately caused by a catastrophic external force." []
-is_a: BFO:0000040 ! material entity
 property_value: IAO:0000116 "At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making 'injury' a subtype of 'disorder'.\n\nNote: Adopted subtype of disorder, and injury can occur at the scale of organism down to cellular level." xsd:string
 property_value: IAO:0000117 "Albert Goldfain\nSagar Jain" xsd:string
 property_value: IAO:0000119 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5\n\nOGMS call adoption- 16 SEPT 2015\nhttps://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/edit" xsd:string
@@ -4692,6 +4688,7 @@ is_a: OMRSE:00000014 ! nurse role
 [Term]
 id: OMRSE:00000152
 name: skilled nursing encounter
+is_a: BFO:0000015 ! process
 is_a: OGMS:0000097 ! health care encounter
 relationship: BFO:0000055 OMRSE:00000151 ! realizes registered nurse role
 
@@ -4732,6 +4729,7 @@ is_a: BFO:0000034 ! function
 id: OMRSE:00000159
 name: post-acute health care encounter
 def: "temporally located after some acute care encounter\nSomehow involves skilled nursing encounters" []
+is_a: BFO:0000003 ! occurrent
 is_a: OGMS:0000097 ! health care encounter
 disjoint_from: OMRSE:00000160 ! acute care encounter
 relationship: BFO:0000066 OMRSE:00000150 ! occurs in community living health care facility
@@ -4776,6 +4774,7 @@ relationship: BFO:0000054 OMRSE:00000166 ! realized in home health care encounte
 [Term]
 id: OMRSE:00000166
 name: home health care encounter
+is_a: BFO:0000003 ! occurrent
 is_a: OGMS:0000097 ! health care encounter
 relationship: BFO:0000066 OMRSE:00000074 ! occurs in housing unit
 
@@ -5808,6 +5807,7 @@ def: "An information content entity that is the specified outcome of and documen
 is_a: IAO:0000030 ! information content entity
 property_value: IAO:0000117 "John Judkins" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: OOSTT:00000030 "Recognized degree awarded after successful completion of a college or post-graduate porgram." xsd:string
 
 [Term]
 id: OOSTT:00000081
@@ -5817,6 +5817,7 @@ is_a: OOSTT:00000074 ! academic degree
 property_value: IAO:0000117 "John Judkins" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 https://en.wikipedia.org/w/index.php?title=Associate_degree&oldid=723897149 xsd:string
+property_value: OOSTT:00000030 "Recognition awarded after completion of a specific curriculum from an accredited tertiary education provider that falls between high school and bachelor's degree program." xsd:string
 
 [Term]
 id: OOSTT:00000082
@@ -5852,6 +5853,7 @@ def: "An academic degree in the science and principles of nursing, granted by an
 is_a: OOSTT:00000082 ! master's degree
 property_value: IAO:0000117 "John Judkins" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: OOSTT:00000030 "An advanced academic degree in the principles and practices of nursing, with a focus on administration, education, or advanced nursing practice, granted by an accredited college or university after the successful completion of a master's of nursing program." xsd:string
 
 [Term]
 id: ObsoleteClass
@@ -6306,7 +6308,6 @@ id: OBI:0000293
 name: has_specified_input
 def: "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
 property_value: IAO:0000111 "has_specified_input" xsd:string
-property_value: IAO:0000111 "has_specified_input" xsd:string
 property_value: IAO:0000112 "see is_input_of example_of_usage" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000116 "8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works." xsd:string
@@ -6322,13 +6323,6 @@ inverse_of: OBI:0000295 ! is_specified_input_of
 [Typedef]
 id: OBI:0000295
 name: is_specified_input_of
-def: "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
-property_value: IAO:0000111 "is_specified_input_of" xsd:string
-property_value: IAO:0000112 "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
-property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
-is_a: RO:0000056 ! participates in
 
 [Typedef]
 id: OBI:0000299
@@ -6360,26 +6354,6 @@ range: OBI:0000011 ! planned process
 is_a: RO:0000056 ! participates in
 
 [Typedef]
-id: OBI:0000417
-name: achieves_planned_objective
-def: "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process." []
-property_value: IAO:0000111 "achieves_planned_objective" xsd:string
-property_value: IAO:0000112 "A cell sorting process achieves the objective specification 'material separation objective'" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "BP, AR, PPPB branch" xsd:string
-property_value: IAO:0000119 "PPPB branch derived" xsd:string
-property_value: IAO:0000232 "modified according to email thread from 1/23/09 in accordince with DT and PPPB branch" xsd:string
-
-[Typedef]
-id: OBI:0000833
-name: objective_achieved_by
-def: "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process." []
-property_value: IAO:0000111 "objective_achieved_by" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "OBI" xsd:string
-property_value: IAO:0000119 "OBI" xsd:string
-
-[Typedef]
 id: OBI:0000846
 name: is member of organization
 def: "Relating a legal person or organization to an organization in the case where the legal person or organization has a role as member of the organization." []
@@ -6401,16 +6375,6 @@ property_value: IAO:0000111 "has organization member" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000116 "See tracker:\nhttps://sourceforge.net/tracker/index.php?func=detail&aid=3512902&group_id=177891&atid=886178" xsd:string
 property_value: IAO:0000117 "Person: Jie Zheng" xsd:string
-
-[Typedef]
-id: OBI:0001938
-name: has value specification
-def: "A relation between an information content entity and a value specification that specifies its value." []
-property_value: IAO:0000111 "has value specification" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "PERSON: James A. Overton" xsd:string
-property_value: IAO:0000119 "OBI" xsd:string
-is_a: BFO:0000051 ! has part
 
 [Typedef]
 id: OMIABIS:0000008
@@ -6466,10 +6430,6 @@ range: OMRSE:00000056 ! hospital organization
 [Typedef]
 id: OMRSE:00000167
 name: provides service
-
-[Typedef]
-id: PCO:0000055
-name: has member of
 
 [Typedef]
 id: RO:0000052

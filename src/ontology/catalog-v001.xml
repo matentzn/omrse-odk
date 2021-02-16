@@ -44,11 +44,6 @@
   <uri name="http://purl.obolibrary.org/obo/omrse/components/d-acts.owl" uri="components/d-acts.owl"/>
   <uri name="http://purl.obolibrary.org/obo/omrse/components/import_terms.owl" uri="components/import_terms.owl"/>
   
-
-  <uri name="http://purl.obolibrary.org/obo/omrse/dev/education.owl" uri="components/education/omrse-education.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/dev/language.owl" uri="components/language/omrse-language.owl"/>
-
-  <uri name="http://purl.obolibrary.org/obo/omrse/dev/omrse-core.owl" uri="components/omrse-core.owl"/>
   
 </group>
 </catalog>

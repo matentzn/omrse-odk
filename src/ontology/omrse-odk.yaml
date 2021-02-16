@@ -11,7 +11,7 @@ release_artefacts:
   - base
   - full
 import_group:
-  module_type: minimal
+  module_type: filter
   annotation_properties:
     - rdfs:label
     - IAO:0000115
@@ -24,6 +24,7 @@ import_group:
     - id: ogms
     - id: obi
     - id: apollo_sv
+      module_type: filter
     - id: omiabis
       module_type: custom
     - id: go

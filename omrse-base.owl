@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-02-15/omrse-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-02-16/omrse-base.owl"/>
         <dc:contributor>Daniel Welch</dc:contributor>
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
@@ -22,7 +22,7 @@
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <owl:versionInfo>2020-10-27</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-02-15</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-02-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -116,6 +116,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OAE_0004334 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OAE_0004334"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000080 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000080">
@@ -154,6 +160,12 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002028">
         <obo:IAO_0000111 xml:lang="en">ISO 639-3 code</obo:IAO_0000111>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OOSTT_00000030 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000030"/>
     
 
 

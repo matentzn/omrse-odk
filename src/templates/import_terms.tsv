@@ -36,6 +36,7 @@ IAO:0100001	owl:AnnotationProperty
 OAE:0000002	owl:Class
 OAE:0000067	owl:Class
 OAE:0002807	owl:Class
+OAE:0004334	owl:AnnotationProperty
 OBI:0000245	owl:Class
 OBI:0000299	owl:ObjectProperty
 OBI:0000312	owl:ObjectProperty
@@ -53,6 +54,12 @@ OMIABIS:0000048	owl:ObjectProperty
 OMIABIS:0000060	owl:Class
 OMIABIS:0001025	owl:Class
 OMIABIS:0001035	owl:Class
+OOSTT:00000030	owl:AnnotationProperty
+OOSTT:00000081	owl:Class
+OOSTT:00000082	owl:Class
+OOSTT:00000083	owl:Class
+OOSTT:00000084	owl:Class
+OOSTT:00000086	owl:Class
 PCO:0000020	owl:Class
 RO:0000052	owl:ObjectProperty
 RO:0000053	owl:ObjectProperty
@@ -70,8 +77,3 @@ RO:0002229	owl:ObjectProperty
 RO:0002350	owl:ObjectProperty
 RO:0002351	owl:ObjectProperty
 RO:0002577	owl:ObjectProperty
-OOSTT:00000081	owl:Class
-OOSTT:00000082	owl:Class
-OOSTT:00000083	owl:Class
-OOSTT:00000084	owl:Class
-OOSTT:00000086	owl:Class

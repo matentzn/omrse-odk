@@ -100,6 +100,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OAE_0004334 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OAE_0004334"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OOSTT_00000030 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000030"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

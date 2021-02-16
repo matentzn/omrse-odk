@@ -5,24 +5,6 @@
         {
           "allValuesFromEdges": [
             {
-              "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
-              "pred": "http://purl.obolibrary.org/obo/OBI_0000293",
-              "sub": "http://purl.obolibrary.org/obo/OBI_0600052"
-            },
-            {
-              "obj": "http://purl.obolibrary.org/obo/IAO_0000027",
-              "pred": "http://purl.obolibrary.org/obo/OBI_0000293",
-              "sub": "http://purl.obolibrary.org/obo/OBI_0200000"
-            }
-          ],
-          "domainClassIds": [
-            "http://purl.obolibrary.org/obo/OBI_0000011"
-          ],
-          "predicateId": "http://purl.obolibrary.org/obo/OBI_0000293"
-        },
-        {
-          "allValuesFromEdges": [
-            {
               "obj": "http://purl.obolibrary.org/obo/BFO_0000002",
               "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
               "sub": "http://purl.obolibrary.org/obo/BFO_0000002"
@@ -118,6 +100,12 @@
             "http://purl.obolibrary.org/obo/IAO_0000582"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/IAO_0000583"
+        },
+        {
+          "domainClassIds": [
+            "http://purl.obolibrary.org/obo/OBI_0000011"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/OBI_0000293"
         },
         {
           "domainClassIds": [
@@ -591,6 +579,16 @@
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000003",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000159"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000003",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000166"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000003",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000168"
         },
         {
@@ -672,6 +670,11 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OBI_0000011"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000152"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
@@ -925,11 +928,6 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
-          "pred": "http://purl.obolibrary.org/obo/OBI_0000293",
-          "sub": "http://purl.obolibrary.org/obo/OBI_0600052"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
           "pred": "http://purl.obolibrary.org/obo/OBI_0000299",
           "sub": "http://purl.obolibrary.org/obo/OBI_0600052"
         },
@@ -982,11 +980,6 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OBI_0100026"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OGMS_0000102"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
@@ -1057,11 +1050,6 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000051",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000583"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "pred": "subPropertyOf",
-          "sub": "http://purl.obolibrary.org/obo/OBI_0001938"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000051",
@@ -2851,11 +2839,6 @@
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OGMS_0000097"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
-          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMIABIS_0001035"
         },
         {
@@ -4297,11 +4280,6 @@
           "obj": "http://purl.obolibrary.org/obo/RO_0000053",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0000091"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/RO_0000056",
-          "pred": "subPropertyOf",
-          "sub": "http://purl.obolibrary.org/obo/OBI_0000295"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0000056",
@@ -5817,11 +5795,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-02-15"
+            "val": "2021-02-16"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-02-15/omrse-full.json",
+        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-02-16/omrse-full.json",
         "xrefs": []
       },
       "nodes": [
@@ -17684,6 +17662,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/OAE_0004334",
+                "val": "10042609"
               }
             ],
             "definition": {
@@ -17851,10 +17833,6 @@
                 "val": "has_specified_input"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "has_specified_input"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
                 "val": "see is_input_of example_of_usage"
               },
@@ -17885,39 +17863,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
                 "val": "http://purl.obolibrary.org/obo/obi.owl"
-              }
-            ],
-            "definition": {
-              "val": "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.",
-              "xrefs": []
-            }
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OBI_0000295",
-          "lbl": "is_specified_input_of",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "is_specified_input_of"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000122"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Alan Ruttenberg"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "PERSON:Bjoern Peters"
               }
             ],
             "definition": {
@@ -18010,43 +17955,6 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/OBI_0000417",
-          "lbl": "achieves_planned_objective",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "achieves_planned_objective"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "A cell sorting process achieves the objective specification 'material separation objective'"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "BP, AR, PPPB branch"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "PPPB branch derived"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
-                "val": "modified according to email thread from 1/23/09 in accordince with DT and PPPB branch"
-              }
-            ],
-            "definition": {
-              "val": "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.",
-              "xrefs": []
-            }
-          },
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/OBI_0000471",
           "lbl": "study design execution",
           "meta": {
@@ -18066,35 +17974,6 @@
             }
           },
           "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OBI_0000833",
-          "lbl": "objective_achieved_by",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "objective_achieved_by"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000122"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "OBI"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "OBI"
-              }
-            ],
-            "definition": {
-              "val": "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.",
-              "xrefs": []
-            }
-          },
-          "type": "PROPERTY"
         },
         {
           "id": "http://purl.obolibrary.org/obo/OBI_0000846",
@@ -18169,97 +18048,6 @@
             ],
             "definition": {
               "val": "Relating an organization to a legal person or organization.",
-              "xrefs": []
-            }
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OBI_0001937",
-          "lbl": "has specified numeric value",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "has specified numeric value"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "A range of 'real' might be better than 'float'. For now we follow 'has measurement value' until we can consider technical issues with SPARQL queries and reasoning."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "PERSON: James A. Overton"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "OBI"
-              }
-            ],
-            "definition": {
-              "val": "A relation between a value specification and a number that quantifies it.",
-              "xrefs": []
-            }
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OBI_0001938",
-          "lbl": "has value specification",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "has value specification"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "PERSON: James A. Overton"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "OBI"
-              }
-            ],
-            "definition": {
-              "val": "A relation between an information content entity and a value specification that specifies its value.",
-              "xrefs": []
-            }
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OBI_0002135",
-          "lbl": "has specified value",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "has specified value"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "This is not an RDF/OWL object property. It is intended to link a value found in e.g. a database column of 'M' (the literal) to an instance of a value specification class, which can then be linked to indicate that this is about the biological gender of a human subject."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "OBI"
-              }
-            ],
-            "definition": {
-              "val": "A relation between a value specification and a literal.",
               "xrefs": []
             }
           },
@@ -23434,6 +23222,19 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/OOSTT_00000030",
+          "lbl": "OOSTT user-centered description",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Mathias Brochhausen"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/OOSTT_00000074",
           "lbl": "academic degree",
           "meta": {
@@ -23445,6 +23246,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Mathias Brochhausen"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/OOSTT_00000030",
+                "val": "Recognized degree awarded after successful completion of a college or post-graduate porgram."
               }
             ],
             "definition": {
@@ -23470,6 +23275,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "https://en.wikipedia.org/w/index.php?title=Associate_degree&oldid=723897149"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/OOSTT_00000030",
+                "val": "Recognition awarded after completion of a specific curriculum from an accredited tertiary education provider that falls between high school and bachelor's degree program."
               }
             ],
             "definition": {
@@ -23566,6 +23375,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Mathias Brochhausen"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/OOSTT_00000030",
+                "val": "An advanced academic degree in the principles and practices of nursing, with a focus on administration, education, or advanced nursing practice, granted by an accredited college or university after the successful completion of a master's of nursing program."
               }
             ],
             "definition": {
@@ -27022,11 +26835,11 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485062"
+                "val": "_:genid2147485055"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485063"
+                "val": "_:genid2147485056"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -27133,6 +26946,16 @@
           "id": "http://purl.obolibrary.org/obo/IAO_0020006",
           "lbl": "portion of energy",
           "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OAE_0004334",
+          "lbl": "has_MedDRA_id",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OBI_0000295",
+          "lbl": "is_specified_input_of",
+          "type": "PROPERTY"
         },
         {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000002",
@@ -27467,11 +27290,6 @@
         {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00002027",
           "lbl": "ISO 639-2/T code",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/PCO_0000055",
-          "lbl": "has member of",
           "type": "PROPERTY"
         },
         {

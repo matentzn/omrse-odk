@@ -200,45 +200,64 @@ imports/%_terms_combined.txt: $(IMPORTSEED) imports/%_terms.txt
 
 
 imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
-		extract -T imports/$*_terms_combined.txt --force true --copy-ontology-annotations true --method BOT \
+	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
+		query --update ../sparql/preprocess-module.ru \
 		remove --base-iri $(URIBASE)"/$(shell echo $* | tr a-z A-Z)_" --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T imports/$*_terms_combined.txt --select complement \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T imports/$*_terms_combined.txt --select complement --select "classes individuals annotation-properties" \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: imports/%_import.owl
-## Special treatment for ontology: ro
+
+## Module for ontology: ro
 
 imports/ro_import.owl: mirror/ro.owl imports/ro_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/ro_terms_combined.txt --force true --individuals exclude --method BOT \
-	query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		query --update ../sparql/inject-subset-declaration.ru \
+	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
+		extract -T imports/ro_terms_combined.txt --force true --individuals exclude --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-## Special treatment for ontology: omiabis
+
+## Module for ontology: apollo_sv
+
+imports/apollo_sv_import.owl: mirror/apollo_sv.owl imports/apollo_sv_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
+		query --update ../sparql/preprocess-module.ru \
+		remove --base-iri $(URIBASE)/APOLLO_SV --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T imports/apollo_sv_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+## Module for ontology: omiabis
 
 imports/omiabis_import.owl: mirror/omiabis.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in omrse.Makefile!" && false## Special treatment for ontology: bfo
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in omrse.Makefile!" && false
+## Module for ontology: bfo
 
 imports/bfo_import.owl: mirror/bfo.owl imports/bfo_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/bfo_terms_combined.txt --force true --individuals exclude --method BOT \
-	query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		query --update ../sparql/inject-subset-declaration.ru \
+	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
+		extract -T imports/bfo_terms_combined.txt --force true --individuals exclude --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-## Special treatment for ontology: omo
+
+## Module for ontology: omo
 
 imports/omo_import.owl: mirror/omo.owl imports/omo_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
+		query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-## Special treatment for ontology: pno
+
+## Module for ontology: pno
 
 imports/pno_import.owl: mirror/pno.owl imports/pno_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
+		query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-## Special treatment for ontology: d-acts
+
+## Module for ontology: d-acts
 
 imports/d-acts_import.owl: mirror/d-acts.owl imports/d-acts_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
+		query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 
